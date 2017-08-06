@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Serhii Sakal</title>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <!--================================================================-->
+    <meta name="keywords"
+          content="Sakal, Serhii, resume, portfolio, about, contact, work, frontend, developer, html, html5, css, css3, javascript, jquery, wordpress">
+    <meta name="description"
+          content="about Sakal Serhii Web developer: - What I can do - What I know - Why we should work together -">
+    <meta name="author" content="Serhii Sakal">
+    <meta name="copyright" content="Copyright (c) 2017 Serhii Sakal">
+    <!--================================================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!--================================================================-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--================================================================-->
+    <!-- cache SVG -->
+    <script src="js/cache-svg.js" async charset="utf-8"></script>
+    <!--================================================================-->
+</head>
+<body>
+
+<!--make difrent backgrounds with auto changing
+    buttin Esc for resset-->
+
+Drag to spin the cube
+<div id="box">
+    <!--header================================================================-->
+    <header style="position: absolute">
+        <h1>Serhii Sakal test</h1>
+        <span>front end developer 3403hrs</span>
+    </header>
+
+
+    <!--cube================================================================-->
+    <div id="viewport" class="a_trans_linear" >
+        <div class="cube" style="background: rebeccapurple">
+            <!--top-side - works-->
+            <section id="cube__side--1" class="cube__side fc_c_cc">
+                <h2>PORTFOLIO</h2>
+                <svg id="works__show-content" width="150" height="150">
+                    <use xlink:href='#works--svg_works'></use>
+                </svg>
+            </section><!--end works-->
+            <!--front - profile-->
+            <section id="cube__side--2" class="cube__side fc_c_cc">
+                <h2>PROFILE</h2>
+                <svg id="profile__show-content" width="150" height="150">
+                    <use xlink:href='#profile--svg_profile'></use>
+                </svg>
+            </section> <!--end front - profile-->
+            <!--right - services-->
+            <section id="cube__side--3" class="cube__side fc_c_cc">
+                <h2>SERVICES</h2>
+                <svg id="services__show-content" width="150" height="150">
+                    <use xlink:href='#services--svg_service'></use>
+                </svg>
+            </section> <!--end services-->
+            <!--back - cooperation-->
+            <section id="cube__side--4" class="cube__side fc_c_cc">
+                <h2>COOPERATION</h2>
+                <svg id="cooperation__show-content" width="150" height="150">
+                    <use xlink:href='#cooperation--svg_cooperation'></use>
+                </svg>
+            </section> <!--end cooperation-->
+            <!--left - knowledge-->
+            <section id="cube__side--5" class="cube__side fc_c_cc">
+                <h2>KNOWLEDGE</h2>
+                <svg id="knowledge__show-content" width="150" height="150">
+                    <use xlink:href='#knowledge--svg_knowledge'></use>
+                </svg>
+            </section> <!--end knowledge-->
+            <!--bottom - contact-->
+            <section id="cube__side--6" class="cube__side fc_c_cc">
+                <h2>CONTACT</h2>
+                <svg id="contact__show-content" width="150" height="150">
+                    <use xlink:href='#contact--svg_contact'></use>
+                </svg>
+            </section> <!--end contact-->
+        </div> <!--end cube-->
+    </div>
+
+    <!--works================================================================-->
+    <div class="wf-cube__preview">
+        <div id="sonar--2" class="sonar"></div>
+        <section id="works__content" class="cube__preview">
+            <h3>my projects</h3>
+            <figure class="cube__atom">
+                <a href="#" target="_blank">
+                    <img src="img/works/work1.jpg" alt="Work preview Foose Shose">
+                </a>
+                <figcaption>Foose Shose</figcaption>
+            </figure>
+            <figure class="cube__atom">
+                <a href="#" target="_blank">
+                    <img src="img/works/work2.jpg" alt="Work preview Landing Page">
+                </a>
+                <figcaption>Landing Page</figcaption>
+            </figure>
+            <figure class="cube__atom">
+                <a href="#" target="_blank">
+                    <img src="img/works/work3.jpg" alt="Work preview Waxo">
+                </a>
+                <figcaption>Waxo</figcaption>
+            </figure>
+            <span class="cube__atom close fr_c_cc t_xxxl a_pointer" style="margin: auto">&#215;</span>
+        </section>
+    </div>
+    <!--profile================================================================-->
+    <div class="wf-cube__preview">
+        <section id="profile__content" class="cube__preview fr_c_cc">
+            <!--about -->
+            <article class="cube__atom cube__atom--bg fc_c_cc">
+                <svg width="44" height="44">
+                    <use xlink:href='#profile--svg_about'></use>
+                </svg>
+                <h3>About me</h3>
+                <p>
+                    Shortly about myself<br>
+                <hr class="hr-smal">
+                I <span class="heart">❤</span> coding & traveling,<br>
+                and I'm hardworking.
+                </p>
+            </article>
+            <!-- education -->
+            <section class="cube__atom cube__atom--bg fc_c_cc">
+                <svg width="44" height="44">
+                    <use xlink:href='#profile--svg_education'></use>
+                </svg>
+                <h3>College</h3>
+                <div class="fr_c_cc">
+                    <time datetime="2003">2003&nbsp;/&nbsp;</time>
+                    <time datetime="2006">2006</time>
+                </div>
+                <article>
+                    <h4 class="t_cntr">UA Kalush Polytechnic</h4>
+                    <hr class="hr-smal">
+                    <p class="t_cntr">Junior specialist in intelligent integrated systems maintenance</p>
+                </article>
+            </section>
+            <section class="cube__atom cube__atom--bg fc_c_cc">
+                <svg width="44" height="44">
+                    <use xlink:href='#profile--svg_education'></use>
+                </svg>
+                <h3>University</h3>
+                <div class="fr_c_cc">
+                    <time datetime="2006">2006&nbsp;/&nbsp;</time>
+                    <time datetime="2008">2008</time>
+                </div>
+                <article>
+                    <h4 class="t_cntr">UA Lviv Polytechnic National</h4>
+                    <hr class="hr-smal">
+                    <p class="t_cntr">Bachelor of Computer Engineering</p>
+                </article>
+            </section>
+            <section class="cube__atom cube__atom--bg fc_c_cc">
+                <svg width="44" height="44">
+                    <use xlink:href='#profile--svg_education'></use>
+                </svg>
+                <h3>Online education</h3>
+                <div class="fr_c_cc">
+                    <time datetime="2016">since 2016</time>
+                </div>
+                <hr class="hr-smal">
+                <article>
+                    <h4 class="l_mark-tick"> geekbrains.ru</h4>
+                    <h4 class="l_mark-tick"> learn.javascript.ru</h4>
+                    <h4 class="l_mark-tick"> udacity.com</h4>
+                    <h4 class="l_mark-tick"> codecademy.com</h4>
+                </article>
+            </section>
+            <!-- experience -->
+            <article class="cube__atom cube__atom--bg fc_c_cc">
+                <svg width="44" height="44">
+                    <use xlink:href='#profile--svg_experience'></use>
+                </svg>
+                <h3>Work experience</h3>
+                <hr class="hr-smal">
+                <p> < 1 year </p>
+            </article>
+            <!-- hobbies -->
+            <section class="cube__atom cube__atom--bg fc_c_cc">
+                <svg width="44" height="44">
+                    <use xlink:href='#profile--svg_hobbies'></use>
+                </svg>
+                <h3>Hobbies</h3>
+                <hr class="hr-smal">
+                <ul>
+                    <li class="l_mark-tick"> coding</li>
+                    <li class="l_mark-tick"> listening music</li>
+                    <li class="l_mark-tick"> snowboarding</li>
+                    <li class="l_mark-tick"> park walks</li>
+                </ul>
+            </section>
+        </section>
+    </div>
+    <!--services================================================================-->
+    <section class="wf-cube__preview">
+        <ul id="services__content" class="cube__preview fr_c_cc">
+            <li class="cube__atom cube__atom--sml fc_c_cc">
+                <svg width="25" height="25">
+                    <use xlink:href='#services--svg_marker'></use>
+                </svg>
+                <h4 class="t_cntr">Writing clean code that is easy to develop and maintain</h4>
+            </li>
+            <li class="cube__atom cube__atom--sml fc_c_cc">
+                <svg width="25" height="25">
+                    <use xlink:href='#services--svg_marker'></use>
+                </svg>
+                <h4 class="t_cntr">Valid code</h4>
+            </li>
+            <li class="cube__atom cube__atom--sml fc_c_cc">
+                <svg width="25" height="25">
+                    <use xlink:href='#services--svg_marker'></use>
+                </svg>
+                <h4 class="t_cntr">Make site responsive</h4>
+            </li>
+            <li class="cube__atom cube__atom--sml fc_c_cc">
+                <svg width="25" height="25">
+                    <use xlink:href='#services--svg_marker'></use>
+                </svg>
+                <h4 class="t_cntr">Website optimization</h4>
+            </li>
+            <li class="cube__atom cube__atom--sml fc_c_cc">
+                <svg width="25" height="25">
+                    <use xlink:href='#services--svg_marker'></use>
+                </svg>
+                <h4 class="t_cntr">Expand site</h4>
+            </li>
+            <li class="cube__atom cube__atom--sml fc_c_cc">
+                <svg width="25" height="25">
+                    <use xlink:href='#services--svg_marker'></use>
+                </svg>
+                <h4 class="t_cntr">Fix issues</h4>
+            </li>
+            <li class="cube__atom cube__atom--sml fc_c_cc">
+                <svg width="25" height="25">
+                    <use xlink:href='#services--svg_marker'></use>
+                </svg>
+                <h4 class="t_cntr">Landing page</h4>
+            </li>
+            <li class="cube__atom cube__atom--sml fc_c_cc">
+                <svg width="25" height="25">
+                    <use xlink:href='#services--svg_marker'></use>
+                </svg>
+                <h4 class="t_cntr">PSD to HTML</h4>
+            </li>
+        </ul>
+    </section>
+    <!--cooperation================================================================-->
+    <section class="wf-cube__preview">
+        <!-- <h2>why we should work together</h2> -->
+        <ul id="cooperation__content" class="cube__preview fr_c_cc">
+            <li class="cube__atom cube__atom--sml fc_c_cc">
+                <svg width="39" height="39">
+                    <use xlink:href='#cooperation--svg_ability-un'></use>
+
+                </svg>
+                <span class="t_cntr">Ability to understand the code of other people</span>
+            </li>
+            <li class="cube__atom cube__atom--sml fc_c_cc">
+                <svg width="39" height="39">
+                    <use xlink:href='#cooperation--svg_ready'></use>
+                </svg>
+                <span class="t_cntr">I am ready to carry out your work on your terms</span>
+            </li>
+            <li class="cube__atom cube__atom--sml fc_c_cc">
+                <svg width="39" height="39">
+                    <use xlink:href='#cooperation--svg_importance'></use>
+                </svg>
+                <span class="t_cntr">I understand the importance of work</span>
+            </li>
+            <li class="cube__atom cube__atom--sml fc_c_cc">
+                <svg width="39" height="39">
+                    <use xlink:href='#cooperation--svg_love'></use>
+                </svg>
+                <span class="t_cntr">I love what I do</span>
+            </li>
+        </ul>
+    </section>
+    <!--knowledge================================================================-->
+    <section class="wf-cube__preview">
+        <div id="knowledge__sonar" class="sonar"></div>
+        <div id="knowledge__content" class="cube__preview fr_c_cc">
+            <!-- cms -->
+            <section class="cube__atom cube__atom--md fcn_c_cc">
+                <h3>CMS</h3>
+                <hr class="hr-smal">
+                <ul class="fc_c_cc">
+                    <svg width="25" height="25">
+                        <use xlink:href='#knowledge--svg_wordpress'></use>
+                    </svg>
+                    <li>WordPress</li>
+                </ul>
+            </section>
+            <!-- methodology -->
+            <section class="cube__atom cube__atom--md fcn_c_cc">
+                <h3>Methodology</h3>
+                <hr class="hr-smal">
+                <ul class="fc_c_cc">
+                    <svg width="34" height="34">
+                        <use xlink:href='#knowledge--svg_bem'></use>
+                    </svg>
+                    <li>BEM</li>
+                </ul>
+            </section>
+            <!-- software -->
+            <section class="cube__atom cube__atom--md fcn_c_cc">
+                <h3>Software</h3>
+                <hr class="hr-smal">
+                <ul>
+                    <li>
+                        <svg width="25" height="25">
+                            <use xlink:href='#knowledge--svg_webstorm'></use>
+                        </svg>
+                        <span>WebStorm</span>
+                    </li>
+                    <li>
+                        <svg width="25" height="25">
+                            <use xlink:href='#knowledge--svg_sublime-text'></use>
+                        </svg>
+                        <span>Sublime Text</span>
+                    </li>
+                    <li>
+                        <svg width="25" height="25">
+                            <use xlink:href='#knowledge--svg_gimp'></use>
+                        </svg>
+                        <span>Gimp</span>
+                    </li>
+                </ul>
+            </section>
+            <!-- languages -->
+            <section class="cube__atom cube__atom--md fcn_c_cc">
+                <h3>Languages</h3>
+                <hr class="hr-smal">
+                <ul>
+                    <li>
+                        <svg width="25" height="25">
+                            <use xlink:href='#knowledge--svg_language'></use>
+                        </svg>
+                        <span>Russian</span>
+                    </li>
+                    <li>
+                        <svg width="25" height="25">
+                            <use xlink:href='#knowledge--svg_language'></use>
+                        </svg>
+                        <span>English</span>
+                    </li>
+                    <li>
+                        <svg width="25" height="25">
+                            <use xlink:href='#knowledge--svg_language'></use>
+                        </svg>
+                        <span>Ukrainian</span>
+                    </li>
+                </ul>
+            </section>
+            <!-- skills -->
+            <section class="cube__atom cube__atom--md fcn_c_cc">
+                <h3>Skills</h3>
+                <hr class="hr-smal">
+                <ul>
+                    <li>
+                        <svg width="25" height="25">
+                            <use xlink:href='#knowledge--svg_html5'></use>
+                        </svg>
+                        <span>HTML5</span>
+                    </li>
+                    <li>
+                        <svg width="25" height="25">
+                            <use xlink:href='#knowledge--svg_css3'></use>
+                        </svg>
+                        <span>CSS3</span>
+                    </li>
+                    <li>
+                        <svg width="25" height="25">
+                            <use xlink:href='#knowledge--svg_javascript'></use>
+                        </svg>
+                        <span>JavaScript</span>
+                    </li>
+                </ul>
+            </section>
+            <!-- css post / preprocesso -->
+            <section class="cube__atom cube__atom--md fcn_c_cc">
+                <h3>CSS</h3>
+                <hr class="hr-smal">
+                <ul>
+                    <li>
+                        <svg width="25" height="25">
+                            <use xlink:href='#knowledge--svg_PostCSS'></use>
+                        </svg>
+                        <span>postCSS</span>
+                    </li>
+                    <li>
+                        <svg width="25" height="25">
+                            <use xlink:href='#knowledge--svg_sass'></use>
+                        </svg>
+                        <span>Sass</span>
+                    </li>
+                </ul>
+            </section>
+            <!-- js librarie -->
+            <section class="cube__atom cube__atom--md fcn_c_cc">
+                <h3>JS librarie</h3>
+                <hr class="hr-smal">
+                <ul class="fc_c_cc">
+                    <svg width="25" height="25">
+                        <use xlink:href='#knowledge--svg_jquery'></use>
+                    </svg>
+                    <li>jQuery</li>
+                </ul>
+            </section>
+            <!-- bundling tools -->
+            <section class="cube__atom cube__atom--md fcn_c_cc">
+                <h3>Bundling tools</h3>
+                <hr class="hr-smal">
+                <svg width="34" height="34">
+                    <use xlink:href='#knowledge--svg_gulp'></use>
+                </svg>
+                <span>Gulp</span>
+            </section>
+        </div>
+    </section>
+    <!--contact================================================================-->
+    <section class="wf-cube__preview">
+        <form id="contact__content" class="cube__preview-2 fc_c_cc" action="">
+            <div id="contact__close" class="wf-close fals_e">
+                <span class="close fr_c_cc t_xxxl a_pointer a_trans_linear">&#215;</span>
+            </div>
+            <div class="contact__from fr_b_cc">
+                <div style="position: relative">
+                    <input class="contact__author" type="text" name="name" placeholder="Name" required
+                           pattern="[a-zA-Z0-9]+"
+                           maxlength="21"
+                           title="only eng. Thank You." autocomplete="on" autofocus>
+                    <label class="contact__label a_label" for="contact__name">Name</label>
+                </div>
+                <div style="position: relative">
+                    <input class="contact__author" type="email" name="email" placeholder="Mail" required
+                           title="example@mail.com"
+                           autocomplete="on">
+                    <label class="contact__label a_label" for="contact__mail">Mail</label>
+                </div>
+            </div>
+            <textarea class="contact__msg" name="question" placeholder="I'm glad to have your questions" required
+                      maxlength="120" title="only eng. Thank You."></textarea>
+            <div class="wf-contact__send-btn a_pointer">
+                <input id="send" class="contact__send-btn" type="submit" name="send" value="">
+            </div>
+        </form>
+    </section>
+</div>
+
+
+<!--paralax================================================================-->
+<div id="container" class="z container">
+    <div id="scene" class="scene parallax">
+        <div class="layer"></div> <!-- wtf -->
+        <div class="layer parallax__layer parallax__layer--mask" style=" z-index: -9;"
+             data-depth="0.50"></div>
+        <div class="layer parallax__layer"
+             style="background: url(img/background2.png); background-size: 100% 100%; z-index: 1;"
+             data-depth="0.00"></div>
+        <div class="layer parallax__layer parallax__layer--bgr" style=" z-index: -10;"
+             data-depth="0.30"></div>
+    </div>
+</div>
+
+
+<!--borders================================================================-->
+<div class="borders"
+     style="left: 0px; top: 0px; width: 11px; height: 327px;"></div>
+<div class="borders"
+     style="left: 0px; top: 0px; width: 286px; height: 11px;"></div>
+<div class="borders"
+     style="background-position: -51px -21px; right: 0px; top: 0px; width: 286px; height: 11px;"></div>
+<div class="borders"
+     style="background-position: -325px -21px; right: 0px; top: 0px; width: 11px; height: 166px;"></div>
+<div class="borders"
+     style="background-position: -335px -195px; right: 0px; bottom: 0px; width: 11px; height: 169px;"></div>
+<div class="borders"
+     style="background-position: -95px -356px; right: 0px; bottom: 0px; width: 252px; height: 8px;"></div>
+<div class="borders"
+     style="background-position: -31px -330px; left: 0px; bottom: 0px; width: 255px; height: 9px;"></div>
+<div class="borders"
+     style="background-position: -31px -15px; left: 0px; bottom: 0px; width: 11px; height: 324px;"></div>
+
+
+<!--Script================================================================-->
+<script src="js/libs.min.js" defer charset="utf-8"></script>
+<script src="js/main.min.js" defer charset="utf-8"></script>
+</body>
+</html>
+
