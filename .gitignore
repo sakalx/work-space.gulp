@@ -4,3 +4,8 @@ node_modules/
 #PSD too fat
 projects/**/*.psd
 src/**/*.psd
+
+#IDEA config
+projects/.idea
+src/.idea
+zona52/.idea
