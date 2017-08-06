@@ -1,0 +1,1945 @@
+
+/*		Compiling Slices
+ * ________________________________
+::::::::::::::::::::::::
+Includes Slices
+::::::::::::::::::::::::
+
+/*	Slice 1 / 8			Color & Background & Borders Properties */
+	/*   Slice 1 / 8		Color & Background & Borders Properties
+________________________________
+::::::::::::::::::::::::
+Includes Properties
+::::::::::::::::::::::::
+________________________________
+Color
+	color	
+	opacity
+________________________________
+Background 
+	background 
+	background-attachment
+	background-blend-mode
+	background-color
+	background-image
+	background-position
+	background-repeat
+	background-clip
+	background-origin
+	background-size
+________________________________
+Border
+	border
+	border-bottom
+	border-bottom-color
+	border-bottom-left-radius
+	border-bottom-right-radius
+	border-bottom-style
+	border-bottom-width
+	border-color
+	border-image
+	border-image-outset
+	border-image-repeat
+	border-image-slice
+	border-image-source
+	border-image-width
+	border-left
+	border-left-color
+	border-left-style
+	border-left-width
+	border-radius
+	border-right
+	border-right-color
+	border-right-style
+	border-right-width
+	border-style
+	border-top
+	border-top-color
+	border-top-left-radius
+	border-top-right-radius
+	border-top-style
+	border-top-width
+	border-width
+	box-decoration-break
+	box-shadow
+________________________________
+*/
+	/* ================================================================ */
+	html, body a {
+    color: #fff
+}
+	/* ================================================================ */
+	.main-nav {
+    background: rgba(0, 0, 0, 0.3)
+}
+	.main-nav__btn {
+    border-radius: 0 0 0.313rem 0.313rem
+}
+	/* ================================================================ */
+	.slider__row {
+    color: rgba(255, 255, 255, 0.5)
+}
+	.slider__dot {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 0.938rem
+}
+	.slider__dot--active {
+    background: #74c7d5
+}
+	.slider__title {
+    background: rgba(255, 255, 255, 0.7);
+    color: #74c7d5
+}
+	/* ================================================================ */
+	.services {
+    background: url("../img/backgrounds/wave1.png") no-repeat #b24a50;
+    background-size: 100% 100%
+}
+	.services__block {
+    background: #b24a50;
+    box-shadow: 5px 5px 20px #000
+}
+	.services__img {
+    background: #fff;
+    border-radius: 6.25rem
+}
+	/* ================================================================ */
+	.about__bgr {
+    background: #665464
+}
+	.about__badge {
+    background: #a1ca6c
+}
+	.about__block {
+    background: rgba(91, 75, 89, 0.8);
+    box-shadow: 5px 5px 20px #000
+}
+	.about__img {
+    background: #fff;
+    border-radius: 6.25rem
+}
+	.about__member-name {
+    color: #c7b6c5
+}
+	.about__member-pos {
+    color: #a1ca6c
+}
+	.about__social-btn {
+    background: #a1859e ;
+    border-radius: 1.25rem
+}
+	/* ================================================================ */
+	.work__bgr {
+    background: #81a256
+}
+	.divider {
+    color: #94b963;
+    background: #94b963;
+    border: none
+}
+	.work__nav-btn {
+    border-radius: 0.313rem
+}
+	.work__block-f {
+    background: #fff;
+    border: solid 1px #fff;
+    box-shadow: 5px 5px 25px #fff
+}
+	.work__title {
+    color: #727272 
+}
+	/*_________________________________________________________________*/
+	.work__block-f--hover4 h4 {
+    opacity: 0;
+    color: #fff;
+    box-shadow: 5px 5px 25px #000
+}
+	.work__block-f--hover4 b {
+    opacity: 0;
+    color: #333
+}
+	.work__block-mask--4 {
+    background: #f5c149;
+    opacity: 0
+}
+	/*_________________________________________________________________*/
+	.work__block-f--hover5 h4 {
+    opacity: 0;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    box-shadow: 5px 5px 25px #fff
+}
+	.work__block-f--hover5 b {
+    opacity: 0;
+    color: #000
+}
+	/*_________________________________________________________________*/
+	.work__block-f--hover6 h4 {
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 5px 5px 25px #000
+}
+	.work__block-f--hover6 b {
+    color: #333;
+    border-radius: 0.625rem;
+    box-shadow: 5px 5px 25px #fff
+}
+	.work__block-mask--6 {
+    background-color: rgba(146,96,91,0.3)
+}
+	/*_________________________________________________________________*/
+	.work__block-f--hover7 h4 {
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 5px 5px 25px #000
+}
+	.work__block-f--hover7 b {
+    color: #333;
+    border-radius: 0.625rem
+}
+	.work__block-mask--7 {
+    background-color: rgba(61,77,41,0.8)
+}
+	/*_________________________________________________________________*/
+	.work__block-f--hover8 h4 {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 5px 5px 25px #fff
+}
+	.work__block-f--hover8 b {
+    opacity: 0;
+    color: #333;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 0.625rem
+}
+	/* ================================================================ */
+	.contact__bgr {
+    background: url(../img/backgrounds/wave4.png) no-repeat #75b4aa;
+    background-size: 100% 100%
+}
+	.contact__address span, .contact__info th {
+    color: #c0dfda
+}
+	.contact__map {
+    box-shadow: 5px 5px 25px #000
+}
+	.contact__form input[type="text"], .contact__form input[type="email"], .contact__form textarea {
+    color: #fff;
+    background: #68a097;
+    border: none;
+    border-radius: 5px
+}
+	.contact__form input[type="submit"] {
+    color: #fff;
+    background: #df5c64;
+    border: none;
+    border-radius: 5px
+}
+	.contact__form ::-webkit-input-placeholder {
+    color: #c0dfda
+}
+	.contact__form ::-moz-placeholder {
+    color: #c0dfda
+}
+	.contact__form :-moz-placeholder {
+    color: #c0dfda
+}
+	.contact__form :-ms-input-placeholder {
+    color: #c0dfda
+}
+	.contact__in-label {
+    color: #c0dfda
+}
+	.contact__social {
+    background: #68a097
+}
+	.contact__social a {
+    background: #75b4aa;
+    border-radius: 3.125rem
+}
+	/* ================================================================ */
+	.block__wave {
+    background: url(../img/backgrounds/wave2.png) no-repeat;
+    background-size: 100% 100%
+}
+	.block__wave2 {
+    background: url(../img/backgrounds/wave3.png) no-repeat;
+    background-size: 100% 100%
+}
+	/* ================================================================ */
+	.footer-add {
+    background: url(../img/footer-add.png) no-repeat;
+    background-size: 100% 100%
+}
+	.footer-add__title {
+    border: 1px solid transparent
+}
+
+/*	Slice 2 / 8			Basic Box Properties */
+	/*   Slice 2 / 8		Basic Box Properties
+________________________________
+::::::::::::::::::::::::
+Includes Properties
+::::::::::::::::::::::::
+________________________________
+Display Position Z-index Clear Vertical-align
+	display
+	float
+	position
+	z-index
+	left
+	right
+	top
+	bottom
+	clear
+	clip
+	vertical-align
+________________________________
+Width & Height Margin & Padding
+	width
+	max-width
+	min-width
+	height
+	max-height
+	min-height
+	margin
+	margin-bottom
+	margin-left
+	margin-right
+	margin-top
+	padding
+	padding-bottom
+	padding-left
+	padding-right
+	padding-top
+________________________________
+Overflow Visibility
+	overflow
+	overflow-x
+	overflow-y
+	visibility
+________________________________
+*/
+	/* ================================================================ */
+	html, body, ul, h1, h2, h3, h4, h5, h6, hr, figure {
+    margin: 0;
+    padding: 0
+}
+	/* ================================================================ */
+	.main-nav {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 4vw
+}
+	.main-nav__hamburger {
+    display: none
+}
+	.main-nav__btn {
+    padding: 1.563rem 1rem 0.313rem 1rem
+}
+	/* ================================================================ */
+	.slider {
+    height: 100vh;
+    position: relative
+}
+	.slider__img {
+    width: 100%;
+    height: 100vh
+}
+	.slider__nav {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 4.375rem
+}
+	.slider__row {
+    margin: 0 3vw
+}
+	.slider__dot {
+    margin: 1.25rem;
+    padding: 0.625rem
+}
+	.slider__dot--active {
+    padding: 0.938rem
+}
+	.slider__wrap-title {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+	.slider__title {
+    padding: 0.625rem 2.5rem
+}
+	/* ================================================================ */
+	.services, .about, .work, .contact {
+    min-height: 100vh
+}
+	.services__caption {
+    margin: 6.25rem 0 2.5rem
+}
+	.services__artcl, .about__artcl, .contact__artcl {
+    max-width: 65.625rem;
+    margin: 0 0.625rem
+}
+	.services__block, .about__block, .work__block, .contact__block {
+    width: 16.25rem;
+    margin: 1.25rem
+}
+	.services__img {
+    width: 8.375rem;
+    height: 8.375rem;
+    margin: 2.813rem 0 2.188rem
+}
+	.services__descr {
+    margin: 2.813rem 0.375rem
+}
+	/* ================================================================ */
+	.about__caption {
+    margin-top: 6.25rem;
+    margin: 6.25rem 0.625rem 0 0.625rem
+}
+	.about__badge {
+    position: relative;
+    padding: 1.25rem 2.5rem;
+    margin: 1.875rem 0
+}
+	.about__triangle {
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - (40px/2))
+}
+	.about__img, .v_ico-user {
+    width: 9.875rem;
+    height: 9.875rem;
+    margin: 4.375rem 0 1.875rem
+}
+	.about__member-pos {
+    margin: 0.938rem 0 1.875rem
+}
+	.abot__social {
+    margin-bottom: 1.875rem
+}
+	.about__social-btn {
+    width: 2.188rem;
+    height: 2.188rem;
+    margin: 0.625rem
+}
+	/* ================================================================ */
+	.work {
+    position: relative
+}
+	.divider {
+    height: 0.188rem;
+    width: 94vw
+}
+	.work__caption {
+    margin: 6.25rem 0 0.625rem
+}
+	.work__nav {
+    margin: 0.938rem 4vw
+}
+	.work__nav-btn {
+    padding: 0.625rem 1.25rem
+}
+	.work__block-f {
+    position: relative
+}
+	.work__triangle {
+    position: absolute;
+    bottom: 45px;
+    left: calc(50% - (40px/2))
+}
+	.work__title {
+    padding: 1rem 0
+}
+	.work__img {
+    width: 100%;
+    height: 10.938rem
+}
+	.work__block-f {
+    position: relative;
+    overflow: hidden
+}
+	.work__block-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+	.work__block-mask h4 {
+    padding: 0.625rem
+}
+	.work__block-mask b {
+    margin: 1.25rem;
+    padding: 0.313rem
+}
+	/* ================================================================ */
+	.contact {
+    position: relative
+}
+	.contact__caption {
+    margin-top: 6.25rem
+}
+	.contact__artcl {
+    margin-bottom: 3.125rem
+}
+	.contact__block {
+    min-height: 15rem
+}
+	.contact__form {
+    padding: 0 1.25rem
+}
+	.contact__address h3 {
+    margin: 0 1.25rem 0.625rem 1.25rem
+}
+	.contact__form-title {
+    margin-bottom: 1.875rem
+}
+	/*_________________________________________________________________*/
+	.wrap-input {
+    position: relative
+}
+	.contact__in-label {
+    position: absolute;
+    bottom: 3.75rem;
+    left: 0
+}
+	/*_________________________________________________________________*/
+	.contact__form input[type="text"], .contact__form input[type="email"], .contact__form-msg {
+    margin-bottom: 1.25rem;
+    padding: 0.625rem 1.25rem
+}
+	.contact__form input[type="text"], .contact__form input[type="email"] {
+    width: 13.75rem;
+    margin-top: 10px
+}
+	.contact__form input[type="text"] {
+    margin-right: 0.625rem
+}
+	.contact__form-sub {
+    padding: 0.938rem 6.25rem;
+    margin-bottom: 1.25rem
+}
+	.contact__form textarea {
+    height: 10rem
+}
+	/*_________________________________________________________________*/
+	.contact__social {
+    min-height: 10vh
+}
+	.contact__social li {}
+	.contact__social a {
+    width: 3.125rem;
+    height: 3.125rem;
+    margin: 1.25rem 1.25rem
+}
+	/* ================================================================ */
+	.footer {
+    position: relative
+}
+	.footer .hamburger {
+    position: absolute;
+    z-index: 99;
+    top: 10px;
+    right: 10px
+}
+	.footer-add {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+	.footer-add__title {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    overflow: hidden
+}
+	.footer-add__title section {
+    margin: 10px
+}
+	/* ================================================================ */
+	.block__wave {
+    position: relative
+}
+	.block__wave2 {
+    position: absolute;
+    z-index: -1;
+    top: 300px;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+	.block-bgr {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+	/* ================================================================ */
+
+/*	Slice 3 / 8			Flex Box Properties */
+	/*   Slice 3 / 8		Flex Box Properties & Grid
+________________________________
+::::::::::::::::::::::::
+Includes Properties
+::::::::::::::::::::::::
+________________________________
+	flex-flow
+	flex-direction
+	flex-wrap
+	justify-content	
+	align-items
+	align-content
+________________________________
+for Flex Item
+	align-self
+	flex
+	flex-grow
+	flex-shrink
+	flex-basis
+	order
+________________________________
+________________________________
+Grid
+	
+________________________________
+*/
+	/* ================================================================ */
+	.fr_b_ss, .fr_a_hh, .fc_b_cc, .fr_e_ss, .fr_e_ee, .fr_e_cc, .fr_s_hh, .fr_e_hh, .fr_c_hh, .fr_b_hh, .fr_s_ss, .fr_s_cc, .fr_c_ss, .fr_c_cc, .fr_a_cc, .fr_b_cc, .fr_a_ss {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap
+}
+	/* ================================================================ */
+	.frn_s_cc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap
+}
+	/* ================================================================ */
+	.fc_b_cc, .fc_c_hh, .fc_c_cc, .fc_b_hh, .fc_c_ee {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap
+}
+	/* ================================================================ */
+	.fcn_b_cc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap
+}
+	/* ================================================================ */
+	.fr_s_ss, .fr_s_hh, .fr_s_cc, .frn_s_cc {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start
+}
+	.fr_e_hh, .fr_e_cc, .fr_e_ee, .fr_e_ss {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end
+}
+	.fr_c_cc, .fr_c_hh, .fr_c_ss, .fc_c_hh, .fc_c_cc, .fc_c_ee {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center
+}
+	.fr_b_cc, .fr_b_hh, .fc_b_hh, .fc_b_cc, .fr_b_ss, .fcn_b_cc {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between
+}
+	.fr_a_ss, .fr_a_cc, .fr_a_hh {
+    -ms-flex-pack: distribute;
+        justify-content: space-around
+}
+	/* ================================================================ */
+	.fr_a_ss, .fr_c_ss, .fr_s_ss, .fr_e_ss, .fr_b_ss {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start
+}
+	.fc_c_ee, .fr_e_ee {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end
+}
+	.fr_c_cc, .fr_b_cc, .fr_a_cc, .fr_s_cc, .fc_c_cc, .frn_s_cc, .fr_e_cc, .fc_b_cc, .fcn_b_cc {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center
+}
+	.fr_s_hh, .fr_e_hh, .fr_c_hh, .fr_b_hh, .fc_c_hh, .fc_b_hh, .fr_a_hh {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch
+}
+	/* ================================================================ */
+	.fr_a_ss, .fr_c_ss, .fr_s_ss, .fr_e_ss, .fr_b_ss {
+    -ms-flex-line-pack: start;
+        align-content: flex-start
+}
+	.fc_c_ee, .fr_e_ee {
+    -ms-flex-line-pack: end;
+        align-content: flex-end
+}
+	.fr_c_cc, .fr_b_cc, .fr_a_cc, .fr_s_cc, .fc_c_cc, .frn_s_cc, .fr_e_cc, .fc_b_cc, .fcn_b_cc {
+    -ms-flex-line-pack: center;
+        align-content: center
+}
+	.fr_s_hh, .fr_e_hh, .fr_c_hh, .fr_b_hh, .fc_c_hh, .fc_b_hh, .fr_a_hh {
+    -ms-flex-line-pack: stretch;
+        align-content: stretch
+}
+	/* ================================================================ */
+	.slider__title, .work__block-mask a {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center
+}
+	.f_ass, .about__blocks, .services__blocks, .work__nav, .contact__social, .contact__form-title, .contact__form-autor, .contact__form-msg {
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch
+}
+	/* ================================================================ */
+	.f1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto
+}
+	.f05 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 49%;
+            flex: 0 0 49%
+}
+	/* ================================================================ */
+	.work__block-mask b {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 5.313rem;
+            flex: 1 1 5.313rem
+}
+	/* ================================================================ */
+	.contact__form {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 36.25rem;
+            flex: 0 1 36.25rem
+}
+	.contact__address {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 38.75rem;
+            flex: 0 1 38.75rem
+}
+	/* ================================================================ */
+
+/*	Slice 4 / 8			Table & List Properties Properties */
+	/*   Slice 4 / 8		Table & List Properties Properties
+________________________________
+::::::::::::::::::::::::
+Includes Properties
+::::::::::::::::::::::::
+________________________________
+Table
+	border-collapse
+	border-spacing
+	caption-side
+	empty-cells
+	table-layout
+________________________________
+List
+	counter-increment
+	counter-reset
+	list-style
+	list-style-image
+	list-style-position
+	list-style-type
+________________________________
+*/
+	/* ================================================================ */
+	ul {
+    list-style: none
+}
+	/* ================================================================ */
+
+/*	Slice 5 / 8			Text-Decoration & Font & Writing Modes Properties Properties */
+	/*   Slice 5 / 8		Text-Decoration & Font & Writing Modes Properties Properties
+________________________________
+::::::::::::::::::::::::
+Includes Properties
+::::::::::::::::::::::::
+________________________________
+Text
+	hanging-punctuation
+	hyphens
+	letter-spacing
+	line-break
+	line-height
+	overflow-wrap
+	tab-size
+	text-align
+	text-align-last
+	text-combine-upright
+	text-indent
+	text-justify
+	text-transform
+	white-space
+	word-break
+	word-spacing
+	word-wrap
+________________________________
+Text-Decoration	
+	Text Decoration
+	text-decoration	
+	text-decoration-color
+	text-decoration-line
+	text-decoration-style
+	text-shadow
+	text-underline-position
+________________________________
+Font
+	@font-face{}
+	@font-feature-values{}
+	font
+	font-family
+	font-feature-settings
+	font-kerning
+	font-language-override
+	font-size
+	font-size-adjust
+	font-stretch
+	font-style
+	font-synthesis
+	font-variant
+	font-variant-alternates
+	font-variant-caps
+	font-variant-east-asian
+	font-variant-ligatures
+	font-variant-numeric
+	font-variant-position
+	font-weight	
+________________________________
+Writing Modes
+	direction
+	text-orientation
+	text-combine-upright
+	unicode-bidi
+	user-select
+	writing-mode
+________________________________
+*/
+	/* ================================================================ */
+	.t_lsp {
+    letter-spacing: 3px
+}
+	/* ================================================================ */
+	.t_capsl {
+    text-transform: uppercase
+}
+	/* ================================================================ */
+	.t_linehg_m {
+    line-height: 1.45
+}
+	/* ================================================================ */
+	.t_lft {
+    text-align: left
+}
+	.t_cntr {
+    text-align: center
+}
+	.t_end {
+    text-align: right
+}
+	/* ================================================================ */
+	a {
+    text-decoration: none
+}
+	.t_unl {
+    text-decoration: underline
+}
+	/* ================================================================ */
+	@font-face {
+    font-family: 'romance';
+    src: url('../font/romance/romance.woff2') format('woff2'),
+       url('../font/romance/romance.woff') format('woff'),
+       url('../font/romance/romance.ttf') format('truetype'),
+       url('../font/romance/romance.svg') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+	h1, h2, h3, h4, h5, h6, input, textarea, a, .t_bxl_bldr {
+    font-family: romance
+}
+	/* ================================================================ */
+	/* - Size */
+	/* ================================================================ */
+	.t_bxl {
+    font-size: 7vw
+}
+	h1, .t_xxxl {
+    font-size: 3.125rem
+}
+	h2, .t_xxl {
+    font-size: 2.75rem
+}
+	h3, .t_xl {
+    font-size: 1.625rem
+}
+	.t_larg {
+    font-size: 1.438rem
+}
+	h4, .t_medium {
+    font-size: 1.125rem
+}
+	h5, h6, .t_smal {
+    font-size: 1rem
+}
+	.t_xs {
+    font-size: 0.875rem
+}
+	.t_zero {
+    font-size: 0
+}
+	/* ================================================================ */
+	h1, h2, h3, h4, h5, h6 {
+    font-style: normal
+}
+	.t_italic {
+    font-style: italic
+}
+	/* ================================================================ */
+	h1, h2, h3, h4, h6 {
+    font-weight: normal
+}
+	.t_bolder {
+    font-weight: bolder
+}
+	/* ================================================================ */
+	/* ================================================================
+molecules
+================================================================ */
+	.t_sml_itlc {
+    font-size: 1rem;
+    font-style: italic
+}
+	/* ================================================================ */
+	.t_larg_bldr {
+    font-size: 1.438rem;
+    font-weight: bolder
+}
+	/* ================================================================ */
+	.t_bxl_bldr {
+    font-size: 7vw;
+    font-weight: bolder
+}
+	/* ================================================================ */
+	.t_xl_end {
+    font-size: 1.625rem;
+    text-align: end
+}
+	.t_xxxl_end {
+    font-size: 3.125rem;
+    text-align: end
+}
+	/* ================================================================ */
+	.t_med_cntr {
+    font-size: 1.125rem;
+    text-align: center
+}
+	.t_larg_cntr {
+    font-size: 1.438rem;
+    text-align: center
+}
+	/* ================================================================ */
+	.t_capsl_cntr {
+    text-transform: uppercase;
+    text-align: center
+}
+	/* ================================================================ */
+
+/*	Slice 6 / 8			Animation & Transform & Transition & User Interface Properties */
+	/*   Slice 6 / 8		Animation & Transform & Transition & User Interface Properties
+________________________________
+::::::::::::::::::::::::
+Includes Properties
+::::::::::::::::::::::::
+________________________________
+Animation
+	@keyframes{}
+	animation
+	animation-delay
+	animation-direction
+	animation-duration
+	animation-fill-mode
+	animation-name
+	animation-play-state
+	animation-timing-function
+________________________________
+Transform
+	backface-visibility
+	perspective
+	perspective-origin
+	transform
+	transform-origin
+	transform-style
+________________________________
+Transitions
+	transition
+	transition-property
+	transition-duration
+	transition-timing-function
+	transition-delay
+________________________________ 
+for User Interface
+	box-sizing
+	content
+	cursor
+	ime-mode
+	nav-down
+	nav-index
+	nav-left
+	nav-right
+	nav-up
+	outline
+	outline-color
+	outline-offset
+	outline-style
+	outline-width
+	resize
+	text-overflow
+________________________________
+*/
+	/* ================================================================ */
+	/* a_in-up */
+	@-webkit-keyframes a_in-up {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+	@keyframes a_in-up {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+	.a_in-up {
+    -webkit-animation-name: a_in-up;
+    animation-name: a_in-up;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+	/* ================================================================ */
+	/* a_in-right */
+	@-webkit-keyframes a_in-right {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+	@keyframes a_in-right {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+	.a_in-right {
+    -webkit-animation-name: a_in-right;
+    animation-name: a_in-right;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+	/* ================================================================ */
+	/*a_in-left*/
+	@-webkit-keyframes a_in-left {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+	@keyframes a_in-left {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+	.a_in-left {
+    -webkit-animation-name: a_in-left;
+    animation-name: a_in-left;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+	/* ================================================================ */
+	/*a_in-left*/
+	@-webkit-keyframes a_out-up {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0)
+    }
+}
+	@keyframes a_out-up {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0)
+    }
+}
+	.a_out-up {
+    -webkit-animation-name: a_out-up;
+    animation-name: a_out-up;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+	/* ================================================================ */
+	/*a_zoom*/
+	@-webkit-keyframes a_zoom {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3)
+    }
+    50% {
+        opacity: 1
+    }
+}
+	@keyframes a_zoom {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3)
+    }
+    50% {
+        opacity: 1
+    }
+}
+	.a_zoom {
+    -webkit-animation-name: a_zoom;
+    animation-name: a_zoom;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+	/* ================================================================ */
+	/* Rotate */
+	@-webkit-keyframes a_rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+	@keyframes a_rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+	/* ================================================================ */
+	/* Pulse */
+	@-webkit-keyframes a_pulse {
+    25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1)
+    }
+    75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9)
+    }
+}
+	@keyframes a_pulse {
+    25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1)
+    }
+    75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9)
+    }
+}
+	.a_pulse {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0)
+}
+	/* ================================================================ */
+	/*transition ease*/
+	.a_trans_easy {
+    transition: all 0.3s ease-in-out
+}
+	/*transition ease slowly*/
+	.a_trans_easy--s {
+    transition: all 0.7s ease-in-out
+}
+	/* ================================================================ */
+	/*transition linear*/
+	.a_trans_linear {
+    transition: all 0.4s linear
+}
+	/* ================================================================ */
+	/*move Ledt and transition easer*/
+	.work__block-mask--6 {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+    transition: all 0.4s ease-in-out
+}
+	/*move Up and transition easer*/
+	.a_up-easy {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    transition: all 0.3s ease-in-out
+}
+	/*move Down and transition linear*/
+	.a_down-liner {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    transition: all 0.4s linear
+}
+	/* ================================================================ */
+	/*rotate and transition ease*/
+	.a_rotate-easy {
+    -webkit-transform: scale(0) rotate(-180deg);
+            transform: scale(0) rotate(-180deg);
+    transition: all 0.4s ease-in;
+    border-radius: 0px
+}
+	/* ================================================================ */
+	/*scale and transition ease*/
+	.a_scale--f {
+    -webkit-transform: scale(10);
+            transform: scale(10);
+    transition: all 0.3s ease-in-out 0.1s
+}
+	/*scale and transition ease*/
+	.a_scale--s {
+    -webkit-transform: scale(10);
+            transform: scale(10);
+    transition: all 0.3s ease-in-out 0.2s
+}
+	/*scale and transition ease*/
+	.a_scale--none {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    transition: all 0.4s linear
+}
+	/* ================================================================ */
+	@-webkit-keyframes showLabel {
+    0% {
+        opacity: 0;
+        display: none;
+        margin: -20px 10px
+    }
+    1% {
+        display: block
+    }
+    100% {
+        padding-top: 0;
+        opacity: 1
+    }
+}
+	@keyframes showLabel {
+    0% {
+        opacity: 0;
+        display: none;
+        margin: -20px 10px
+    }
+    1% {
+        display: block
+    }
+    100% {
+        padding-top: 0;
+        opacity: 1
+    }
+}
+	.a_label {
+    -webkit-animation: showLabel 0.25s ease-in-out;
+            animation: showLabel 0.25s ease-in-out
+}
+	/* ================================================================ */
+	a, section, div, span, nav, ul {
+    box-sizing: border-box
+}
+	/* ================================================================ */
+	.contact__form input[type="text"], .contact__form input[type="email"], .contact__form textarea {
+    outline: none
+}
+	/* ================================================================ */
+	textarea {
+    resize: none
+}
+	/* ================================================================ */
+	.slider__row, .slider__dot, .work__nav-btn, input[type="submit"] {
+    cursor: pointer
+}
+	/* ================================================================ */
+	/* Neon */
+	@-webkit-keyframes neon {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177
+    }
+}
+	.a_neon {
+    -webkit-animation: neon 1s ease-in-out infinite alternate;
+    animation: neon 1s ease-in-out infinite alternate
+}
+	/* ================================================================ */
+	/* Rotate 3D */
+	.a_roate3d {
+    display: inline-block;
+    -webkit-transform: perspective(1000px) rotate3d(0,1,0,0deg);
+    transform: perspective(1000px) rotate3d(0,1,0,0deg);
+    transition: color 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, color 0.5s;
+    transition: transform 0.5s, color 0.5s, -webkit-transform 0.5s
+}
+	/* ================================================================ */
+	/* Footer additional */
+	.footer-add__title {
+    transition: all 0.4s 0s,
+  border 0.4s 0.6s,
+  height 0.4s 0.4s
+}
+	/* ================================================================ */
+
+/*	Slice 7 / 8			Selectors */
+	/*   Slice 7 / 8		Selectors
+________________________________
+::::::::::::::::::::::::
+Includes Properties
+::::::::::::::::::::::::
+________________________________
+Selectors
+	:active
+	::after
+	::before
+	:checked
+	:disabled
+	:empty
+	:enabled
+	:first-child
+	::first-letter
+	::first-line
+	:first-of-type
+	:focus
+	:hover
+	:in-range
+	:invalid
+	:lang(language)
+	:last-child
+	:last-of-type
+	:link
+	:not(selector)
+	:nth-child(n)
+	:nth-last-child(n)
+	:nth-last-of-type(n)
+	:nth-of-type(n)
+	:only-of-type
+	:only-child
+	:optional
+	:out-of-range
+	:read-only
+	:read-write	
+	:required
+	:root
+	::selection 
+	:target
+	:valid
+	:visited
+________________________________
+*/
+	/* ================================================================ */
+	/*Scale*/
+	.s_scale:hover {
+    -webkit-transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2)
+}
+	/* ================================================================ */
+	/* Pulse */
+	.s_pulse:hover, .s_pulse:focus {
+    -webkit-animation-name: a_pulse;
+    animation-name: a_pulse;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite
+}
+	/* ================================================================ */
+	/* Bounce Bottom */
+	.s_bounce_bottom {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.5s
+}
+	.s_bounce_bottom:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #74c7d5;
+    border-radius: 0 0 0.313rem 0.313rem;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out
+}
+	.s_bounce_bottom:hover:before, .s_bounce_bottom:focus:before, .s_bounce_bottom:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66)
+}
+	.s_sc_bounce_bottom:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66)
+}
+	/* ================================================================ */
+	/* Shutter Out Vertical */
+	.s_out_vertical {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.3s
+}
+	.s_out_vertical:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #f5c149;
+    border-radius: 0.313rem;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out
+}
+	.s_out_vertical:hover:before, .s_out_vertical:focus:before, .s_out_vertical:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1)
+}
+	/* ================================================================ */
+	.slider__row:hover {
+    color: rgba(255, 255, 255, 1)
+}
+	.slider__dot:hover {
+    background: rgba(255, 255, 255, 1)
+}
+	/* ================================================================ */
+	.services__block:hover .services__img .v_ico-bulb {
+    -webkit-animation-name: a_pulse;
+    animation-name: a_pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite
+}
+	.services__block:hover .v_ico-gear, .services__block:hover .v_ico-magic {
+    -webkit-animation: a_rotate 1s infinite linear;
+    animation: a_rotate 1s infinite linear;
+    display: inline-block
+}
+	.services__block:hover .s_rocket {
+    -webkit-animation: a_rotate 1s infinite linear;
+    animation: a_rotate 1s infinite linear;
+    display: inline-block
+}
+	/* ================================================================ */
+	.about__block:hover {
+    box-shadow: 5px 5px 35px #fff
+}
+	.about__block:hover .v_ico-user {
+    color: #c8535a ;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1)
+}
+	.about__block:hover .about__member-pos {
+    color: #ff8973
+}
+	.about__block:hover .about__social-btn--f {
+    background: #4f689e 
+}
+	.about__block:hover .about__social-btn--t {
+    background: #74c7d5 
+}
+	.about__block:hover .about__social-btn--g {
+    background: #c8535a 
+}
+	.about__block:hover .about__social-btn--l {
+    background: #3e61af 
+}
+	/* ================================================================ */
+	.work__block-f:hover {
+    box-shadow: 5px 5px 35px #000
+}
+	/* ================================================================ */
+	.work__block-f--hover4:hover img {
+    -webkit-transform: scale(10);
+            transform: scale(10);
+    opacity: 0
+}
+	.work__block-f--hover4:hover .work__block-mask--4 {
+    opacity: 1
+}
+	.work__block-f--hover4:hover h4, .work__block-f--hover4:hover b {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1
+}
+	/* ================================================================ */
+	.work__block-f--hover5:hover h4 {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    transition-delay: 0.1s
+}
+	.work__block-f--hover5:hover b {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    transition-delay: 0.2s
+}
+	/* ================================================================ */
+	.work__block-f--hover6:hover .work__block-mask--6 {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px)
+}
+	.work__block-f--hover6:hover img {
+    -webkit-transform: translateX(300px);
+            transform: translateX(300px);
+    transition-delay: 0.1s
+}
+	/* ================================================================ */
+	.work__block-f--hover7:hover .work__block-mask {
+    opacity: 1;
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+    transition-delay: 0.2s
+}
+	.work__block-f--hover7:hover img {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+    transition-delay: 0s
+}
+	.work__block-f--hover7:hover h2, .work__block-f--hover7:hover p {
+    opacity: 1;
+    transition-delay: 0.5s
+}
+	/* ================================================================ */
+	.work__block-f--hover8:hover img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 0.8
+}
+	.work__block-f--hover8:hover h4, .work__block-f--hover8:hover b {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px)
+}
+	/* ================================================================ */
+	.contact__btn-f:hover {
+    background: #4f689e 
+}
+	.contact__btn-t:hover {
+    background: #74c7d5 
+}
+	.contact__btn-g:hover {
+    background: #c8535a 
+}
+	.contact__btn-l:hover {
+    background: #3e61af 
+}
+	/* ================================================================ */
+	.contact__form input[type="text"]:placeholder-shown + .contact__in-label, .contact__form input[type="email"]:placeholder-shown + .contact__in-label {
+    display: none;
+    -webkit-animation: none;
+            animation: none
+}
+	.contact__form-sub:hover {
+    box-shadow: 5px 5px 25px #000
+}
+	.contact__form-sub:focus, .contact__form-sub:active {
+    box-shadow: 5px 5px 25px #fff
+}
+	/* ================================================================ */
+	input:focus, textarea:focus {
+    outline: 0;
+    box-shadow: 5px 5px 25px #000
+}
+	/* ================================================================ */
+	/* Footer additional */
+	.footer-add:hover .footer-add__title {
+    height: 100%;
+    width: 100%;
+    border-color: rgba(255,255,255,0.5);
+    background-color: rgba(0,0,0,0.8);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transition: all 0.5s 0.5s,
+	border 0.5s 0s,
+	height 0.5s 0s,
+	margin 0.5s 0s
+}
+	/* ================================================================ */
+	/* Page swich */
+	.page-switch:hover {
+    color: #FF1177;
+    -webkit-animation: none;
+    animation: none
+}
+	.page-switch:hover span {
+    color: #777;
+    -webkit-transform: perspective(1000px) rotate3d(0,1,0,360deg);
+    transform: perspective(1000px) rotate3d(0,1,0,360deg)
+}
+	.page-switch span:first-child, .page-switch:hover span:nth-child(4) {
+    transition-delay: 0.3s
+}
+	.page-switch span:nth-child(2), .page-switch:hover span:nth-child(3) {
+    transition-delay: 0.2s
+}
+	.page-switch span:nth-child(3), .page-switch:hover span:nth-child(2) {
+    transition-delay: 0.1s
+}
+	.page-switch span:nth-child(4), .page-switch:hover span:first-child {
+    transition-delay: 0s
+}
+
+/*	Slice 8 / 8			Media queries & Vendors */
+	/*   Slice 8 / 8		Media queries & Vendors
+________________________________
+::::::::::::::::::::::::
+Includes Media queries & Vendors
+::::::::::::::::::::::::
+*/
+	/* ================================================================ */
+	@media only screen
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+    .main-nav {
+        background: rgba(0, 0, 0, 0.8);
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column wrap;
+                flex-flow: column wrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center
+    }
+    .main-nav__hamburger {
+        display: block
+    }
+    .main-nav__btn {
+        font-size: 24px
+    }
+    .slider__title {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 auto;
+                flex: 1 1 auto
+    }
+    .slider__row {
+        display: none
+    }
+}
+	/* ================================================================ */
+	/*
+Fontello
+This webfont is generated by http://fontello.com open source project.*/
+	/* ================================================================ */
+	@font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello/fontello.woff2?78184818') format('woff2'),
+	url('../font/fontello/fontello.woff?78184818') format('woff'),
+	url('../font/fontello/fontello.ttf?78184818') format('truetype'),
+	url('../font/fontello/fontello.svg?78184818#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+	[class^="v_ico-"]:before, [class*=" v_ico-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    text-align: center;
+    /* opacity: .8; */
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+	.v_ico-facebook:before {
+    content: '\66'
+}
+	/* 'f' */
+	.v_ico-gear:before {
+    content: '\e800'
+}
+	/* '' */
+	.v_ico-user:before {
+    content: '\e801'
+}
+	/* '' */
+	.v_ico-twitter:before {
+    content: '\f09a'
+}
+	/* '' */
+	.v_ico-magic:before {
+    content: '\f0d0'
+}
+	/* '' */
+	.v_ico-linkedin:before {
+    content: '\f0e1'
+}
+	/* '' */
+	.v_ico-bulb:before {
+    content: '\f0eb'
+}
+	/* '' */
+	.v_ico-rocket:before {
+    content: '\f135'
+}
+	/* '' */
+	.v_ico-google:before {
+    content: '\f30f'
+}
+	/* '' */
+	.v_ico-load:before {
+    content: '\e839'
+}
+	/* '' */
+	/* ________________________________________________________________ */
+	.v_ico-bulb, .v_ico-magic, .v_ico-gear, .v_ico-rocket {
+    color: #c8535a;
+    font-size: 4.375rem
+}
+	/* ________________________________________________________________ */
+	.v_ico-user {
+    color: #5b4b59;
+    font-size: 9.875rem
+}
+	/* ________________________________________________________________ */
+	.v_ico-facebook, .v_ico-twitter, .v_ico-google, .v_ico-linkedin {
+    font-size: 1.5rem
+}
+	/* ================================================================ */
+	/*
+Hamburgers
+description Tasty CSS-animated hamburgers
+author Jonathan Suh jonsuh
+site https://jonsuh.com/hamburgers
+link https://github.com/jonsuh/hamburgers
+*/
+	/* ================================================================ */
+	.hamburger {
+    padding: 15px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, -webkit-filter;
+    transition-property: opacity, filter;
+    transition-property: opacity, filter, -webkit-filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible
+}
+	.hamburger:hover {
+    opacity: 0.7
+}
+	.hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative
+}
+	.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px
+}
+	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease
+}
+	.hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block
+}
+	.hamburger-inner::before {
+    top: -10px
+}
+	.hamburger-inner::after {
+    bottom: -10px
+}
+	/*Spring*/
+	.hamburger--spring .hamburger-inner {
+    top: 2px;
+    transition: background-color 0s 0.13s linear
+}
+	.hamburger--spring .hamburger-inner::before {
+    top: 10px;
+    transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19)
+}
+	.hamburger--spring .hamburger-inner::after {
+    top: 20px;
+    transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19)
+}
+	.hamburger--spring.is-active .hamburger-inner {
+    transition-delay: 0.22s;
+    background-color: transparent
+}
+	.hamburger--spring.is-active .hamburger-inner::before {
+    top: 0;
+    transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 10px, 0) rotate(45deg);
+            transform: translate3d(0, 10px, 0) rotate(45deg)
+}
+	.hamburger--spring.is-active .hamburger-inner::after {
+    top: 0;
+    transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 10px, 0) rotate(-45deg);
+            transform: translate3d(0, 10px, 0) rotate(-45deg)
+}

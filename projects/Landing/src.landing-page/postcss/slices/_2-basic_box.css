@@ -1,0 +1,389 @@
+
+/*   Slice 2 / 8		Basic Box Properties
+________________________________
+::::::::::::::::::::::::
+Includes Properties
+::::::::::::::::::::::::
+________________________________
+Display Position Z-index Clear Vertical-align
+	display
+	float
+	position
+	z-index
+	left
+	right
+	top
+	bottom
+	clear
+	clip
+	vertical-align
+________________________________
+Width & Height Margin & Padding
+	width
+	max-width
+	min-width
+	height
+	max-height
+	min-height
+	margin
+	margin-bottom
+	margin-left
+	margin-right
+	margin-top
+	padding
+	padding-bottom
+	padding-left
+	padding-right
+	padding-top
+________________________________
+Overflow Visibility
+	overflow
+	overflow-x
+	overflow-y
+	visibility
+________________________________
+*/
+/* ================================================================ */
+
+html, body,
+ul,
+h1,h2,h3,h4,h5, h6,
+hr,
+figure 
+{ margin: 0; padding: 0;}
+/* ================================================================ */
+
+.main-nav {
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0 4vw;
+}
+
+.main-nav__hamburger {
+	display: none;
+}
+
+.main-nav__btn {
+	padding: rem(25) rem(16) rem(5) rem(16); 
+}
+/* ================================================================ */
+
+.slider {
+	height: 100vh;
+	position: relative;
+}
+
+.slider__img {
+	width: 100%;
+	height: 100vh;
+}
+
+.slider__nav {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: rem(70);
+}
+.slider__row {
+	margin: 0 3vw;
+}
+.slider__dot {
+	margin: rem(20);
+	padding: rem(10);
+}
+.slider__dot--active {
+	padding: rem(15);
+}
+
+.slider__wrap-title {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.slider__title {
+	padding: rem(10) rem(40);
+}
+/* ================================================================ */
+
+.services,
+.about,
+.work,
+.contact {
+	min-height: 100vh;
+}
+
+.services__caption {
+	margin: rem(100) 0 rem(40);
+}
+
+.services__artcl,
+.about__artcl,
+.contact__artcl {
+	max-width: rem(1050);
+	margin: 0 rem(10);
+}
+
+.services__block,
+.about__block,
+.work__block,
+.contact__block {
+	width: rem(260);
+	margin: rem(20);
+}
+
+.services__img {
+	width: rem(134);
+	height: rem(134);
+	margin: rem(45) 0 rem(35);
+}
+
+.services__descr {
+	margin: rem(45) rem(6);
+}
+/* ================================================================ */
+
+.about__caption {
+	margin-top: rem(100);
+	margin: rem(100) rem(10) 0 rem(10);
+
+}
+.about__badge {
+	position: relative;
+	padding: rem(20) rem(40); 
+	margin: rem(30) 0;
+}
+
+.about__triangle {
+	position: absolute;
+	bottom: -20px;
+	left: calc(50% - (40px/2));
+}
+
+.about__img,
+.v_ico-user  {
+	width: rem(158);
+	height: rem(158);
+	margin: rem(70) 0 rem(30);
+}
+
+.about__member-pos {
+	margin: rem(15) 0 rem(30);
+}
+
+.abot__social {
+	margin-bottom: rem(30);
+}
+
+.about__social-btn {
+	width: rem(35);
+	height: rem(35);
+	margin: rem(10);
+}
+/* ================================================================ */
+.work {
+	position: relative;
+}
+
+.divider {
+	height: rem(3);
+	width: 94vw; 
+}
+
+.work__caption {
+	margin: rem(100) 0 rem(10);
+}
+
+.work__nav {
+	margin: rem(15) 4vw;
+}
+
+.work__nav-btn {
+	padding: rem(10) rem(20); 
+}
+
+
+.work__block-f {
+	position: relative;
+}
+
+.work__triangle {
+	position: absolute;
+	bottom: 45px;
+	left: calc(50% - (40px/2));
+}
+
+.work__title  {
+	padding: rem(16) 0; 
+}
+
+.work__img {
+	width: 100%;
+	height: rem(175);
+}
+
+.work__block-f {
+	position: relative;
+	overflow: hidden;
+}
+
+.work__block-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.work__block-mask h4 {
+	padding: rem(10);
+}
+
+.work__block-mask b {
+	margin: rem(20);
+	padding: rem(5);
+}
+/* ================================================================ */
+.contact {
+	position: relative;
+}
+
+.contact__caption {
+	margin-top: rem(100);
+}
+
+.contact__artcl {
+	margin-bottom: rem(50); 
+}
+
+.contact__block{
+	min-height: rem(240);
+}
+
+.contact__form {
+	padding: 0 rem(20);
+}
+.contact__address h3 {
+	margin: 0 rem(20) rem(10) rem(20);
+}
+
+.contact__form-title {
+	margin-bottom: rem(30);
+}
+/*_________________________________________________________________*/
+.wrap-input {
+	position: relative;
+}
+
+.contact__in-label {
+	position: absolute;
+	bottom: rem(60);
+	left: 0;
+}
+/*_________________________________________________________________*/
+.contact__form input[type="text"],
+.contact__form input[type="email"],
+.contact__form-msg {
+	margin-bottom: rem(20);
+	padding: rem(10) rem(20);
+}
+
+.contact__form input[type="text"],
+.contact__form input[type="email"] {
+	width: rem(220);
+	margin-top: 10px;
+}
+
+.contact__form input[type="text"] {
+	margin-right:  rem(10);
+}
+
+.contact__form-sub {
+	padding: rem(15) rem(100);
+	margin-bottom: rem(20);
+}
+
+.contact__form textarea {
+	height: rem(160);
+}
+/*_________________________________________________________________*/
+.contact__social {
+	min-height: 10vh;
+}
+
+.contact__social li {
+	
+}
+
+.contact__social a {
+	width: rem(50);
+	height: rem(50);
+	margin: rem(20) rem(20);
+}
+/* ================================================================ */
+
+.footer {
+	position: relative;
+}
+
+.footer .hamburger {
+	position: absolute;
+	z-index: 99;
+	top: 10px;
+	right: 10px;
+}
+
+.footer-add {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.footer-add__title {
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+.footer-add__title section {
+	margin: 10px;
+}
+/* ================================================================ */
+
+.block__wave  {
+	position: relative;
+}
+
+.block__wave2 {
+	position: absolute;
+	z-index: -1;
+	top: 300px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.block-bgr {
+	position: absolute;
+	z-index: -2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/* ================================================================ */

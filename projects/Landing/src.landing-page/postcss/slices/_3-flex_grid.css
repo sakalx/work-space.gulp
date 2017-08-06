@@ -1,0 +1,115 @@
+
+/*   Slice 3 / 8		Flex Box Properties & Grid
+________________________________
+::::::::::::::::::::::::
+Includes Properties
+::::::::::::::::::::::::
+________________________________
+	flex-flow
+	flex-direction
+	flex-wrap
+	justify-content	
+	align-items
+	align-content
+________________________________
+for Flex Item
+	align-self
+	flex
+	flex-grow
+	flex-shrink
+	flex-basis
+	order
+________________________________
+________________________________
+Grid
+	
+________________________________
+*/
+/* ================================================================ */
+.fr_b_ss,.fr_a_hh,.fc_b_cc,.fr_e_ss,.fr_e_ee,.fr_e_cc,.fr_s_hh,.fr_e_hh,.fr_c_hh, .fr_b_hh,.fr_s_ss,.fr_s_cc,.fr_c_ss,.fr_c_cc,.fr_a_cc,.fr_b_cc,.fr_a_ss
+{display: flex; flex-flow: row wrap; }
+/* ================================================================ */
+.frn_s_cc
+{display: flex; flex-flow: row nowrap; }
+/* ================================================================ */
+.fc_b_cc,.fc_c_hh,.fc_c_cc,.fc_b_hh,.fc_c_ee
+{display: flex; flex-flow: column wrap; }
+/* ================================================================ */
+.fcn_b_cc
+{display: flex; flex-flow: column nowrap; }
+/* ================================================================ */
+.fr_s_ss,.fr_s_hh,.fr_s_cc,.frn_s_cc
+{ justify-content: flex-start; }
+
+.fr_e_hh,.fr_e_cc,.fr_e_ee,.fr_e_ss
+{ justify-content: flex-end; }
+
+.fr_c_cc,.fr_c_hh,.fr_c_ss,
+.fc_c_hh,.fc_c_cc,.fc_c_ee
+{ justify-content: center; }
+
+.fr_b_cc,.fr_b_hh,.fc_b_hh,.fc_b_cc,.fr_b_ss,.fcn_b_cc
+{ justify-content: space-between; }
+
+.fr_a_ss,.fr_a_cc,.fr_a_hh
+{ justify-content: space-around; }
+/* ================================================================ */
+.fr_a_ss,  .fr_c_ss, .fr_s_ss,.fr_e_ss,.fr_b_ss
+{ align-items: flex-start; }
+
+.fc_c_ee,.fr_e_ee
+{ align-items: flex-end; }
+
+.fr_c_cc,.fr_b_cc, .fr_a_cc,.fr_s_cc,.fc_c_cc,.frn_s_cc,.fr_e_cc,.fc_b_cc,.fcn_b_cc
+{ align-items: center; }
+
+.fr_s_hh,.fr_e_hh, .fr_c_hh, .fr_b_hh,.fc_c_hh,.fc_b_hh,.fr_a_hh
+{ align-items: stretch; }
+/* ================================================================ */
+.fr_a_ss,  .fr_c_ss, .fr_s_ss,.fr_e_ss,.fr_b_ss
+{ align-content: flex-start; }
+
+.fc_c_ee,.fr_e_ee
+{ align-content: flex-end; }
+
+.fr_c_cc,.fr_b_cc,.fr_a_cc,.fr_s_cc,.fc_c_cc,.frn_s_cc,.fr_e_cc,.fc_b_cc,.fcn_b_cc
+{ align-content: center; }
+
+.fr_s_hh,.fr_e_hh,.fr_c_hh, .fr_b_hh,.fc_c_hh,.fc_b_hh,.fr_a_hh
+{ align-content: stretch; }
+/* ================================================================ */
+
+.slider__title,
+.work__block-mask a {
+	align-self: center;
+}
+
+.f_ass,
+.about__blocks,
+.services__blocks,
+.work__nav,
+.contact__social,
+.contact__form-title,
+.contact__form-autor,
+.contact__form-msg {
+	align-self: stretch;
+}
+/* ================================================================ */
+
+.f1
+{ flex: 1 1 auto; }
+
+.f05
+{ flex: 0 0 49%; }
+/* ================================================================ */
+
+.work__block-mask b
+{ flex: 1 1 rem(85); }
+/* ================================================================ */
+
+.contact__form 
+{ flex: 0 1 rem(580); }
+
+.contact__address
+{ flex: 0 1 rem(620); }
+/* ================================================================ */
