@@ -1,0 +1,357 @@
+
+/*   Slice 2 / 7		Basic Box Properties
+________________________________
+::::::::::::::::::::::::
+Includes Properties
+::::::::::::::::::::::::
+________________________________
+Display Position Z-index Clear Vertical-align
+	display
+	float
+	position
+	z-index
+	left
+	right
+	top
+	bottom
+	clear
+	clip
+	vertical-align
+________________________________
+Width & Height Margin & Padding
+	width
+	max-width
+	min-width
+	height
+	max-height
+	min-height
+	margin
+	margin-bottom
+	margin-left
+	margin-right
+	margin-top
+	padding
+	padding-bottom
+	padding-left
+	padding-right
+	padding-top
+________________________________
+Overflow Visibility
+	overflow
+	overflow-x
+	overflow-y
+	visibility
+________________________________
+*/
+/* ================================================================ */
+
+.search-form__text,
+.modal-bin,									/*modal bin for img*/
+.s-action-menu--item
+    { display: none; }
+/* ================================================================ */
+
+.item 										/*item*/
+	{ position: relative; }
+
+.s-price,									/*item has price*/
+.badge										/*item has badge*/
+	{ position: absolute; }
+
+.modal-bin,									/*modal bin for img*/
+.modal-bin__close  							/*modal-bin__close modal img*/
+	{ position: fixed; }
+/* ================================================================ */
+
+.modal-bin 									/*modal bin for img*/
+	{ z-index: 1; }
+/* ================================================================ */
+
+.modal-bin, 								/*modal bin for img*/
+.badge
+	{ top: 0; }
+
+.modal-bin__close  									/*modal-bin__close modal img*/
+	{ top: 1rem; }
+/* ================================================================ */
+
+.modal-bin__close  									/*modal-bin__close modal img*/
+	{ right: 3rem; }
+
+.badge
+	{ right: 0.7rem; }
+/* ================================================================ */
+
+.s-price
+	{ bottom: 0; }
+/* ================================================================ */
+
+.s-price
+	{ left: 0.8rem; }
+
+.modal-bin 									/*modal bin for img*/
+	{ left: 0; }
+/* ================================================================ */
+
+.modal-bin,									/*modal bin for img*/
+.modal-bin__img
+	{ width: 100%; }
+
+.social__btn                                /*social*/
+    { width: 2.25rem; }
+
+.price
+	{ width: 4.25rem; }
+
+.badge
+	{ width: 4.3rem; }
+
+.blog-news__data
+	{ width: 2.25rem; }
+/* ================================================================ */
+
+img
+	{ max-width: 100%;}						/*normalized*/
+/* ================================================================ */
+
+.on-sale__name,
+.special-offers__name,
+.must-have__name
+	{ min-width: 11.25rem; }
+/* ================================================================ */
+
+img 										/*normalized*/
+	{ height: auto; }
+hr 											/*normalized*/
+    { height: 0.1rem; }
+
+.modal-bin 									/*modal bin for img*/
+	{ height: 100%; }
+
+.social__btn                                /*social*/
+    { height: 2.25rem; }
+
+.price
+	{ height: 4.25rem; }
+
+.s-action-menu
+	{ height: 2.5rem; }
+
+.top__nav-pos
+	{ height: 0.625rem; }
+
+.on-sale,
+.special-offers,
+.must-have
+	{ height: 14rem; }
+
+.badge
+	{ height: 4.3rem; }
+
+.shipping,
+.testimonials,
+.blog-news
+	{ height: 11.5625rem; }
+
+.blog-news__data
+	{ height: 2.25rem; }
+
+.mail-form__text,
+.mail-form__submit
+	{ height: 2.27rem; }
+/* ================================================================ */
+
+.logo__title,
+.search-form__text,
+.log-in
+	{ min-height: 2.8125rem; }
+
+.s-nav-menu__btn,
+.cart-counter__btn,
+.wishlist-counter__btn
+	{ min-height: 3.8rem; }
+
+.top
+	{ min-height: 29rem; }
+
+.top__descr1
+	{ min-height: 18.65rem; }
+
+.top-nav__title
+	{ min-height: 4.687rem; }
+
+.specials
+	{ min-height: 14.45rem; }
+
+.item__title
+	{ min-height: 3rem; }
+
+.prefooter
+	{ min-height: 15.3125rem; }
+
+.under-prefooter
+	{ min-height: 7.4rem; }
+
+.footer
+	{ min-height: 5.625rem; }
+/* ================================================================ */
+
+.item__img
+	{ max-height: 13.75rem; }
+/* ================================================================ */
+
+html, body,
+ul,
+h1,h2,h3,h4,h5, h6, hr,
+figure 										/*normalized*/
+    { margin: 0; }
+
+.top__descr1
+	{ margin: 4.3rem 0 2rem; }
+
+.shipping,
+.testimonials,
+.blog-news
+	{ margin: 1.65rem 0.625rem 1.45rem; }
+
+.s-blog-news__artcl 
+	{ margin: 0 0 0.9rem; }
+
+.mail-form
+	{ margin: 2.34rem 0 0.5rem; }
+
+.social
+	{ margin: 2.3rem 0 0.5rem; }
+
+.copyright,
+.menu-smal
+	{ margin: 1rem 0; }
+/* ================================================================ */
+
+.items__title,
+.s-items__btn-show
+	{ margin-top: 2rem; }
+
+.item
+	{ margin-top: 1.7rem; }
+
+.s-action-menu--item
+	{ margin-top: 0.3rem; }
+
+.divider-addon
+	{ margin-top: 2.95rem; }
+
+.prefooter-blc
+	{ margin-top: 3.15rem; }
+/* ================================================================ */
+
+.search-form
+	{ margin-right: 1rem; }
+
+.wishlist-counter__img,
+.cart-counter__img
+	{ margin-right: 0.31rem; }
+/* ================================================================ */
+
+.blog-news__artcl
+	{ margin-left: 0.65rem; }
+/* ================================================================ */
+.nav-menu,
+.counters
+{ padding: 0; }
+
+ul,hr,										/*normalized*/
+input[type='email'] 						/*input for mail*/
+    { padding: 0 10px; }
+
+.top__scr--1
+	{ padding: 0 2vw; }
+
+.specials
+	{ padding: 0 8vw; }
+
+.wishlist-counter__number,
+.cart-counter__number
+	{ padding: 2px; }
+
+.nav-menu__btn,								/*nav-menu btn*/
+.top-nav__title						    	/*top__nav-btn*/
+    { padding: 0 1.25rem; }
+
+.on-sale__name,                             /*on-sale has name*/
+.special-offers__name,                      /*special-offers has name*/
+.must-have__name                            /*must-have has name*/
+    { padding: 1rem; }
+
+.items__header
+	{ padding: 0 12.5vw; }
+
+.items
+	{ padding: 0 11.8vw; }
+
+.shipping,
+.testimonials,
+.blog-news
+	{ padding: 2rem 1rem; }
+
+.prefooter
+	{ padding: 0 13.8vw; }
+
+.under-prefooter
+	{ padding: 0 10vw; }
+
+.footer
+	{  padding: 0 12.45vw; }
+/* ================================================================ */
+
+.item__title   								/*item name*/
+	{ padding-left: 5.3rem; }
+
+.item__name
+	{ padding-left: 0.5rem; }
+
+.s-action-menu--item
+	{ padding-left: 1.2rem; }
+/* ================================================================ */
+
+.testimonials,						       /*testimonials*/
+.blog-news							       /*blog-news*/
+	{ overflow-y: scroll; }
+
+.modal-bin 									/*modal bin for img*/
+	{ overflow: auto; }
+/* ================================================================ */
+
+.footer {
+	position: relative;
+}
+
+.footer .hamburger {
+	position: absolute;
+	z-index: 99;
+	top: 10px;
+	right: 10px;
+}
+
+.footer-add {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.footer-add__title {
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+.footer-add__title section {
+	margin: 10px;
+}

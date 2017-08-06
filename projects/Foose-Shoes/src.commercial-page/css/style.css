@@ -1,0 +1,1302 @@
+
+/*		Compiling Slices
+ * ________________________________
+::::::::::::::::::::::::
+Includes Slices
+::::::::::::::::::::::::
+
+/*	Slice 1 / 8			Color & Background & Borders Properties */
+	/*   Slice 1 / 7		Color & Background & Borders Properties
+________________________________
+::::::::::::::::::::::::
+Includes Properties
+::::::::::::::::::::::::
+________________________________
+Color
+	color	
+	opacity
+________________________________
+Background 
+	background 
+	background-attachment
+	background-blend-mode
+	background-color
+	background-image
+	background-position
+	background-repeat
+	background-clip
+	background-origin
+	background-size
+________________________________
+Border
+	border
+	border-bottom
+	border-bottom-color
+	border-bottom-left-radius
+	border-bottom-right-radius
+	border-bottom-style
+	border-bottom-width
+	border-color
+	border-image
+	border-image-outset
+	border-image-repeat
+	border-image-slice
+	border-image-source
+	border-image-width
+	border-left
+	border-left-color
+	border-left-style
+	border-left-width
+	border-radius
+	border-right
+	border-right-color
+	border-right-style
+	border-right-width
+	border-style
+	border-top
+	border-top-color
+	border-top-left-radius
+	border-top-right-radius
+	border-top-style
+	border-top-width
+	border-width
+	box-decoration-break
+	box-shadow
+________________________________
+*/
+	/* ================================================================ */
+	a {
+    color: inherit
+}
+	/*normalized*/
+	body {
+    color: #242424
+}
+	/*normalized*/
+	.log-in, .footer {
+    color: #7e7e7e
+}
+	.counters, .badge, .specials, .blog-news__data, .wishlist-counter__number, .cart-counter__number, .footer-add {
+    color: #fff
+}
+	.twitter-widget__author {
+    color: #57c5a0
+}
+	.header-items__btn-show {
+    color: #bcb5a7
+}
+	.modal-bin__close, .prefooter {
+    color: #adadad
+}
+	.item__divider, .divider-addon {
+    color: #bcb5a7
+}
+	.divider-prefooter {
+    color: #1c1c1c
+}
+	.mail-form__submit {
+    color: #2e2e2e
+}
+	/* ================================================================ */
+	button {
+    background: rgba(0,0,0, 0)
+}
+	body {
+    background: #ebe7df
+}
+	.s-header, .badge, .prefooter, .under-prefooter {
+    background: #242424
+}
+	.badge--orange {
+    background: #f27e4b
+}
+	.modal-bin, .log-in__btn, .nav-menu__btn, .wishlist-counter__btn, .cart-counter__btn {
+    background: #d3d3d3
+}
+	.wishlist-counter__number, .mail-form__submit {
+    background: #7e7e7e
+}
+	.cart-counter__number, .price, .blog-news__data {
+    background: #57c5a0
+}
+	.s-top__nav, input[type='email'], .social__btn, .footer {
+    background: #2e2e2e
+}
+	.specials, .on-sale__name, .special-offers__name, .must-have__name {
+    background: #242424
+}
+	.s-menu, .item, .action-menu__btn {
+    background: #fff
+}
+	.shipping, .testimonials, .blog-news {
+    background: #000
+}
+	.item__divider, .divider-addon {
+    background: #bcb5a7
+}
+	.divider-prefooter {
+    background: #1c1c1c
+}
+	.top__scr--1 {
+    background: url("../img/top/background.png")
+}
+	.on-sale {
+    background: url("../img/specials/on-sale.png") no-repeat
+}
+	.special-offers {
+    background: url("../img/specials/special-offers.png") no-repeat
+}
+	.must-have {
+    background: url("../img/specials/must-have.png") no-repeat
+}
+	/* ================================================================ */
+	.on-sale, .special-offers, .must-have {
+    background-size: 100% 100%
+}
+	/* ================================================================ */
+	button, hr, input {
+    border: none
+}
+	/* ================================================================ */
+	.wishlist-counter__number, .cart-counter__number {
+    border-radius: 5px
+}
+	/* ================================================================ */
+	.footer-add {
+    background: url(../img/footer-add.png) no-repeat;
+    background-size: 100% 100%
+}
+	.footer-add__title {
+    border: 1px solid transparent
+}
+
+/*	Slice 2 / 8			Basic Box Properties */
+	/*   Slice 2 / 7		Basic Box Properties
+________________________________
+::::::::::::::::::::::::
+Includes Properties
+::::::::::::::::::::::::
+________________________________
+Display Position Z-index Clear Vertical-align
+	display
+	float
+	position
+	z-index
+	left
+	right
+	top
+	bottom
+	clear
+	clip
+	vertical-align
+________________________________
+Width & Height Margin & Padding
+	width
+	max-width
+	min-width
+	height
+	max-height
+	min-height
+	margin
+	margin-bottom
+	margin-left
+	margin-right
+	margin-top
+	padding
+	padding-bottom
+	padding-left
+	padding-right
+	padding-top
+________________________________
+Overflow Visibility
+	overflow
+	overflow-x
+	overflow-y
+	visibility
+________________________________
+*/
+	/* ================================================================ */
+	.search-form__text, .modal-bin, .s-action-menu--item {
+    display: none
+}
+	/* ================================================================ */
+	.item {
+    position: relative
+}
+	.s-price, .badge {
+    position: absolute
+}
+	.modal-bin, .modal-bin__close {
+    position: fixed
+}
+	/* ================================================================ */
+	.modal-bin {
+    z-index: 1
+}
+	/* ================================================================ */
+	.modal-bin, .badge {
+    top: 0
+}
+	.modal-bin__close {
+    top: 1rem
+}
+	/* ================================================================ */
+	.modal-bin__close {
+    right: 3rem
+}
+	.badge {
+    right: 0.7rem
+}
+	/* ================================================================ */
+	.s-price {
+    bottom: 0
+}
+	/* ================================================================ */
+	.s-price {
+    left: 0.8rem
+}
+	.modal-bin {
+    left: 0
+}
+	/* ================================================================ */
+	.modal-bin, .modal-bin__img {
+    width: 100%
+}
+	.social__btn {
+    width: 2.25rem
+}
+	.price {
+    width: 4.25rem
+}
+	.badge {
+    width: 4.3rem
+}
+	.blog-news__data {
+    width: 2.25rem
+}
+	/* ================================================================ */
+	img {
+    max-width: 100%
+}
+	/*normalized*/
+	/* ================================================================ */
+	.on-sale__name, .special-offers__name, .must-have__name {
+    min-width: 11.25rem
+}
+	/* ================================================================ */
+	img {
+    height: auto
+}
+	hr {
+    height: 0.1rem
+}
+	.modal-bin {
+    height: 100%
+}
+	.social__btn {
+    height: 2.25rem
+}
+	.price {
+    height: 4.25rem
+}
+	.s-action-menu {
+    height: 2.5rem
+}
+	.top__nav-pos {
+    height: 0.625rem
+}
+	.on-sale, .special-offers, .must-have {
+    height: 14rem
+}
+	.badge {
+    height: 4.3rem
+}
+	.shipping, .testimonials, .blog-news {
+    height: 11.5625rem
+}
+	.blog-news__data {
+    height: 2.25rem
+}
+	.mail-form__text, .mail-form__submit {
+    height: 2.27rem
+}
+	/* ================================================================ */
+	.logo__title, .search-form__text, .log-in {
+    min-height: 2.8125rem
+}
+	.s-nav-menu__btn, .cart-counter__btn, .wishlist-counter__btn {
+    min-height: 3.8rem
+}
+	.top {
+    min-height: 29rem
+}
+	.top__descr1 {
+    min-height: 18.65rem
+}
+	.top-nav__title {
+    min-height: 4.687rem
+}
+	.specials {
+    min-height: 14.45rem
+}
+	.item__title {
+    min-height: 3rem
+}
+	.prefooter {
+    min-height: 15.3125rem
+}
+	.under-prefooter {
+    min-height: 7.4rem
+}
+	.footer {
+    min-height: 5.625rem
+}
+	/* ================================================================ */
+	.item__img {
+    max-height: 13.75rem
+}
+	/* ================================================================ */
+	html, body, ul, h1, h2, h3, h4, h5, h6, hr, figure {
+    margin: 0
+}
+	.top__descr1 {
+    margin: 4.3rem 0 2rem
+}
+	.shipping, .testimonials, .blog-news {
+    margin: 1.65rem 0.625rem 1.45rem
+}
+	.s-blog-news__artcl {
+    margin: 0 0 0.9rem
+}
+	.mail-form {
+    margin: 2.34rem 0 0.5rem
+}
+	.social {
+    margin: 2.3rem 0 0.5rem
+}
+	.copyright, .menu-smal {
+    margin: 1rem 0
+}
+	/* ================================================================ */
+	.items__title, .s-items__btn-show {
+    margin-top: 2rem
+}
+	.item {
+    margin-top: 1.7rem
+}
+	.s-action-menu--item {
+    margin-top: 0.3rem
+}
+	.divider-addon {
+    margin-top: 2.95rem
+}
+	.prefooter-blc {
+    margin-top: 3.15rem
+}
+	/* ================================================================ */
+	.search-form {
+    margin-right: 1rem
+}
+	.wishlist-counter__img, .cart-counter__img {
+    margin-right: 0.31rem
+}
+	/* ================================================================ */
+	.blog-news__artcl {
+    margin-left: 0.65rem
+}
+	/* ================================================================ */
+	.nav-menu, .counters {
+    padding: 0
+}
+	ul, hr, input[type='email'] {
+    padding: 0 10px
+}
+	.top__scr--1 {
+    padding: 0 2vw
+}
+	.specials {
+    padding: 0 8vw
+}
+	.wishlist-counter__number, .cart-counter__number {
+    padding: 2px
+}
+	.nav-menu__btn, .top-nav__title {
+    padding: 0 1.25rem
+}
+	.on-sale__name, .special-offers__name, .must-have__name {
+    padding: 1rem
+}
+	.items__header {
+    padding: 0 12.5vw
+}
+	.items {
+    padding: 0 11.8vw
+}
+	.shipping, .testimonials, .blog-news {
+    padding: 2rem 1rem
+}
+	.prefooter {
+    padding: 0 13.8vw
+}
+	.under-prefooter {
+    padding: 0 10vw
+}
+	.footer {
+    padding: 0 12.45vw
+}
+	/* ================================================================ */
+	.item__title {
+    padding-left: 5.3rem
+}
+	.item__name {
+    padding-left: 0.5rem
+}
+	.s-action-menu--item {
+    padding-left: 1.2rem
+}
+	/* ================================================================ */
+	.testimonials, .blog-news {
+    overflow-y: scroll
+}
+	.modal-bin {
+    overflow: auto
+}
+	/* ================================================================ */
+	.footer {
+    position: relative
+}
+	.footer .hamburger {
+    position: absolute;
+    z-index: 99;
+    top: 10px;
+    right: 10px
+}
+	.footer-add {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+	.footer-add__title {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    overflow: hidden
+}
+	.footer-add__title section {
+    margin: 10px
+}
+
+/*	Slice 3 / 8			Flex Box Properties */
+	/*   Slice 3 / 7		Flex Box Properties
+________________________________
+::::::::::::::::::::::::
+Includes Properties
+::::::::::::::::::::::::
+________________________________
+	flex-flow
+	flex-direction
+	flex-wrap
+	justify-content	
+	align-items
+	align-content
+________________________________
+for Flex Item
+	align-self
+	flex
+	flex-grow
+	flex-shrink
+	flex-basis
+	order
+________________________________
+*/
+	/* ================================================================ */
+	.fr_s_hh, .fr_e_hh, .fr_c_hh, .fr_b_hh, .fr_s_ss, .fr_s_cc, .fr_c_ss, .fr_c_cc, .fr_a_cc, .fr_b_cc, .fr_a_ss {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap
+}
+	/* ================================================================ */
+	.frn_s_cc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap
+}
+	/* ================================================================ */
+	.fc_c_hh, .fc_c_cc, .fc_b_hh {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap
+}
+	/* ================================================================ */
+	.fr_s_ss, .fr_s_hh, .fr_s_cc, .frn_s_cc {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start
+}
+	.fr_e_hh {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end
+}
+	.fr_c_cc, .fr_c_hh, .fr_c_ss, .fc_c_hh, .fc_c_cc {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center
+}
+	.fr_b_cc, .fr_b_hh, .fc_b_hh {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between
+}
+	.fr_a_ss, .fr_a_cc {
+    -ms-flex-pack: distribute;
+        justify-content: space-around
+}
+	/* ================================================================ */
+	.fr_a_ss, .fr_c_ss, .fr_s_ss {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start
+}
+	.fr_c_cc, .fr_b_cc, .fr_a_cc, .fr_s_cc, .fc_c_cc, .frn_s_cc {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center
+}
+	.fr_s_hh, .fr_e_hh, .fr_c_hh, .fr_b_hh, .fc_c_hh, .fc_b_hh {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch
+}
+	/* ================================================================ */
+	.fr_a_ss, .fr_c_ss, .fr_s_ss {
+    -ms-flex-line-pack: start;
+        align-content: flex-start
+}
+	.fr_c_cc, .fr_b_cc, .fr_a_cc, .fr_s_cc, .fc_c_cc, .frn_s_cc {
+    -ms-flex-line-pack: center;
+        align-content: center
+}
+	.fr_s_hh, .fr_e_hh, .fr_c_hh, .fr_b_hh, .fc_c_hh, .fc_b_hh {
+    -ms-flex-line-pack: stretch;
+        align-content: stretch
+}
+	/* ================================================================ */
+	.f1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto
+}
+	.header {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 58.75rem;
+            flex: 0 1 58.75rem
+}
+	.logo {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 10rem;
+            flex: 0 1 10rem
+}
+	.log-in {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 8.78rem;
+            flex: 0 1 8.78rem
+}
+	.menu {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 58.75rem;
+            flex: 0 1 58.75rem
+}
+	.nav-menu {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 34.7rem;
+            flex: 1 1 34.7rem
+}
+	.counters {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 11.25rem;
+            flex: 1 1 11.25rem
+}
+	.wishlist-counter, .cart-counter {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 5.55rem;
+            flex: 1 1 5.55rem
+}
+	.wishlist-counter__number, .cart-counter__number {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 1.25rem;
+            flex: 0 1 1.25rem
+}
+	.top__descr1 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 23.75rem;
+            flex: 0 1 23.75rem
+}
+	.action-menu {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 10.625rem;
+            flex: 0 1 10.625rem
+}
+	.s-action-menu__btn {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 2.5rem;
+            flex: 0 1 2.5rem
+}
+	.top__nav {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 60rem;
+            flex: 0 1 60rem
+}
+	.on-sale, .special-offers, .must-have {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 20rem;
+            flex: 0 1 20rem
+}
+	.items__btn-show {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 6.25rem;
+            flex: 0 1 6.25rem
+}
+	.item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 18.75rem;
+            flex: 0 1 18.75rem
+}
+	.divider-addon {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 58.75rem;
+            flex: 0 1 58.75rem
+}
+	.shipping, .testimonials {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 13.75rem;
+            flex: 0 1 13.75rem
+}
+	.blog-news {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 28.8rem;
+            flex: 0 1 28.8rem
+}
+	.blog-news__artcl {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 22rem;
+            flex: 0 1 22rem
+}
+	.prefooter-blc {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 15.625rem;
+            flex: 0 1 15.625rem
+}
+	.mail-form {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 15.6rem;
+            flex: 0 1 15.6rem
+}
+	.mail-form__text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 13.3rem;
+            flex: 0 1 13.3rem
+}
+	.mail-form__submit {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 2.3rem;
+            flex: 0 1 2.3rem
+}
+	.social {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 13.2rem;
+            flex: 0 1 13.2rem
+}
+	.menu-smal {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 22.5rem;
+            flex: 0 1 22.5rem
+}
+	/* ================================================================ */
+	.testimonials__name {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1
+}
+	.blog-news__data {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1
+}
+	/* ================================================================ */
+
+/*	Slice 4 / 8			Table & List Properties Properties */
+	/*   Slice 4 / 7		Table & List Properties Properties
+________________________________
+::::::::::::::::::::::::
+Includes Properties
+::::::::::::::::::::::::
+________________________________
+Table
+	border-collapse
+	border-spacing
+	caption-side
+	empty-cells
+	table-layout
+________________________________
+List
+	counter-increment
+	counter-reset
+	list-style
+	list-style-image
+	list-style-position
+	list-style-type
+________________________________
+*/
+	/* ================================================================ */
+	ul {
+    list-style: none
+}
+	/* ================================================================ */
+
+/*	Slice 5 / 8			Text-Decoration & Font & Writing Modes Properties Properties */
+	/*   Slice 5 / 7		Text-Decoration & Font & Writing Modes Properties Properties
+________________________________
+::::::::::::::::::::::::
+Includes Properties
+::::::::::::::::::::::::
+________________________________
+Text
+	hanging-punctuation
+	hyphens
+	letter-spacing
+	line-break
+	line-height
+	overflow-wrap
+	tab-size
+	text-align
+	text-align-last
+	text-combine-upright
+	text-indent
+	text-justify
+	text-transform
+	white-space
+	word-break
+	word-spacing
+	word-wrap
+________________________________
+Text-Decoration	
+	Text Decoration
+	text-decoration	
+	text-decoration-color
+	text-decoration-line
+	text-decoration-style
+	text-shadow
+	text-underline-position
+________________________________
+Font
+	@font-face{}
+	@font-feature-values{}
+	font
+	font-family
+	font-feature-settings
+	font-kerning
+	font-language-override
+	font-size
+	font-size-adjust
+	font-stretch
+	font-style
+	font-synthesis
+	font-variant
+	font-variant-alternates
+	font-variant-caps
+	font-variant-east-asian
+	font-variant-ligatures
+	font-variant-numeric
+	font-variant-position
+	font-weight	
+________________________________
+Writing Modes
+	direction
+	text-orientation
+	text-combine-upright
+	unicode-bidi
+	user-select
+	writing-mode
+________________________________
+*/
+	/* ================================================================ */
+	.t_lsp {
+    letter-spacing: 3px
+}
+	/* ================================================================ */
+	h2 {
+    line-height: 1
+}
+	.t_linehg_m {
+    line-height: 1.45
+}
+	/* ================================================================ */
+	.t_cntr {
+    text-align: center
+}
+	/* ================================================================ */
+	a {
+    text-decoration: none
+}
+	/* ================================================================ */
+	@font-face {
+    font-family: "aller__light";
+    src: url("../fonts/aller__light/aller__lt.woff2") format("woff2"),
+         url("../fonts/aller__light/aller__lt.woff") format("woff"),
+         url("../fonts/aller__light/aller__lt.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100%
+}
+	body {
+    font-family: aller__light, sans-serif
+}
+	/* ================================================================ */
+	.t_bxl {
+    font-size: 7rem
+}
+	.t_xxxl {
+    font-size: 4rem
+}
+	h2, .t_xxl {
+    font-size: 2.5rem
+}
+	h3, .t_xl {
+    font-size: 1.5rem
+}
+	.t_large {
+    font-size: 1.31rem
+}
+	h4, .t_medium {
+    font-size: 1.1rem
+}
+	h5, h6, .t_small {
+    font-size: 1rem
+}
+	.t_xs {
+    font-size: 0.75rem
+}
+	/* ================================================================ */
+	h1, h2, h3, h4, h5, h6 {
+    font-style: normal
+}
+	input[type='email'], .t_italic {
+    font-style: italic
+}
+	/* ================================================================ */
+	h1, h2, h3, h4, h6 {
+    font-weight: normal
+}
+	.t_bolder {
+    font-weight: bolder
+}
+	/* ================================================================ */
+	/* ================================================================
+molecules
+================================================================ */
+	.t_sml_itlc {
+    font-size: 0.8rem;
+    font-style: italic
+}
+	/* ================================================================ */
+	.t_larg_bldr {
+    font-size: 1.31rem;
+    font-weight: bolder
+}
+	/* ================================================================ */
+	.t_med_cntr {
+    font-size: 1.313rem;
+    text-align: center
+}
+	/* ================================================================ */
+
+/*	Slice 6 / 8			Animation & Transform & Transition & User Interface Properties */
+	/*   Slice 6 / 7		Animation & Transform & Transition & User Interface Properties
+________________________________
+::::::::::::::::::::::::
+Includes Properties
+::::::::::::::::::::::::
+________________________________
+Animation
+	@keyframes{}
+	animation
+	animation-delay
+	animation-direction
+	animation-duration
+	animation-fill-mode
+	animation-name
+	animation-play-state
+	animation-timing-function
+________________________________
+Transform
+	backface-visibility
+	perspective
+	perspective-origin
+	transform
+	transform-origin
+	transform-style
+________________________________
+Transitions
+	transition
+	transition-property
+	transition-duration
+	transition-timing-function
+	transition-delay
+________________________________ 
+for User Interface
+	box-sizing
+	content
+	cursor
+	ime-mode
+	nav-down
+	nav-index
+	nav-left
+	nav-right
+	nav-up
+	outline
+	outline-color
+	outline-offset
+	outline-style
+	outline-width
+	resize
+	text-overflow
+________________________________
+*/
+	/* ================================================================ */
+	@-webkit-keyframes zoom {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3)
+    }
+    50% {
+        opacity: 1
+    }
+}
+	@keyframes zoom {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3)
+    }
+    50% {
+        opacity: 1
+    }
+}
+	.a_zoom {
+    -webkit-animation-name: zoom;
+    animation-name: zoom;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s
+}
+	/* ================================================================ */
+	.a_trans_easy {
+    transition: all 0.5s ease-in-out
+}
+	/* ================================================================ */
+	a, section, div, span, nav {
+    box-sizing: border-box
+}
+	/* ================================================================ */
+	input[type='submit'], button, .a_pointer {
+    cursor: pointer
+}
+	/* ================================================================ */
+	button {
+    outline: none
+}
+	/* ================================================================ */
+	/* Footer additional */
+	.footer-add__title {
+    transition: all 0.4s 0s,
+  border 0.4s 0.6s,
+  height 0.4s 0.4s
+}
+	/* ================================================================ */
+	/* Rotate 3D */
+	.a_roate3d {
+    display: inline-block;
+    -webkit-transform: perspective(1000px) rotate3d(0,1,0,0deg);
+    transform: perspective(1000px) rotate3d(0,1,0,0deg);
+    transition: color 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, color 0.5s;
+    transition: transform 0.5s, color 0.5s, -webkit-transform 0.5s
+}
+	/* ================================================================ */
+	/* Neon */
+	@-webkit-keyframes neon {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177
+    }
+}
+	.a_neon {
+    -webkit-animation: neon 1s ease-in-out infinite alternate;
+    animation: neon 1s ease-in-out infinite alternate
+}
+	/* ================================================================ */
+
+/*	Slice 7 / 8			Selectors */
+	/*   Slice 7 / 7		Selectors
+________________________________
+::::::::::::::::::::::::
+Includes Properties
+::::::::::::::::::::::::
+________________________________
+Selectors
+	:active
+	::after
+	::before
+	:checked
+	:disabled
+	:empty
+	:enabled
+	:first-child
+	::first-letter
+	::first-line
+	:first-of-type
+	:focus
+	:hover
+	:in-range
+	:invalid
+	:lang(language)
+	:last-child
+	:last-of-type
+	:link
+	:not(selector)
+	:nth-child(n)
+	:nth-last-child(n)
+	:nth-last-of-type(n)
+	:nth-of-type(n)
+	:only-of-type
+	:only-child
+	:optional
+	:out-of-range
+	:read-only
+	:read-write	
+	:required
+	:root
+	::selection 
+	:target
+	:valid
+	:visited
+________________________________
+*/
+	/* ================================================================ */
+	.s_bg_empt:hover {
+    background: rgba(0,0,0, 0)
+}
+	/* ================================================================ */
+	.s_disp1:hover .s_disp2_non {
+    display: none
+}
+	.s_disp1:hover .s_disp2_flx {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+	/* ================================================================ */
+	.s_scale_y:hover {
+    -webkit-transform: scaleY(1.2);
+    transform: scaleY(1.2)
+}
+	/* ================================================================ */
+	.s_colr_red:hover {
+    color: #E62117
+}
+	/* ================================================================ */
+	/* Shutter Out Horizontal */
+	.s_out_horz {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0)
+}
+	.s_out_horz:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255, 1);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out
+}
+	.s_out_horz:hover:before, .s_out_horz:focus:before, .s_out_horz:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1)
+}
+	/* ================================================================ */
+	/* Page swich */
+	.page-switch:hover {
+    color: #FF1177;
+    -webkit-animation: none;
+    animation: none
+}
+	.page-switch:hover span {
+    color: #777;
+    -webkit-transform: perspective(1000px) rotate3d(0,1,0,360deg);
+    transform: perspective(1000px) rotate3d(0,1,0,360deg)
+}
+	.page-switch span:first-child, .page-switch:hover span:nth-child(4) {
+    transition-delay: 0.3s
+}
+	.page-switch span:nth-child(2), .page-switch:hover span:nth-child(3) {
+    transition-delay: 0.2s
+}
+	.page-switch span:nth-child(3), .page-switch:hover span:nth-child(2) {
+    transition-delay: 0.1s
+}
+	.page-switch span:nth-child(4), .page-switch:hover span:first-child {
+    transition-delay: 0s
+}
+	/* ================================================================ */
+	/* Footer additional */
+	.footer-add:hover .footer-add__title {
+    height: 100%;
+    width: 100%;
+    border-color: rgba(255,255,255,0.5);
+    background-color: rgba(0,0,0,0.8);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transition: all 0.5s 0.5s,
+	border 0.5s 0s,
+	height 0.5s 0s,
+	margin 0.5s 0s
+}
+	/* ================================================================ */
+
+/*	Slice 8 / 8			Media queries & Vendors */
+	/*   Slice 8 / 8		Media queries & Vendors
+________________________________
+::::::::::::::::::::::::
+Includes Media queries & Vendors
+::::::::::::::::::::::::
+*/
+	/* ================================================================ */
+	/*
+Hamburgers
+description Tasty CSS-animated hamburgers
+author Jonathan Suh jonsuh
+site https://jonsuh.com/hamburgers
+link https://github.com/jonsuh/hamburgers
+*/
+	/* ================================================================ */
+	.hamburger {
+    padding: 15px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, -webkit-filter;
+    transition-property: opacity, filter;
+    transition-property: opacity, filter, -webkit-filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible
+}
+	.hamburger:hover {
+    opacity: 0.7
+}
+	.hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative
+}
+	.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px
+}
+	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease
+}
+	.hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block
+}
+	.hamburger-inner::before {
+    top: -10px
+}
+	.hamburger-inner::after {
+    bottom: -10px
+}
+	/*Spring*/
+	.hamburger--spring .hamburger-inner {
+    top: 2px;
+    transition: background-color 0s 0.13s linear
+}
+	.hamburger--spring .hamburger-inner::before {
+    top: 10px;
+    transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19)
+}
+	.hamburger--spring .hamburger-inner::after {
+    top: 20px;
+    transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19)
+}
+	.hamburger--spring.is-active .hamburger-inner {
+    transition-delay: 0.22s;
+    background-color: transparent
+}
+	.hamburger--spring.is-active .hamburger-inner::before {
+    top: 0;
+    transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 10px, 0) rotate(45deg);
+            transform: translate3d(0, 10px, 0) rotate(45deg)
+}
+	.hamburger--spring.is-active .hamburger-inner::after {
+    top: 0;
+    transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 10px, 0) rotate(-45deg);
+            transform: translate3d(0, 10px, 0) rotate(-45deg)
+}

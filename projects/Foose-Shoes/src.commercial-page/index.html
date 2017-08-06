@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Foose Shoes</title>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<meta name="description" content="commerce page by Sakal">
+	<meta name="keywords" content="Sakal, commerce, template">
+	<meta name="author" content="Serhii Sakal">
+	<link rel="shortcut icon" href="img/icon/favicon.png" type="image/png">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!-- header -->
+	<header class="s-header fr_c_hh">
+		<div class="header fr_b_cc">
+			<!-- logo -->
+			<div class="logo fr_s_hh">
+				<h1 class="logo__title fr_c_cc">
+					<a href="index.html"><img src="img/logo/logo.png" alt="foose shoes"></a>
+				</h1>
+			</div>
+			<div class="fr_e_hh f1">
+				<!-- search -->
+				<form class="search-form fr_c_cc">
+					<input class="search-form__text" type="search" name="search">
+					<button type="submit">
+						<img src="img/search/search-icon.png" alt="search">
+					</button>
+				</form>
+				<!-- login / register btn -->
+				<div class="log-in fr_c_hh t_xs">	<a class="log-in__btn fr_c_cc f1 s_bg_empt" href="#">LOGIN or REGISTER</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--================================================================-->
+	<!-- menu -->
+	<div class="s-menu fr_c_hh">
+		<div class="menu fr_b_cc">
+			<!-- nav-menu -->
+			<ul class="nav-menu fr_s_hh">
+				<li class="s-nav-menu__btn fr_c_hh f1">	<a class="nav-menu__btn fr_c_cc f1 s_out_horz" href="#">Home</a>
+				</li>
+				<li class="s-nav-menu__btn fr_c_hh f1">	<a class="nav-menu__btn fr_c_cc f1 s_out_horz" href="#">Products</a>
+				</li>
+				<li class="s-nav-menu__btn fr_c_hh f1">	<a class="nav-menu__btn fr_c_cc f1 s_out_horz" href="#">About</a>
+				</li>
+				<li class="s-nav-menu__btn fr_c_hh f1">	<a class="nav-menu__btn fr_c_cc f1 s_out_horz" href="#">Pages</a>
+				</li>
+				<li class="s-nav-menu__btn fr_c_hh f1">	<a class="nav-menu__btn fr_c_cc f1 s_out_horz" href="#">Blog</a>
+				</li>
+				<li class="s-nav-menu__btn fr_c_hh f1">	<a class="nav-menu__btn fr_c_cc f1 s_out_horz" href="#">Contact</a>
+				</li>
+			</ul>
+			<div style="flex: 0 1 12.7rem;">
+				<!-- white space "crutch"-->
+			</div>
+			<!-- counters -->
+			<ul class="counters fr_b_hh">
+				<!-- wish list -->
+				<li class="wishlist-counter fr_c_hh">
+					<a class="wishlist-counter__btn fr_c_cc f1 s_out_horz" href="#">
+						<img class="wishlist-counter__img" src="img/menu-main/star-icon.png" alt="wish list">	<span class="wishlist-counter__number fr_c_cc t_xs">30</span>
+					</a>
+				</li>
+				<!-- cart -->
+				<li class="cart-counter fr_c_hh">
+					<a class="cart-counter__btn fr_c_cc f1 s_out_horz" href="#">
+						<img class="cart-counter__img" src="img/menu-main/cart-icon.png" alt="cart">	<span class="cart-counter__number fr_c_cc t_xs">0</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--================================================================-->
+	<!-- top -->
+	<div class="top fr_c_hh">
+		<div class="top__scr top__scr--1 fr_c_ss f1">
+			<!-- img in top-btn1-->
+			<img id="js-top__img1" class="top__img a_pointer" src="img/top/pink-shoes.png" alt="pink-shoes" onclick="openModal('1')">
+			<!-- MODAL bin img -->
+			<div id="js-modal-bin" class="modal-bin">
+				<img id="js-modal-img" class="modal-bin__img" src="#" alt="full screen">	<span class="modal-bin__close a_pointer t_xxxl s_colr_red" onclick="closeModal()">&times;</span>
+			</div>
+			<!-- item details selected-->
+			<div class="top__descr1 fc_b_hh">
+				<!-- Price -->	<span class="price fr_c_cc t_xs">$145,99</span>
+				<!-- Desc -->
+				<article class="fr_s_cc">
+					<h2>Pink Shoes<br>2013 Collection</h2>
+					<div class="t_large">
+						<div>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..</div>
+					</div>
+				</article>
+				<!-- action menu -->
+				<nav class="s-action-menu fr_s_hh">
+					<ul class="action-menu fr_b_hh">
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1 s_bg_empt" href="#">
+								<img src="img/menu-action/view.png" alt="view">
+							</a>
+						</li>
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1 s_bg_empt" href="#">
+								<img src="img/menu-action/wishlist.png" alt="wishlist">
+							</a>
+						</li>
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1 s_bg_empt" href="#">
+								<img src="img/menu-action/share.png" alt="share">
+							</a>
+						</li>
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1 s_bg_empt" href="#">
+								<img src="img/menu-action/buy.png" alt="buy">
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div style="flex: 0 1 7.15rem;">
+				<!-- white space "crutch"-->
+			</div>
+		</div>
+		<div class="top__scr top__scr--2 f1">screen 2</div>
+		<div class="top__scr top__scr--3 f1">screen 3</div>
+		<div class="top__scr top__scr--4 f1">screen 4</div>
+		<div class="top__scr top__scr--5 f1">screen 5</div>
+	</div>
+	<nav class="s-top__nav   fr_c_hh">
+		<!-- nav -->
+		<ul class="top__nav fr_c_hh">
+			<li class="top__nav-btn fc_c_hh f1 a_pointer" onclick="activeBookmark(1)">
+				<div class="top__nav-pos">&nbsp;</div>
+				<section class="top-nav__title fc_c_cc f1">
+					<h4 class="top__nav-name">Pink Shoes</h4>
+					<span class="top__nav-desc t_xs">Now af $145,99</span>
+				</section>
+			</li>
+			<li class="top__nav-btn fc_c_hh f1 a_pointer" onclick="activeBookmark(2)">
+				<div class="top__nav-pos">&nbsp;</div>
+				<section class="top-nav__title fc_c_cc f1">
+					<h4 class="top__nav-name">Anna Field</h4>
+					<span class="top__nav-desc t_xs">Limited Edition</span>
+				</section>
+			</li>
+			<li class="top__nav-btn fc_c_hh f1 a_pointer" onclick="activeBookmark(3)">
+				<div class="top__nav-pos">&nbsp;</div>
+				<section class="top-nav__title fc_c_cc f1">
+					<h4 class="top__nav-name">Prada</h4>
+					<span class="top__nav-desc t_xs">Summer is coming</span>
+				</section>
+			</li>
+			<li class="top__nav-btn fc_c_hh f1 a_pointer" onclick="activeBookmark(4)">
+				<div class="top__nav-pos">&nbsp;</div>
+				<section class="top-nav__title fc_c_cc f1">
+					<h4 class="top__nav-name">Casadei</h4>
+					<span class="top__nav-desc t_xs">All Colors avaiable</span>
+				</section>
+			</li>
+			<li class="top__nav-btn fc_c_hh f1 a_pointer" onclick="activeBookmark(5)">
+				<div class="top__nav-pos">&nbsp;</div>
+				<section class="top-nav__title fc_c_cc f1">
+					<h4 class="top__nav-name">Mellow Yellow</h4>
+					<span class="top__nav-desc t_xs">Free delivery</span>
+				</section>
+			</li>
+		</ul>
+	</nav>
+	<!--================================================================-->
+	<!-- specials -->
+	<div class="specials fr_c_cc t_xl">
+		<!-- on sale -->
+		<a class="on-sale fr_c_cc a_trans_easy s_scale_y" href="#">	<span class="on-sale__name fr_c_cc">ON SALE</span>
+		</a>
+		<!-- special offers -->
+		<a class="special-offers fr_c_cc a_trans_easy s_scale_y" href="#">	<span class="special-offers__name fr_c_cc;">SPECIAL OFFERS</span>
+		</a>
+		<!-- must have -->
+		<a class="must-have fr_c_cc a_trans_easy s_scale_y" href="#">	<span class="must-have__name fr_c_cc">MUST HAVE</span>
+		</a>
+	</div>
+	<!--================================================================-->
+	<!-- newArriv -->
+	<section class="items__header fr_b_hh">
+		<!-- title new arrivals -->
+		<h3 class="items__title fr_s_cc f1">
+			New arrivals on FooseShoes
+		</h3>
+		<!-- show all btn  -->
+		<div class="s-items__btn-show fr_e_hh f1">	<a class="items__btn-show  fr_c_cc" href="#">Show All</a>
+		</div>
+	</section>
+	<div class="items fr_a_cc">
+		<!-- item #1 -->
+		<figure class="item a_pointer s_disp1">
+			<div class="item__img">
+				<img src="img/new-arrive/item-1.png" alt="Even Odd">
+			</div>
+			<!-- badge -->
+			<!-- <div class="badge fr_c_cc t_xs">
+				<span class="badge__name t_cntr">ON SALE!</span>
+			</div> -->
+			<hr class="item__divider">
+			<figcaption class="item__title fr_s_hh">
+				<!-- item name-->
+				<h4 class="item__name fr_s_cc s_disp2_non">
+					Even&#38;Odd
+				</h4>
+				<!-- action menu -->
+				<nav class="s-action-menu s-action-menu--item f1 s_disp2_flx">
+					<ul class="action-menu action-menu--item fr_b_hh">
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1" href="#">
+								<img src="img/menu-action/view.png" alt="view">
+							</a>
+						</li>
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1" href="#">
+								<img src="img/menu-action/wishlist.png" alt="wishlist">
+							</a>
+						</li>
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1" href="#">
+								<img src="img/menu-action/share.png" alt="share">
+							</a>
+						</li>
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1" href="#">
+								<img src="img/menu-action/buy.png" alt="buy">
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- item price-->
+				<div class="s-price fr_c_cc">	<span class="price fr_c_cc t_xs">$145,99</span>
+				</div>
+			</figcaption>
+		</figure>
+		<!-- item #2 -->
+		<figure class="item a_pointer s_disp1">
+			<div class="item__img">
+				<img src="img/new-arrive/item-2.png" alt="Even Odd">
+			</div>
+			<!-- badge -->
+			<div class="badge fr_c_cc t_xs">	<span class="badge__name t_cntr">ON SALE!</span>
+			</div>
+			<hr class="item__divider">
+			<figcaption class="item__title fr_s_hh">
+				<!-- item name-->
+				<h4 class="item__name fr_s_cc s_disp2_non">
+					Even&#38;Odd
+				</h4>
+				<!-- action menu -->
+				<nav class="s-action-menu s-action-menu--item f1 s_disp2_flx">
+					<ul class="action-menu action-menu--item fr_b_hh">
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1" href="#">
+								<img src="img/menu-action/view.png" alt="view">
+							</a>
+						</li>
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1" href="#">
+								<img src="img/menu-action/wishlist.png" alt="wishlist">
+							</a>
+						</li>
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1" href="#">
+								<img src="img/menu-action/share.png" alt="share">
+							</a>
+						</li>
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1" href="#">
+								<img src="img/menu-action/buy.png" alt="buy">
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- item price-->
+				<div class="s-price fr_c_cc">	<span class="price fr_c_cc t_xs">$145,99</span>
+				</div>
+			</figcaption>
+		</figure>
+		<!-- item #3 -->
+		<figure class="item a_pointer s_disp1">
+			<div class="item__img">
+				<img src="img/new-arrive/item-3.png" alt="Buffalo-Decollete">
+			</div>
+			<!-- badge -->
+			<!-- <div class="badge fr_c_cc t_xs">
+				<span class="badge__name t_cntr">ON SALE!</span>
+			</div> -->
+			<hr class="item__divider">
+			<figcaption class="item__title fr_s_hh">
+				<!-- item name-->
+				<h4 class="item__name fr_s_cc s_disp2_non">
+					Buffalo Decollete
+				</h4>
+				<!-- action menu -->
+				<nav class="s-action-menu s-action-menu--item f1 s_disp2_flx">
+					<ul class="action-menu action-menu--item fr_b_hh">
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1" href="#">
+								<img src="img/menu-action/view.png" alt="view">
+							</a>
+						</li>
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1" href="#">
+								<img src="img/menu-action/wishlist.png" alt="wishlist">
+							</a>
+						</li>
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1" href="#">
+								<img src="img/menu-action/share.png" alt="share">
+							</a>
+						</li>
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1" href="#">
+								<img src="img/menu-action/buy.png" alt="buy">
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- item price-->
+				<div class="s-price fr_c_cc">	<span class="price fr_c_cc t_xs">$145,99</span>
+				</div>
+			</figcaption>
+		</figure>
+	</div>
+	<!--================================================================-->
+	<!-- best seller -->
+	<section class="items__header fr_b_hh">
+		<!-- title new arrivals -->
+		<h3 class="items__title fr_s_cc f1">
+			Best sellers of the month
+		</h3>
+		<!-- show all btn  -->
+		<div class="s-items__btn-show fr_e_hh f1">	<a class="items__btn-show  fr_c_cc" href="#">Show All</a>
+		</div>
+	</section>
+	<div class="items fr_a_cc">
+		<!-- item #1 -->
+		<figure class="item a_pointer s_disp1">
+			<div class="item__img">
+				<img src="img/best-seller/item-1.png" alt="Even&Odd">
+			</div>
+			<!-- badge -->
+			<!-- <div class="badge fr_c_cc t_xs">
+				<span class="badge__name t_cntr">ON SALE!</span>
+			</div> -->
+			<hr class="item__divider">
+			<figcaption class="item__title fr_s_hh">
+				<!-- item name-->
+				<h4 class="item__name fr_s_cc s_disp2_non">
+					Even&#38;Odd
+				</h4>
+				<!-- action menu -->
+				<nav class="s-action-menu s-action-menu--item f1 s_disp2_flx">
+					<ul class="action-menu action-menu--item fr_b_hh">
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1" href="#">
+								<img src="img/menu-action/view.png" alt="view">
+							</a>
+						</li>
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1" href="#">
+								<img src="img/menu-action/wishlist.png" alt="wishlist">
+							</a>
+						</li>
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1" href="#">
+								<img src="img/menu-action/share.png" alt="share">
+							</a>
+						</li>
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1" href="#">
+								<img src="img/menu-action/buy.png" alt="buy">
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- item price-->
+				<div class="s-price fr_c_cc">	<span class="price fr_c_cc t_xs">$145,99</span>
+				</div>
+			</figcaption>
+		</figure>
+		<!-- item #2 -->
+		<figure class="item a_pointer s_disp1">
+			<div class="item__img">
+				<img src="img/best-seller/item-2.png" alt="Even&Odd">
+			</div>
+			<!-- badge -->
+			<!-- <div class="badge fr_c_cc t_xs">
+				<span class="badge__name t_cntr">ON SALE!</span>
+			</div> -->
+			<hr class="item__divider">
+			<figcaption class="item__title fr_s_hh">
+				<!-- item name-->
+				<h4 class="item__name fr_s_cc s_disp2_non">
+					Even&#38;Odd
+				</h4>
+				<!-- action menu -->
+				<nav class="s-action-menu s-action-menu--item f1 s_disp2_flx">
+					<ul class="action-menu action-menu--item fr_b_hh">
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1" href="#">
+								<img src="img/menu-action/view.png" alt="view">
+							</a>
+						</li>
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1" href="#">
+								<img src="img/menu-action/wishlist.png" alt="wishlist">
+							</a>
+						</li>
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1" href="#">
+								<img src="img/menu-action/share.png" alt="share">
+							</a>
+						</li>
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1" href="#">
+								<img src="img/menu-action/buy.png" alt="buy">
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- item price-->
+				<div class="s-price fr_c_cc">	<span class="price fr_c_cc t_xs">$145,99</span>
+				</div>
+			</figcaption>
+		</figure>
+		<!-- item #3 -->
+		<figure class="item a_pointer s_disp1">
+			<div class="item__img">
+				<img src="img/best-seller/item-3.png" alt="Buffalo-Decollete">
+			</div>
+			<!-- badge -->
+			<div class="badge badge--orange fr_c_cc t_xs">	<span class="badge__name t_cntr">OUT OF STOCK</span>
+			</div>
+			<hr class="item__divider">
+			<figcaption class="item__title fr_s_hh">
+				<!-- item name-->
+				<h4 class="item__name fr_s_cc s_disp2_non">
+					Buffalo Decollete
+				</h4>
+				<!-- action menu -->
+				<nav class="s-action-menu s-action-menu--item f1 s_disp2_flx">
+					<ul class="action-menu action-menu--item fr_b_hh">
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1" href="#">
+								<img src="img/menu-action/view.png" alt="view">
+							</a>
+						</li>
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1" href="#">
+								<img src="img/menu-action/wishlist.png" alt="wishlist">
+							</a>
+						</li>
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1" href="#">
+								<img src="img/menu-action/share.png" alt="share">
+							</a>
+						</li>
+						<li class="s-action-menu__btn fr_c_hh">
+							<a class="action-menu__btn fr_c_cc f1" href="#">
+								<img src="img/menu-action/buy.png" alt="buy">
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- item price-->
+				<div class="s-price fr_c_cc">	<span class="price fr_c_cc t_xs">$145,99</span>
+				</div>
+			</figcaption>
+		</figure>
+	</div>
+	<!--================================================================-->
+	<!-- divider before addon-->
+	<div class="fr_c_cc">
+		<hr class="divider-addon">
+	</div>
+	<!-- addon -->
+	<div class="addon fr_c_ss t_small">
+		<!-- free shipping -->
+		<a href="#" class="shipping s_bg_empt">
+			<article>
+				<h5>
+					FREE SHIPPING
+				</h5>
+				<p>Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel</p>
+			</article>
+		</a>
+		<!-- testimonials -->
+		<a href="#" class="testimonials s_bg_empt">
+			<section class="">
+				<h5>
+					TESTIMONIALS
+				</h5>
+				<article class="fc_c_cc">
+					<h6 class="testimonials__name">
+						-John Doe-
+					</h6>
+					<p>vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora</p>
+				</article>
+				<article class="fc_c_cc">
+					<h6 class="testimonials__name">
+						-Doe John-
+					</h6>
+					<p>Class aptent taciti sociosqu ad litora vel, vulputate vel nvel, vulputate vel nibh.Class aptent taciti sociosqu ad litora vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora</p>
+				</article>
+			</section>
+		</a>
+		<!-- blog news -->
+		<section class="blog-news s_bg_empt">
+			<h5>
+				BLOG NEWS
+			</h5>
+			<br>
+			<a href="#">
+				<div class="s-blog-news__artcl fr_s_cc">
+					<article class="blog-news__artcl fr_s_cc">	<h5>
+							Nice &#38; clean. The best for you blog!
+						</h5>
+						<div>Vivamus metus turpis, bibe Vivamus</div>
+					</article>
+					<div class="blog-news__data fr_c_cc t_cntr">Apr
+						<br>01</div>
+				</div>
+			</a>
+			<a href="#">
+				<div class="s-blog-news__artcl fr_s_cc">
+					<article class="blog-news__artcl fr_s_cc">	<h5>
+							One more Great news on this day!
+						</h5>
+						<div>metus turpis, bibendum vitae euismod vel</div>
+					</article>
+					<div class="blog-news__data fr_c_cc t_cntr">Apr
+						<br>01</div>
+				</div>
+			</a>
+			<a href="#">
+				<div class="s-blog-news__artcl fr_s_cc">
+					<article class="blog-news__artcl fr_s_cc">	<h5>
+							Nice &#38; clean. The best for you blog!
+						</h5>
+						<div>Vivamus metus turpis, bibe Vivamus metus turpis, bibe Vivamus metus turpis, bibe</div>
+					</article>
+					<div class="blog-news__data fr_c_cc t_cntr">Apr
+						<br>12</div>
+				</div>
+			</a>
+		</section>
+	</div>
+	<!--================================================================-->
+	<!-- pre Footer -->
+	<div class="prefooter fr_a_ss t_sml_itlc">
+		<!-- text widget -->
+		<a class="prefooter-blc" href="#">
+			<section class="text-widget">
+				<h5>
+						TEXT WIDGET
+					</h5>
+				<div class="text-widget__artcl t_linehg_m">
+					<br>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.</div>
+			</section>
+		</a>
+		<!-- twitter widget -->
+		<a class="prefooter-blc" href="#">
+			<section class="twitter-widget">
+				<h5>
+						TWITTER WIDGET
+					</h5>
+				<br>
+				<article>
+					<h6 class="twitter-widget__author">
+							@ericafustero
+						</h6>
+					<div>Why thank you. Your work looks awesome by the way</div>
+					<div style="text-align: right;">19 days ago</div>
+				</article>
+				<br>
+				<article>
+					<h6 class="twitter-widget__author">
+							@roymarvelous
+						</h6>
+					<div>You can seek a refund through TF if it is not as - but it is :)</div>
+					<div style="text-align: right;">21 days ago</div>
+				</article>
+			</section>
+		</a>
+		<!-- flickr widget -->
+		<a class="prefooter-blc" href="#">
+			<section class="flickr">
+				<h5>
+						FLICKR WIDGET
+					</h5>
+				<br>
+				<div class="fr_b_cc">
+					<div>
+						<img src="img/flickr/flickr-1.png" alt="Flicr Widget">
+					</div>
+					<div>
+						<img src="img/flickr/flickr-2.png" alt="Flicr Widget">
+					</div>
+					<div>
+						<img src="img/flickr/flickr-3.png" alt="Flicr Widget">
+					</div>
+					<div>
+						<img src="img/flickr/flickr-4.png" alt="Flicr Widget">
+					</div>
+					<div>
+						<img src="img/flickr/flickr-5.png" alt="Flicr Widget">
+					</div>
+					<div>
+						<img src="img/flickr/flickr-6.png" alt="Flicr Widget">
+					</div>
+				</div>
+			</section>
+		</a>
+	</div>
+	<!-- divider -->
+	<hr class="divider-prefooter">
+	<div class="under-prefooter fr_c_ss">
+		<!-- news letter sign up -->
+		<form class="mail-form frn_s_cc">
+			<input class="mail-form__text" type="email" placeholder="Enter email for newsletter" required>
+			<input class="mail-form__submit t_larg_bldr" type="submit" value=">">
+		</form>
+		<div style="flex: 0 1 24.9rem;">
+			<!-- white space -->
+		</div>
+		<!-- socials -->
+		<ul class="social fr_b_cc">
+			<li class="fr_c_hh">
+				<a class="social__btn fr_c_cc s_bg_empt" href="#">
+					<img src="img/socials/facebook.png" alt="Facebook">
+				</a>
+			</li>
+			<li class="fr_c_hh">
+				<a class="social__btn fr_c_cc s_bg_empt" href="#">
+					<img src="img/socials/twitter.png" alt="Twitter">
+				</a>
+			</li>
+			<li class="fr_c_hh">
+				<a class="social__btn fr_c_cc s_bg_empt" href="#">
+					<img src="img/socials/google.png" alt="G+">
+				</a>
+			</li>
+			<li class="fr_c_hh">
+				<a class="social__btn fr_c_cc s_bg_empt" href="#">
+					<img src="img/socials/linkedin.png" alt="Linkedin">
+				</a>
+			</li>
+			<li class="fr_c_hh">
+				<a class="social__btn fr_c_cc s_bg_empt" href="#">
+					<img src="img/socials/flickr.png" alt="Flickr">
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!--================================================================-->
+	<!-- footer -->
+	<footer class="footer fr_b_cc t_small">
+		<!-- copyright -->
+		<h5 class="copyright">
+			Copyright © Fooseshoes 2013.<br>Designed by EnzoLiVolti.<br>
+			Craft by Sakal<sup>S</sup> 
+		</h5>
+		<!-- menu secondary-->
+		<ul class="menu-smal fr_c_cc">
+			<li><a href="#">Home</a><span>&nbsp;/&nbsp;</span>
+			</li>
+			<li><a href="#">Support</a><span>&nbsp;/&nbsp;</span>
+			</li>
+			<li><a href="#">Terms and Conditions</a><span>&nbsp;/&nbsp;</span>
+			</li>
+			<li><a href="#">Faqs</a><span>&nbsp;/&nbsp;</span>
+			</li>
+			<li><a href="#">Contact us</a>
+			</li>
+		</ul>
+
+
+		<!--Footer additional================================================================-->
+		<!-- Burger -->
+		<div class="hamburger hamburger--spring" id="sc_footer-add__btn">
+			<div class="hamburger-box" style="">
+				<div class="hamburger-inner"></div>
+			</div>
+		</div>
+		<!--Footer additional-->
+		<div class="footer-add">
+			<div class="footer-add__title fr_a_cc" id="footer-add">
+				<section>
+					<h5 class="t_lsp">S<sub>akal</sub><sup class="a_neon" style="color: #000;">s &#x1F608;</sup></h5>
+					<span class="t_lsp">Copyright <sup>&#x00A9;</sup> 2017.</span>
+				</section>
+
+				<a href="https://sakals.000webhostapp.com/landing.page/index.html" class="page-switch t_med_cntr a_neon" id="sc_switch-btn" target="_blank">
+					<span class="a_roate3d">O</span>
+					<span class="a_roate3d">P</span>
+					<span class="a_roate3d">E</span>
+					<span class="a_roate3d">N</span>
+					<b class="t_lsp">&nbsp;landing work</b>
+				</a>
+				<audio preload="auto">
+					<source src="audio/switch.mp3?raw=true" type="audio/mp3" />
+				</audio>
+			</div>
+		</div>
+
+
+	</footer>
+	<!--================================================================-->
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>

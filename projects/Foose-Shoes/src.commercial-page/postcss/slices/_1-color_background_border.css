@@ -1,0 +1,196 @@
+
+/*   Slice 1 / 7		Color & Background & Borders Properties
+________________________________
+::::::::::::::::::::::::
+Includes Properties
+::::::::::::::::::::::::
+________________________________
+Color
+	color	
+	opacity
+________________________________
+Background 
+	background 
+	background-attachment
+	background-blend-mode
+	background-color
+	background-image
+	background-position
+	background-repeat
+	background-clip
+	background-origin
+	background-size
+________________________________
+Border
+	border
+	border-bottom
+	border-bottom-color
+	border-bottom-left-radius
+	border-bottom-right-radius
+	border-bottom-style
+	border-bottom-width
+	border-color
+	border-image
+	border-image-outset
+	border-image-repeat
+	border-image-slice
+	border-image-source
+	border-image-width
+	border-left
+	border-left-color
+	border-left-style
+	border-left-width
+	border-radius
+	border-right
+	border-right-color
+	border-right-style
+	border-right-width
+	border-style
+	border-top
+	border-top-color
+	border-top-left-radius
+	border-top-right-radius
+	border-top-style
+	border-top-width
+	border-width
+	box-decoration-break
+	box-shadow
+________________________________
+*/
+/* ================================================================ */
+a
+    { color: inherit; }                     /*normalized*/
+
+body
+	{ color: #242424; } 					/*normalized*/
+
+.log-in, 							    	/*log-in*/
+.footer 			                        /*footer*/
+	{ color: #7e7e7e; }
+
+.counters,                                  /*counters*/
+.badge,                                     /*badge*/
+.specials,                                  /*specials*/
+.blog-news__data,			                /*blog news has data*/
+.wishlist-counter__number,                  /*wishlist-counter__number*/
+.cart-counter__number,                      /*cart-counter__numbe*/
+.footer-add
+    { color: #fff; }
+
+.twitter-widget__author      				/*twitter widget author*/
+	{ color: #57c5a0; }
+
+.header-items__btn-show           			/*header-items has btn show all*/
+	{ color: #bcb5a7; }
+
+.modal-bin__close, 						    /*modal-bin__close modal img*/
+.prefooter                                  /*prefooter link*/
+    { color: #adadad; } 
+
+.item__divider,
+.divider-addon
+	{ color: #bcb5a7; }
+
+.divider-prefooter
+	{ color: #1c1c1c; }
+
+.mail-form__submit
+	{ color: #2e2e2e; }
+/* ================================================================ */
+
+button 										/*normalized*/
+	{ background: rgba(0,0,0, 0); }
+body 										/*normalized*/
+	{ background: #ebe7df; } 		
+
+.s-header, 									/*header*/
+.badge,										/*item has badge*/
+.prefooter,									/*pre footer*/
+.under-prefooter							/*under-prefooter*/
+	{ background: #242424; }
+
+.badge--orange 						        /*item has badge but orange*/
+	{ background: #f27e4b; }
+
+.modal-bin, 								/*modal bin for img*/
+.log-in__btn, 							    /*log-in btn*/
+.nav-menu__btn, 							/*nav-menu has buttons*/
+.wishlist-counter__btn,  					/*wishlist-counter*/
+.cart-counter__btn 							/*cart-counter*/
+	{ background: #d3d3d3; }
+
+.wishlist-counter__number, 					/*wishlist-counter has number*/
+.mail-form__submit 							/*mail-form has btn submit*/
+    { background: #7e7e7e; }
+
+.cart-counter__number, 						/*cart-counter has number*/
+.price, 									/*item-top has price*/
+.blog-news__data							/*blog news data*/
+    { background: #57c5a0; }
+
+.s-top__nav  , 								/*top nav*/
+input[type='email'], 						/*input for mail*/
+.social__btn,		                        /*social*/
+.footer								    	/*footer*/
+	{ background: #2e2e2e; }
+
+.specials, 									/*specials*/
+.on-sale__name,                             /*on-sale has name*/
+.special-offers__name,                      /*special-offers has name*/
+.must-have__name                            /*must-have has name*/
+	{ background: #242424; } 		
+
+.s-menu,									/*menu*/
+.item, 										/*item*/
+.action-menu__btn 							/*action-menu has buttons*/
+	{ background: #fff; } 
+
+.shipping,									/*free shipping*/
+.testimonials,								/*testimonials*/
+.blog-news									/*blog-news*/
+	{ background: #000; }
+
+.item__divider,
+.divider-addon
+	{ background: #bcb5a7; }
+
+.divider-prefooter
+	{ background: #1c1c1c; }
+
+.top__scr--1								/*item-img #1 in top*/
+	{ background: url("../img/top/background.png"); }
+
+.on-sale 									/*on-sale*/
+    { background: url("../img/specials/on-sale.png") no-repeat; }
+
+.special-offers 							/*special-offers*/
+    { background: url("../img/specials/special-offers.png") no-repeat; }
+
+.must-have 									/*must-have*/
+    { background: url("../img/specials/must-have.png") no-repeat; }
+/* ================================================================ */
+
+.on-sale,                                   /*on-sale*/
+.special-offers,                            /*special-offers*/
+.must-have                                  /*must-have*/
+    { background-size: 100% 100%; }
+/* ================================================================ */
+button, 									/*normalized*/
+hr,   										/*normalized*/
+input 										/*normalized*/
+    { border: none; }
+/* ================================================================ */
+
+.wishlist-counter__number, 					/*wishlist-counter has number*/
+.cart-counter__number 						/*cart-counter has number*/
+    { border-radius: 5px; }
+/* ================================================================ */
+
+.footer-add {
+	background: url(../img/footer-add.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.footer-add__title {
+	border: 1px solid transparent;
+}

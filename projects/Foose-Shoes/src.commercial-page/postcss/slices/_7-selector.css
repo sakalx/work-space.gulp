@@ -1,0 +1,163 @@
+
+/*   Slice 7 / 7		Selectors
+________________________________
+::::::::::::::::::::::::
+Includes Properties
+::::::::::::::::::::::::
+________________________________
+Selectors
+	:active
+	::after
+	::before
+	:checked
+	:disabled
+	:empty
+	:enabled
+	:first-child
+	::first-letter
+	::first-line
+	:first-of-type
+	:focus
+	:hover
+	:in-range
+	:invalid
+	:lang(language)
+	:last-child
+	:last-of-type
+	:link
+	:not(selector)
+	:nth-child(n)
+	:nth-last-child(n)
+	:nth-last-of-type(n)
+	:nth-of-type(n)
+	:only-of-type
+	:only-child
+	:optional
+	:out-of-range
+	:read-only
+	:read-write	
+	:required
+	:root
+	::selection 
+	:target
+	:valid
+	:visited
+________________________________
+*/
+/* ================================================================ */
+
+.s_bg_empt:hover								/*background transparent*/
+	{ background: rgba(0,0,0, 0); }
+/* ================================================================ */
+
+.s_disp1:hover .s_disp2_non 					/*display none*/
+    { display: none; }
+
+.s_disp1:hover .s_disp2_flx 					/*display flex*/
+    { display: flex; }
+/* ================================================================ */
+
+.s_scale_y:hover 								/*scale Y*/
+	{ -o-transform: scaleY(1.2);
+	 -ms-transform: scaleY(1.2);
+	 -moz-transform: scaleY(1.2);
+	 -webkit-transform: scaleY(1.2);
+	 transform: scaleY(1.2); }
+/* ================================================================ */
+
+.s_colr_red:hover 								/*color ~red*/
+	{ color: #E62117; }
+/* ================================================================ */
+
+/* Shutter Out Horizontal */
+.s_out_horz {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+}
+.s_out_horz:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255,255,255, 1);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.s_out_horz:hover:before, 
+.s_out_horz:focus:before,
+.s_out_horz:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/* ================================================================ */
+/* Page swich */
+.page-switch:hover {
+	color: #FF1177;
+	-webkit-animation: none;
+	-moz-animation: none;
+	animation: none;
+}
+
+.page-switch:hover span {
+	color: #777;
+	-webkit-transform: perspective(1000px) rotate3d(0,1,0,360deg);
+	transform: perspective(1000px) rotate3d(0,1,0,360deg);
+}
+
+.page-switch span:first-child,
+.page-switch:hover span:nth-child(4) {
+	-webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+
+.page-switch span:nth-child(2),
+.page-switch:hover span:nth-child(3) {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.page-switch span:nth-child(3),
+.page-switch:hover span:nth-child(2) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.page-switch span:nth-child(4),
+.page-switch:hover span:first-child {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+/* ================================================================ */
+/* Footer additional */
+.footer-add:hover .footer-add__title {
+	height: 100%;
+	width: 100%;
+	border-color: rgba(255,255,255,0.5);
+	background-color: rgba(0,0,0,0.8);
+
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+
+	-webkit-transition:	all 0.5s 0.5s,
+	border 0.5s 0s,
+	height 0.5s 0s,
+	margin 0.5s 0s;
+
+	transition:			all 0.5s 0.5s,
+	border 0.5s 0s,
+	height 0.5s 0s,
+	margin 0.5s 0s;
+}
+/* ================================================================ */

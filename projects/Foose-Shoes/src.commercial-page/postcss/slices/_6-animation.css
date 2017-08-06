@@ -1,0 +1,135 @@
+
+/*   Slice 6 / 7		Animation & Transform & Transition & User Interface Properties
+________________________________
+::::::::::::::::::::::::
+Includes Properties
+::::::::::::::::::::::::
+________________________________
+Animation
+	@keyframes{}
+	animation
+	animation-delay
+	animation-direction
+	animation-duration
+	animation-fill-mode
+	animation-name
+	animation-play-state
+	animation-timing-function
+________________________________
+Transform
+	backface-visibility
+	perspective
+	perspective-origin
+	transform
+	transform-origin
+	transform-style
+________________________________
+Transitions
+	transition
+	transition-property
+	transition-duration
+	transition-timing-function
+	transition-delay
+________________________________ 
+for User Interface
+	box-sizing
+	content
+	cursor
+	ime-mode
+	nav-down
+	nav-index
+	nav-left
+	nav-right
+	nav-up
+	outline
+	outline-color
+	outline-offset
+	outline-style
+	outline-width
+	resize
+	text-overflow
+________________________________
+*/
+/* ================================================================ */
+
+@-webkit-keyframes zoom {
+  from
+  { opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3); }
+  50%
+  { opacity: 1;}
+}
+
+@keyframes zoom {
+  from
+  { opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3); }
+  50%
+  { opacity: 1; }
+}
+
+.a_zoom 							   /*zoom*/
+  { -webkit-animation-name: zoom;
+    animation-name: zoom;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s; }
+/* ================================================================ */
+
+.a_trans_easy 						  /*transition ease-in-out*/
+{
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* ================================================================ */
+
+a,section,div,span,nav 				  /*normalized*/
+    { box-sizing: border-box; }
+/* ================================================================ */
+
+input[type='submit'],   			  /*cursor pointer*/
+button,
+.a_pointer
+   { cursor: pointer; }
+/* ================================================================ */
+
+button
+    { outline: none; }
+/* ================================================================ */
+ /* Footer additional */
+.footer-add__title {
+  -webkit-transition: all 0.4s 0s,
+  border 0.4s 0.6s,
+  height 0.4s 0.4s;
+  transition:     all 0.4s 0s,
+  border 0.4s 0.6s,
+  height 0.4s 0.4s;
+}
+ /* ================================================================ */
+ /* Rotate 3D */
+.a_roate3d {
+  display: inline-block;
+  -webkit-transform: perspective(1000px) rotate3d(0,1,0,0deg);
+  transform: perspective(1000px) rotate3d(0,1,0,0deg);
+  -webkit-transition: -webkit-transform 0.5s, color 0.5s;
+  transition: transform 0.5s, color 0.5s;
+}
+ /* ================================================================ */
+ /* Neon */
+@-webkit-keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+}
+.a_neon {
+  -webkit-animation: neon 1s ease-in-out infinite alternate;
+  -moz-animation: neon 1s ease-in-out infinite alternate;
+  animation: neon 1s ease-in-out infinite alternate;
+}
+ /* ================================================================ */
