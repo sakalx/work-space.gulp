@@ -1,0 +1,6 @@
+﻿#I wish
+node_modules/
+
+
+projects/*.psd
+src/*.psd
