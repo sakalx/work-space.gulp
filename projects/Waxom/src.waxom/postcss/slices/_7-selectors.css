@@ -1,0 +1,422 @@
+
+/*   Slice 7 / 8		Selectors
+________________________________
+::::::::::::::::::::::::
+Includes Properties
+::::::::::::::::::::::::
+________________________________
+Selectors
+	:active
+	::after
+	::before
+	:checked
+	:disabled
+	:empty
+	:enabled
+	:first-child
+	::first-letter
+	::first-line
+	:first-of-type
+	:focus
+	:hover
+	:in-range
+	:invalid
+	:lang(language)
+	:last-child
+	:last-of-type
+	:link
+	:not(selector)
+	:nth-child(n)
+	:nth-last-child(n)
+	:nth-last-of-type(n)
+	:nth-of-type(n)
+	:only-of-type
+	:only-child
+	:optional
+	:out-of-range
+	:read-only
+	:read-write	
+	:required
+	:root
+	::selection 
+	:target
+	:valid
+	:visited
+________________________________
+*/
+/* ================================================================ */
+/* ================================================================ */
+/* Bubble Bottom */
+.s_arrow-bottom {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	position: relative;
+}
+.s_arrow-bottom:before {
+	pointer-events: none;
+	position: absolute;
+	z-index: -1;
+	content: '';
+	border-style: solid;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	left: calc(50% - 10px);
+	bottom: 0;
+	border-width: 10px 10px 0 10px;
+	border-color: $brown transparent transparent transparent;
+	transform: scale(.1);
+}
+.s_sc_arrow-bottom:before {
+	transform: translateY(10px);
+	border-color: $brown transparent transparent transparent;
+}
+.s_sc_arrow-bottom {
+	color: $brown_light !important;
+}
+
+.main-menu a:hover {
+	color: $brown_light;
+}
+/* ================================================================ */
+.button:hover {
+	background: linear-gradient(to top, #362f2d, #CDB9A7);
+}
+
+.button:active {
+	box-shadow: 0px 2px 0px #362f2d, 0px 1px 6px rgba(255, 255, 255, 0.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+	transform: translate(0, 4px);
+}
+/* ================================================================ */
+.slider__arrows span:hover {
+	color: $white;
+}
+/* ================================================================ */
+.services a:hover svg {
+	fill: $brown;
+}
+.services a:hover svg {
+	fill: $brown;
+}
+.services a:hover h3 {
+	color: $brown;
+}
+.services a:hover hr {
+	background: $brown;
+}
+/* ================================================================ */
+.work__example--1:hover {
+	position: relative;
+	z-index: 99;
+	transform: scale(1.1);
+	transform-origin:bottom left;
+}
+.work__example--3:hover {
+	position: relative;
+	z-index: 99;
+	transform: scale(1.1);
+	transform-origin:bottom right;
+}
+/* ================================================================ */
+/* Float Shadow */
+.hvr-float-shadow {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	position: relative;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+.hvr-float-shadow:before {
+	pointer-events: none;
+	position: absolute;
+	z-index: -1;
+	content: '';
+	top: 100%;
+	left: 5%;
+	height: 10px;
+	width: 90%;
+	opacity: 0;
+	background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+	background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform, opacity;
+	transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+	-webkit-transform: translateY(-5px);
+	transform: translateY(-5px);
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before {
+	opacity: 1;
+	-webkit-transform: translateY(5px);
+	transform: translateY(5px);
+}
+.hvr-float-shadow:active:before {
+	opacity: 0;
+}
+.portfolio__nav button:hover {
+	background: $brown_light;
+	color: $white;
+}
+.portfolio__nav button:active {
+	transform: scale(.98);
+}
+	/* ================================================================ */
+.portfolio__work:hover {
+	box-shadow: 5px 5px 35px #000;
+}
+.portfolio__work-title:after {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: $white;
+	border-width: 16px;
+	margin-left: -16px;
+	opacity: 0;
+}
+
+.portfolio__work:hover .portfolio__work-title {
+	background: $brown_dark;
+}
+.portfolio__work:hover .portfolio__work-title:after {
+	transform: translateY(0);
+	border-bottom-color: $brown_dark;
+	opacity: 1;
+}
+
+.portfolio__work:hover h4 {
+	color: $white;
+}
+.portfolio__work:hover span {
+	color: $brown_light;
+}
+
+.portfolio__work:hover .portfolio__work-mask {
+	background-image: radial-gradient(ellipse farthest-corner at center, rgba(255,255,255,0) 0%, #000000 100%);
+	opacity: 1;
+}
+.portfolio__work:hover .portfolio__work-mask a {
+	transform: scale(1);
+}
+.portfolio__work-mask svg:hover {
+	transform: scale(0.9);
+}
+.portfolio__work:hover .portfolio__work-img img {
+	transform: scale(1.1);
+}
+/* ================================================================ */
+.video__icon-play:after {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: '';
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.video__icon-play:before {
+  speak: none;
+  font-size: 48px;
+  line-height: 90px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+}
+.video__icon-play {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
+  -moz-transition: -moz-transform ease-out 0.1s, background 0.2s;
+  transition: transform ease-out 0.1s, background 0.2s;
+}
+
+.video__icon-play:after {
+  top: 0;
+  left: 0;
+  padding: 0;
+  z-index: -1;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.video__icon-play:hover {
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-transform: scale(0.93);
+  -moz-transform: scale(0.93);
+  -ms-transform: scale(0.93);
+  transform: scale(0.93);
+  color: #fff;
+}
+
+.video__icon-play:hover:after {
+  -webkit-animation: sonarEffect 1.3s ease-out 75ms;
+  -moz-animation: sonarEffect 1.3s ease-out 75ms;
+  animation: sonarEffect 1.3s ease-out 75ms;
+}
+
+/* ================================================================ */
+#features__modal:not(:target) {
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 1s, visibility 1s;
+}
+#features__modal:target {
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 1s, visibility 1s;
+}
+
+.features__modal-close:hover {
+	color: #cc181e;
+	transform: rotate(360deg);
+	background: $white;
+}
+
+.features__desc li:before {
+	margin: rem(15);
+	font-family: fontello;
+	content: '\e800';
+	color: $brown_light;
+}
+/* ================================================================ */
+.icon-right-circle:hover {
+	color: $brown;
+}
+.blog__list li:hover {
+	box-shadow: 5px 5px 20px #000;
+}
+.blog__list li:hover .blog__post-time {
+	background-image: radial-gradient(ellipse farthest-corner at center, rgba(255,255,255,0) 0%, #000000 100%);
+}
+.blog__list li:hover .blog__post-date {
+	background: $brown_light;
+}
+.blog__list li:hover .blog__post-month {
+	background: $brown;
+}
+.blog__list li:hover .blog__post-title {
+	background: $brown_dark;
+}
+.blog__list li:hover .blog__post-title h5 {
+	color: $brown;
+}
+.blog__list li:hover .blog__post-title p {
+	color: $white;
+}
+.blog__link:hover .link-arrow {
+	opacity: 0;
+	margin-left: 70%;
+}
+/* ================================================================ */
+.counter  li:hover .counter__img {
+    -webkit-animation: smallToBig 900ms alternate infinite ease;
+    -moz-animation: smallToBig 900ms alternate infinite ease;
+    -ms-animation: smallToBig 900ms alternate infinite ease;
+}
+.counter  li:hover .counter__amount {
+	transform: scale(1.2);
+}
+/* ================================================================ */
+
+.recent-posts li:hover .recent-posts__time {
+	color: $white;
+}
+.recent-posts li:hover .recent-posts__artcl {
+	color: $brown;
+}
+/* ================================================================ */
+.about-wacom__link:hover .link-arrow {
+	opacity: 0;
+	margin-left: 60%;
+}
+/* ================================================================ */
+.copyright a:hover {
+	color: $brown;
+}
+/* ================================================================ */
+/* ================================================================ */
+/* Footer additional */
+.footer-add:hover .footer-add__title {
+	height: 100%;
+	width: 100%;
+	border-color: rgba(255,255,255,0.5);
+	background-color: rgba(0,0,0,0.8);
+
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+
+	-webkit-transition:	all 0.5s 0.5s,
+	border 0.5s 0s,
+	height 0.5s 0s,
+	margin 0.5s 0s;
+
+	transition:			all 0.5s 0.5s,
+	border 0.5s 0s,
+	height 0.5s 0s,
+	margin 0.5s 0s;
+}
+/* ================================================================ */
+.copyright:hover .hamburger-box {
+	opacity: 1;
+}
+/* Page swich */
+.page-switch:hover {
+	color: #FF1177;
+	-webkit-animation: none;
+	-moz-animation: none;
+	animation: none;
+}
+
+.page-switch:hover span {
+	color: #777;
+	-webkit-transform: perspective(1000px) rotate3d(0,1,0,360deg);
+	transform: perspective(1000px) rotate3d(0,1,0,360deg);
+}
+
+.page-switch span:first-child,
+.page-switch:hover span:nth-child(4) {
+	-webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+
+.page-switch span:nth-child(2),
+.page-switch:hover span:nth-child(3) {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.page-switch span:nth-child(3),
+.page-switch:hover span:nth-child(2) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.page-switch span:nth-child(4),
+.page-switch:hover span:first-child {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}

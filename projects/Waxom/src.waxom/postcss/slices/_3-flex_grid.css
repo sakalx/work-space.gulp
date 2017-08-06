@@ -1,0 +1,208 @@
+
+/*   Slice 3 / 8		Flex Box Properties & Grid
+________________________________
+::::::::::::::::::::::::
+Includes Properties
+::::::::::::::::::::::::
+________________________________
+	flex-flow
+	flex-direction
+	flex-wrap
+	justify-content	
+	align-items
+	align-content
+________________________________
+for Flex Item
+	align-self
+	flex
+	flex-grow
+	flex-shrink
+	flex-basis
+	order
+________________________________
+________________________________
+Grid	
+________________________________
+/*Colum margin*/
+$col_margin: 15px;
+/*one column*/
+$col: 70px;
+
+$col1: calc($col * 1);
+$col2: calc($col * 2 + 2 * $col_margin);
+$col3: calc($col * 3 + 4 * $col_margin);
+$col4: calc($col * 4 + 6 * $col_margin);
+$col5: calc($col * 5 + 8 * $col_margin);
+$col6: calc($col * 6 + 10 * $col_margin);
+$col7: calc($col * 7 + 12 * $col_margin);
+$col8: calc($col * 8 + 14 * $col_margin);
+$col9: calc($col * 9 + 16 * $col_margin);
+$col10: calc($col * 10 + 18 * $col_margin);
+$col11: calc($col * 11 + 20 * $col_margin);
+$col12: calc($col * 12 + 22 * $col_margin);
+/* ================================================================ */
+.wrap2
+{ flex: 1 1 16.66%; }
+.wrap3
+{ flex: 1 1 25%; }
+.wrap4
+{ flex: 1 1 33.33%; }
+.wrap5
+{ flex: 1 1 41.66%; }
+.wrap6
+{ flex: 1 1 50%; }
+.wrap7
+{ flex: 1 1 58.33%; }
+.wrap8
+{ flex: 1 1 66.66%; }
+.wrap9
+{ flex: 1 1 75.55; }
+.wrap10
+{ flex: 1 1 83.33%; }
+.wrap11
+{ flex: 1 1 91.66%; }
+.wrap12
+{ max-width: 1280px; width: 100%; }
+/* ================================================================ */
+.fr_b_ee,.fr_c_ee,.fr_b_ss,.fr_a_hh,.fc_b_cc,.fr_e_ss,.fr_e_ee,.fr_e_cc,.fr_s_hh,.fr_e_hh,.fr_c_hh, .fr_b_hh,.fr_s_ss,.fr_s_cc,.fr_c_ss,.fr_c_cc,.fr_a_cc,.fr_b_cc,.fr_a_ss
+{display: flex; flex-flow: row wrap; }
+/* ================================================================ */
+.frn_s_cc
+{display: flex; flex-flow: row nowrap; }
+/* ================================================================ */
+.fc_b_cc,.fc_c_hh,.fc_c_cc,.fc_b_hh,.fc_c_ee
+{display: flex; flex-flow: column wrap; }
+/* ================================================================ */
+.fcn_b_cc
+{display: flex; flex-flow: column nowrap; }
+/* ================================================================ */
+.fr_s_ss,.fr_s_hh,.fr_s_cc,.frn_s_cc
+{ justify-content: flex-start; }
+
+.fr_e_hh,.fr_e_cc,.fr_e_ee,.fr_e_ss
+{ justify-content: flex-end; }
+
+.fr_c_cc,.fr_c_hh,.fr_c_ss,.fr_c_ee,
+.fc_c_hh,.fc_c_cc,.fc_c_ee
+{ justify-content: center; }
+
+.fr_b_cc,.fr_b_hh,.fc_b_hh,.fc_b_cc,.fr_b_ss,.fcn_b_cc,.fr_b_ee
+{ justify-content: space-between; }
+
+.fr_a_ss,.fr_a_cc,.fr_a_hh
+{ justify-content: space-around; }
+/* ================================================================ */
+.fr_a_ss,  .fr_c_ss, .fr_s_ss,.fr_e_ss,.fr_b_ss
+{ align-items: flex-start; }
+
+.fc_c_ee,.fr_e_ee,.fr_c_ee,.fr_b_ee
+{ align-items: flex-end; }
+
+.fr_c_cc,.fr_b_cc, .fr_a_cc,.fr_s_cc,.fc_c_cc,.frn_s_cc,.fr_e_cc,.fc_b_cc,.fcn_b_cc
+{ align-items: center; }
+
+.fr_s_hh,.fr_e_hh, .fr_c_hh, .fr_b_hh,.fc_c_hh,.fc_b_hh,.fr_a_hh
+{ align-items: stretch; }
+/* ================================================================ */
+.fr_a_ss,  .fr_c_ss, .fr_s_ss,.fr_e_ss,.fr_b_ss
+{ align-content: flex-start; }
+
+.fc_c_ee,.fr_e_ee,.fr_c_ee,.fr_b_ee
+{ align-content: flex-end; }
+
+.fr_c_cc,.fr_b_cc,.fr_a_cc,.fr_s_cc,.fc_c_cc,.frn_s_cc,.fr_e_cc,.fc_b_cc,.fcn_b_cc
+{ align-content: center; }
+
+.fr_s_hh,.fr_e_hh,.fr_c_hh, .fr_b_hh,.fc_c_hh,.fc_b_hh,.fr_a_hh
+{ align-content: stretch; }
+/* ================================================================ */
+.f_asc
+{ align-self: center; }
+
+.f_ass
+{ align-self: stretch; }
+/* ================================================================ */
+.f0_1
+{ flex: 0 0 $col1; margin: $col_margin; }
+.f0_2
+{ flex: 0 0 $col2; margin: $col_margin; }
+.f0_3
+{ flex: 0 0 $col3; margin: $col_margin; }
+.f0_4
+{ flex: 0 0 $col4; margin: $col_margin; }
+.f0_5
+{ flex: 0 0 $col5; margin: $col_margin; }
+.f0_6
+{ flex: 0 0 $col6; margin: $col_margin; }
+.f0_7
+{ flex: 0 0 $col7; margin: $col_margin; }
+.f0_8
+{ flex: 0 0 $col8; margin: $col_margin; }
+.f0_9
+{ flex: 0 0 $col9; margin: $col_margin; }
+.f0_10
+{ flex: 0 0 $col10; margin: $col_margin; }
+.f0_11
+{ flex: 0 0 $col11; margin: $col_margin; }
+.f0_12
+{ flex: 0 0 $col12; }
+/* ================================================================ */
+.f01_1
+{ flex: 0 1 $col1; margin: $col_margin; }
+.f01_2
+{ flex: 0 1 $col2; margin: $col_margin; }
+.f01_3
+{ flex: 0 1 $col3; margin: $col_margin; }
+.f01_4
+{ flex: 0 1 $col4; margin: $col_margin; }
+.f01_5
+{ flex: 0 1 $col5; margin: $col_margin; }
+.f01_6
+{ flex: 0 1 $col6; margin: $col_margin; }
+.f01_7
+{ flex: 0 1 $col7; margin: $col_margin; }
+.f01_8
+{ flex: 0 1 $col8; margin: $col_margin; }
+.f01_9
+{ flex: 0 1 $col9; margin: $col_margin; }
+.f01_10
+{ flex: 0 1 $col10; margin: $col_margin; }
+.f01_11
+{ flex: 0 1 $col11; margin: $col_margin; }
+.f01_12
+{ flex: 0 1 $col12; margin: $col_margin; }
+/* ================================================================ */
+.f1
+{ flex: 1 1 auto; margin: $col_margin;}
+.f1_1
+{ flex: 1 1 $col1; margin: $col_margin;}
+.f1_2
+{ flex: 1 1 $col2; margin: $col_margin;}
+.f1_3
+{ flex: 1 1 $col3; margin: $col_margin;}
+.f1_4
+{ flex: 1 1 $col4; margin: $col_margin;}
+.f1_5
+{ flex: 1 1 $col5; margin: $col_margin;}
+.f1_6
+{ flex: 1 1 $col6; margin: $col_margin;}
+.f1_7
+{ flex: 1 1 $col7; margin: $col_margin;}
+.f1_8
+{ flex: 1 1 $col8; margin: $col_margin;}
+.f1_9
+{ flex: 1 1 $col9; margin: $col_margin;}
+.f1_10
+{ flex: 1 1 $col10; margin: $col_margin;}
+.f1_11
+{ flex: 1 1 $col11; margin: $col_margin;}
+.f1_12
+{ flex: 1 1 $col12; }
+/* ================================================================ */
+.ord-1
+{ order: -1; }
+/* ================================================================ */
+.fals_s {
+    align-self: flex-start;
+}
+

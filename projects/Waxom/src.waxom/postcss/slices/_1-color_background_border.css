@@ -1,0 +1,295 @@
+
+/*   Slice 1 / 8		Color & Background & Borders Properties
+________________________________
+::::::::::::::::::::::::
+Includes Properties
+::::::::::::::::::::::::
+________________________________
+Color
+	color	
+	opacity
+________________________________
+Background 
+	background 
+	background-attachment
+	background-blend-mode
+	background-color
+	background-image
+	background-position
+	background-repeat
+	background-clip
+	background-origin
+	background-size
+________________________________
+Border
+	border
+	border-bottom
+	border-bottom-color
+	border-bottom-left-radius
+	border-bottom-right-radius
+	border-bottom-style
+	border-bottom-width
+	border-color
+	border-image
+	border-image-outset
+	border-image-repeat
+	border-image-slice
+	border-image-source
+	border-image-width
+	border-left
+	border-left-color
+	border-left-style
+	border-left-width
+	border-radius
+	border-right
+	border-right-color
+	border-right-style
+	border-right-width
+	border-style
+	border-top
+	border-top-color
+	border-top-left-radius
+	border-top-right-radius
+	border-top-style
+	border-top-width
+	border-width
+	box-decoration-break
+	box-shadow
+________________________________
+*/
+
+/* ================================================================ */
+/*main site Color*/
+$white: #fff;
+
+$black: #111;
+
+$brown: #998675;
+$brown_light: #C7B299;
+$brown_dark: #362F2D;
+
+@define-extend bg_brown_liner {
+	background: linear-gradient(to right, #221C1A, #4D3327);
+}
+/*.example {
+	@extend bg_brown_liner;
+}*/
+$grey: #888;
+$grey_dark: #575757;
+$grey_light: #f1eee9;
+/* ================================================================ */
+.top,
+.top a {
+	color: $white;
+}
+.top {
+	background: rgba(0, 0, 0, .7);
+}
+.cart svg {
+	fill: $white;
+}
+.search svg {
+	fill: $white;
+}
+.search input[type="search"] {
+	background: rgba(0,0,0, 0);
+	border: none; 
+}
+/* ================================================================ */
+.slider {
+	color: $white;
+}
+
+.button {
+	color: $white;
+	border: 1px solid #998675;
+	border-radius: 5px;
+	background: linear-gradient(to top, #7D695B, #CDB9A7);
+	box-shadow: 0px 6px 0px #998675, 0px 3px 15px rgba(255, 255, 255, .4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+}
+
+.slider__arrows span {
+	color: $brown_light;
+}
+
+.mainSlide__dots  {
+	background: $grey;
+	border: 1px solid $grey;
+	border-radius: rem(10);
+}
+
+.mainSlide__dot--active {
+	background: rgba(0,0,0, 0);
+	border: 1px solid $brown_light;
+	border-radius: rem(10);
+}
+/* ================================================================ */
+.services a {
+	color: $grey;
+}
+.services svg{
+	fill: $grey_dark;
+}
+.services__title {
+	color: $grey_dark;
+}
+.services__hr {
+	background: $grey_light;
+	border: none;
+}
+/* ================================================================ */
+.work h2,
+.portfolio__title h2,
+.features__desc h3,
+.blog h2, .blog__list h5 {
+	color: $grey_dark;
+}
+.work p,
+.portfolio__title p,
+.features__desc p, .features__desc ul,
+.blog p, .blog__list p {
+	color: $grey;
+}
+/* ================================================================ */
+.text-box,
+.counter {
+	background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+}
+.text-box h2 {
+	color: $white;
+}
+.text-box span {
+	color: $brown;
+}
+.text-box p {
+	color: $brown_light;
+}
+/* ================================================================ */
+.portfolio__nav button {
+	color: $grey;
+	background: none;
+	border-radius: 5px;
+}
+.portfolio__list h4 {
+	color: $brown_light;
+}
+.portfolio__list span {
+	color: $grey;
+}
+.portfolio__work-mask {
+	opacity: 0;
+	background-image: radial-gradient(ellipse farthest-corner at center, rgba(255,255,255,0) 0%, #000 100%);
+}
+/* ================================================================ */
+.video__title {
+	color: $white;
+	background: rgba(0,0,0, .5);
+}
+
+.video__title span {
+	color: $brown_light !important;
+}
+.video__icon-play {
+	border-radius: rem(100);
+	fill: $white;
+}
+/* ================================================================ */
+#features__modal {
+	background: rgba(0,0,0,0.9);
+}
+
+.features__modal-close {
+	color: $white;
+	border-radius: rem(100);
+}
+/* ================================================================ */
+.counter {
+	color: $white;
+}
+.counter svg, .counter h6 {
+	fill: $brown_light;
+	color: $brown_light;
+}
+.counter__hr {
+	background: #f1eee9;
+	border: none;
+}
+/* ================================================================ */
+.blog__list-nav {
+	background: #fff;
+}
+
+.icon-right-circle {
+	color: $grey;
+}
+.blog__post-time {
+	color: $white;
+}
+.blog__list a {
+	color: $brown;
+}
+
+.blog__post-date {
+	background: $grey_dark;
+	border-radius: 7px 7px 0 0;
+}
+.blog__post-month {
+	background: $black;
+	border-radius: 0 0 7px 7px;
+}
+/* ================================================================ */
+
+.partners {
+	background: url("../img/partners/background.jpg") no-repeat;
+	background-size: cover;
+}
+.partners ul {
+	background: rgba(0, 0, 0, .5);
+}
+/* ================================================================ */
+.footer {
+	color: $white;
+	background: #191919;
+}
+.about-wacom p,
+.recent-posts p,
+.twiter p {
+	color: $grey_dark;
+}
+.about-wacom a {
+	color: $white;
+}
+.recent-posts time,
+.twiter__time,
+
+.copyright span,
+.designed span {
+	color: $grey;
+}
+.twiter__nick {
+	color: #00bff3;
+}
+
+.copyright,
+.copyright__link {
+	color: $grey_dark;
+	background: $black;
+}
+.hr__tiny-grey {
+	background:  #222;
+	border: none;
+}
+/* ================================================================ */
+/* ================================================================ */
+
+.footer-add {
+	background: url(../img/footer-add.png) no-repeat;
+	background-size: 100% 100%;
+}
+.footer-add__title {
+	border: 1px solid transparent;
+}
+.page-switch span,
+.page-switch {
+	color: #fff;
+}
