@@ -1,79 +1,80 @@
-var cube = document.getElementById('viewport');
-
+var CubeEnvironment = {
+  cube: document.getElementById('viewport'),
+  header: document.getElementById('header').style
+};
 var CubeContent = {
-  works:       document.getElementById('works__content'),
-  profile:     document.getElementById('profile__content'),
-  services:    document.getElementById('services__content'),
+  works: document.getElementById('works__content'),
+  profile: document.getElementById('profile__content'),
+  services: document.getElementById('services__content'),
   cooperation: document.getElementById('cooperation__content'),
-  knowledge:   document.getElementById('knowledge__content'),
-  contact:     document.getElementById('contact__content')
+  knowledge: document.getElementById('knowledge__content'),
+  contact: document.getElementById('contact__content'),
 };
 var CubeSide = {
-  works:       document.getElementById('works__show-content'),
-  profile:     document.getElementById('profile__show-content'),
-  services:    document.getElementById('services__show-content'),
+  works: document.getElementById('works__show-content'),
+  profile: document.getElementById('profile__show-content'),
+  services: document.getElementById('services__show-content'),
   cooperation: document.getElementById('cooperation__show-content'),
-  knowledge:   document.getElementById('knowledge__show-content'),
-  contact:     document.getElementById('contact__show-content')
+  knowledge: document.getElementById('knowledge__show-content'),
+  contact: document.getElementById('contact__show-content'),
 };
-
 
 // Nandi
 function nandiShow() {
-  cubeSize();
+  optimizeEl();
   CubeContent.contact.parentNode.style.visibility = 'visible';
-    anime({
-      targets: CubeContent.contact,
-      duration: 300,
-      easing: 'easeOutExpo',
-      scale: {
-        value: [0, 1],
-        easing: 'easeInOutSine'
-      },
-      translateY: {
-        value: [0, -200]
-      },
-      opacity: {
-        value: 1,
-        duration: 50,
-        easing: 'linear'
-      }
-    });
+  anime({
+    targets: CubeContent.contact,
+    duration: 300,
+    easing: 'easeOutExpo',
+    scale: {
+      value: [0, 1],
+      easing: 'easeInOutSine',
+    },
+    translateY: {
+      value: [0, -200],
+    },
+    opacity: {
+      value: 1,
+      duration: 50,
+      easing: 'linear',
+    },
+  });
 
-    anime({
-      targets: CubeContent.contact.children,
-      duration: 1200,
-      delay: function delay(t, i) {
-        return i * 280 + 500;
-      },
-      easing: [0.1, 1, 0.3, 1],
-      scale: [0, 1]
-    });
+  anime({
+    targets: CubeContent.contact.children,
+    duration: 1200,
+    delay: function delay(t, i) {
+      return i * 280 + 500;
+    },
+    easing: [0.1, 1, 0.3, 1],
+    scale: [0, 1],
+  });
 }
 function nandiHide() {
-  cubeSize();
+  unOptimizeEl();
   anime({
     targets: CubeContent.contact,
     duration: 500,
     easing: 'easeInOutSine',
     scale: {
       value: [1, 0],
-      easing: 'easeOutExpo'
+      easing: 'easeOutExpo',
     },
     translateY: 0,
     opacity: {
       value: 0,
       duration: 50,
       delay: 200,
-      easing: 'linear'
-    }
+      easing: 'linear',
+    },
   });
 
   anime({
     targets: CubeContent.contact.children,
     duration: 100,
     easing: 'easeOutQuad',
-    scale: 0
+    scale: 0,
   });
   setTimeout(function() {
     CubeContent.contact.parentNode.style.visibility = 'hidden';
@@ -82,7 +83,7 @@ function nandiHide() {
 
 //Devi
 function deviShow() {
-  cubeSize();
+  optimizeEl();
   CubeContent.profile.parentNode.style.visibility = 'visible';
   anime({
     targets: CubeContent.profile.children,
@@ -109,12 +110,12 @@ function deviShow() {
     opacity: {
       value: 1,
       duration: 10,
-      easing: 'linear'
-    }
+      easing: 'linear',
+    },
   });
 }
 function deviHide() {
-  cubeSize();
+  unOptimizeEl();
   anime({
     targets: CubeContent.profile.children,
     duration: 600,
@@ -131,8 +132,8 @@ function deviHide() {
       delay: function delay(t, i, c) {
         return (c - i - 1) * 40 + 600;
       },
-      easing: 'linear'
-    }
+      easing: 'linear',
+    },
   });
   setTimeout(function() {
     CubeContent.profile.parentNode.style.visibility = 'hidden';
@@ -141,39 +142,39 @@ function deviHide() {
 
 //Rudras
 function rudrasShow() {
-  cubeSize();
+  optimizeEl();
   CubeContent.services.parentNode.style.visibility = 'visible';
   anime({
     targets: CubeContent.services.children,
     duration: 800,
-      delay: function delay(t, i, c) {
-    return (c - i - 1) * 260;
-  },
-  easing: 'easeOutElastic',
-      translateY: function translateY(t, i, c) {
-    var radius = 130,
-        startAngle = Math.PI / c * 2,
-        angle = startAngle / 2 + startAngle * i;
+    delay: function delay(t, i, c) {
+      return (c - i - 1) * 260;
+    },
+    easing: 'easeOutElastic',
+    translateY: function translateY(t, i, c) {
+      var radius = 130,
+          startAngle = Math.PI / c * 2,
+          angle = startAngle / 2 + startAngle * i;
 
-    return Math.round((-1 * radius * Math.sin(angle)) / 4) + 'vh';
-  },
-  translateX: function translateX(t, i, c) {
-    var radius = 130,
-        startAngle = Math.PI / c * 2,
-        angle = startAngle / 2 + startAngle * i;
+      return Math.round((-1 * radius * Math.sin(angle)) / 4) + 'vh';
+    },
+    translateX: function translateX(t, i, c) {
+      var radius = 130,
+          startAngle = Math.PI / c * 2,
+          angle = startAngle / 2 + startAngle * i;
 
-    return Math.round((radius * Math.cos(angle)) / 4) + 'vw';
-  },
-  scale: [0, 1],
-      opacity: {
-    value: 1,
-        duration: 10,
-        easing: 'linear'
-  }
-});
+      return Math.round((radius * Math.cos(angle)) / 4) + 'vw';
+    },
+    scale: [0, 1],
+    opacity: {
+      value: 1,
+      duration: 10,
+      easing: 'linear',
+    },
+  });
 }
 function rudrasHide() {
-  cubeSize();
+  unOptimizeEl();
   anime({
     targets: CubeContent.services.children,
     duration: 300,
@@ -190,8 +191,8 @@ function rudrasHide() {
       delay: function delay(t, i, c) {
         return i * 40 + 300;
       },
-      easing: 'linear'
-    }
+      easing: 'linear',
+    },
   });
   setTimeout(function() {
     CubeContent.services.parentNode.style.visibility = 'hidden';
@@ -200,7 +201,7 @@ function rudrasHide() {
 
 //Durga
 function durgaShow() {
-  cubeSize();
+  optimizeEl();
   CubeContent.cooperation.parentNode.style.visibility = 'visible';
   anime({
     targets: CubeContent.cooperation.children,
@@ -227,12 +228,12 @@ function durgaShow() {
     opacity: {
       value: 1,
       duration: 10,
-      easing: 'linear'
-    }
+      easing: 'linear',
+    },
   });
 }
 function durgaHide() {
-  cubeSize();
+  unOptimizeEl();
   anime({
     targets: CubeContent.cooperation.children,
     duration: 600,
@@ -249,8 +250,8 @@ function durgaHide() {
       delay: function delay(t, i, c) {
         return i * 40 + 500;
       },
-      easing: 'linear'
-    }
+      easing: 'linear',
+    },
   });
   setTimeout(function() {
     CubeContent.cooperation.parentNode.style.visibility = 'hidden';
@@ -259,7 +260,7 @@ function durgaHide() {
 
 //Ardra
 function ardraShow() {
-  cubeSize();
+  optimizeEl();
   CubeContent.knowledge.parentNode.style.visibility = 'visible';
   anime({
     targets: CubeContent.knowledge.children,
@@ -267,11 +268,13 @@ function ardraShow() {
     easing: [0.1, 1, 0.3, 1],
     translateY: function translateY(t, i, c) {
       var radius = anime.random(110, 160);
-      return Math.round((radius * Math.sin(2 * (i + 1) * Math.PI / c)) / 4) + 'vh';
+      return Math.round((radius * Math.sin(2 * (i + 1) * Math.PI / c)) / 4) +
+          'vh';
     },
     translateX: function translateX(t, i, c) {
       var radius = anime.random(110, 160);
-      return Math.round((radius * Math.cos(2 * (i + 1) * Math.PI / c)) / 4.5) + 'vw';
+      return Math.round((radius * Math.cos(2 * (i + 1) * Math.PI / c)) / 4.5) +
+          'vw';
     },
     rotate: function rotate(t, i, c) {
       return [0, anime.random(-5, 5) + 'deg'];
@@ -280,29 +283,30 @@ function ardraShow() {
     opacity: {
       value: 1,
       duration: 10,
-      easing: 'linear'
-    }
+      easing: 'linear',
+    },
   });
 
   anime({
     targets: document.getElementById('knowledge__sonar'),
     easing: [0.1, 1, 0.3, 1],
-    opacity: [{
-      value: 1,
-      duration: 20
-    }, {
-      value: 0,
-      duration: 400,
-      delay: 50
-    }],
+    opacity: [
+      {
+        value: 1,
+        duration: 20,
+      }, {
+        value: 0,
+        duration: 400,
+        delay: 50,
+      }],
     scale: {
       value: [1, 10],
-      duration: 900
-    }
+      duration: 900,
+    },
   });
 }
 function ardraHide() {
-  cubeSize();
+  unOptimizeEl();
   anime({
     targets: CubeContent.knowledge.children,
     duration: 500,
@@ -315,18 +319,17 @@ function ardraHide() {
       value: 0,
       duration: 250,
       delay: 250,
-      easing: 'linear'
-    }
+      easing: 'linear',
+    },
   });
   setTimeout(function() {
     CubeContent.knowledge.parentNode.style.visibility = 'hidden';
   }, 440);
 }
 
-
 //Ravi
-function raviShow(){
-  cubeSize();
+function raviShow() {
+  optimizeEl();
   CubeContent.works.parentNode.style.visibility = 'visible';
   anime({
     targets: CubeContent.works.children,
@@ -335,22 +338,24 @@ function raviShow(){
     translateY: -180,
     translateX: function translateX(t, i, c) {
       var interval = 100;
-      return (-1 * interval * Math.floor(c / 2) + interval * i + (c / 2 % 1 != 0 ? 0 : interval / 2)) / 5 + 'vw';
+      return (-1 * interval * Math.floor(c / 2) + interval * i +
+          (c / 2 % 1 != 0 ? 0 : interval / 2)) / 7 + 'vw';
     },
     rotate: function rotate(t, i, c) {
       var interval = 30;
-      return -1 * interval * Math.floor(c / 2) + interval * i + (c / 2 % 1 != 0 ? 0 : interval / 2) + 'deg';
+      return -1 * interval * Math.floor(c / 2) + interval * i +
+          (c / 2 % 1 != 0 ? 0 : interval / 2) + 'deg';
     },
     opacity: {
       value: 1,
       duration: 10,
-      easing: 'linear'
-    }
+      easing: 'linear',
+    },
   });
 }
 
 function raviHide() {
-  cubeSize();
+  unOptimizeEl();
   anime({
     targets: CubeContent.works.children,
     duration: 300,
@@ -363,42 +368,42 @@ function raviHide() {
       value: 0,
       duration: 10,
       delay: 300,
-      easing: 'linear'
-    }
+      easing: 'linear',
+    },
   });
 
   anime({
     targets: document.getElementById('sonar--2'),
     delay: 350,
     easing: [0.1, 1, 0.3, 1],
-    opacity: [{
-      value: 1,
-      duration: 10
-    }, {
-      value: 0,
-      duration: 500,
-      delay: 20
-    }],
+    opacity: [
+      {
+        value: 1,
+        duration: 10,
+      }, {
+        value: 0,
+        duration: 500,
+        delay: 20,
+      }],
     scale: {
       value: [1, 7],
-      duration: 800
-    }
+      duration: 800,
+    },
   });
   setTimeout(function() {
     CubeContent.works.parentNode.style.visibility = 'hidden';
   }, 750);
 }
-
 /************************************************************************
- * ReSize Cube
+ * optimize Elements for better view
  ************************************************************************/
-function cubeSize() {
-  var cube = document.getElementById('viewport');
-  if (cube.classList.contains('shrink')) {
-    cube.classList.remove('shrink');
-  } else {
-    cube.classList.add('shrink');
-  }
+function optimizeEl() {
+  CubeEnvironment.cube.classList.add('shrink');
+  CubeEnvironment.header.display = 'none';
+}
+function unOptimizeEl() {
+  CubeEnvironment.cube.classList.remove('shrink');
+  CubeEnvironment.header.display  = 'flex';
 }
 /************************************************************************
  * 1: works
@@ -433,5 +438,5 @@ CubeContent.knowledge.parentNode.addEventListener('click', ardraHide);
 /************************************************************************
  * 6: contact
  ************************************************************************/
-CubeSide.contact.addEventListener('click', nandiShow );
+CubeSide.contact.addEventListener('click', nandiShow);
 document.getElementById('contact__close').addEventListener('click', nandiHide);
