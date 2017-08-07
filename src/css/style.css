@@ -90,6 +90,10 @@ ________________________________
 	.cube__side {
     color: rgba(39,147,232, 1)
 }
+	/*WORKS===================================================================*/
+	.works__img {
+    border-radius: 2vmin
+}
 	/*CUBE-CONTENT===================================================================*/
 	.cube__preview-2 {
     background-color: rgba(15,15,15, .8);
@@ -213,7 +217,7 @@ ________________________________
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 100vh
+    height: 95vh
 }
 	/*CUBE===================================================================*/
 	/*very important!*/
@@ -224,7 +228,10 @@ ________________________________
     will-change: transform
 }
 	#viewport {
-    margin: auto
+    margin: auto;
+    -ms-touch-action: none;
+        touch-action: none
+    /*error from chrome fix*/
 }
 	.cube {
     position: relative;
@@ -269,15 +276,15 @@ ________________________________
 }
 	.cube__atom--bg {
     width: 30vmin;
-    height: 30vmin
+    min-height: 30vmin
 }
 	.cube__atom--md {
     width: 18vmin;
-    height: 18vmin
+    min-height: 18vmin
 }
 	.cube__atom--sml {
     width: 15vmin;
-    height: 15vmin
+    min-height: 15vmin
 }
 	.sonar {
     position: absolute;
@@ -285,6 +292,10 @@ ________________________________
     left: calc(50% - (3.125rem / 2));
     width: 3.125rem;
     height: 3.125rem
+}
+	/*WORKS===================================================================*/
+	.works__img {
+    width: 100%
 }
 	/*CONTACT===================================================================*/
 	.contact__from {
@@ -1380,7 +1391,13 @@ Includes Media queries & Vendors
 */
 	/*@MEDIA==================================================================*/
 	/*NOTE max-device-widt*/
-	@media only screen and (max-width: 1200px) {
+	@media only screen and (max-width: 610px) {
+    .svg-atom {
+        display: none
+    }
+    .l_mark-tick:before {
+        content: ""
+    }
     /*++++++++++++++++++++++++++++++++++++*/
     /*++++++++++++++++++++++++++++++++++++*/
 }

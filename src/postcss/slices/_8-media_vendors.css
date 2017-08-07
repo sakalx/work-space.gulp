@@ -6,9 +6,15 @@ Includes Media queries & Vendors
 */
 /*@MEDIA==================================================================*/
 /*NOTE max-device-widt*/
-@media only screen and (max-width: 1200px)
-{   
-/*++++++++++++++++++++++++++++++++++++*/
+@media only screen and (max-width: 610px)
+{
+    .svg-atom {
+        display: none;
+    }
+    .l_mark-tick:before {
+        content: "";
+    }
+    /*++++++++++++++++++++++++++++++++++++*/
 /*++++++++++++++++++++++++++++++++++++*/
 }
 

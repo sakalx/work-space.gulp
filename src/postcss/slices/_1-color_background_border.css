@@ -111,6 +111,11 @@ $clr-bgr-attention: rgba(28, 28, 28, 1);
 	color: $clr-link;
 }
 
+/*WORKS===================================================================*/
+.works__img {
+	border-radius: 2vmin;
+}
+
 /*CUBE-CONTENT===================================================================*/
 .cube__preview-2 {
 	background-color: $clr-bgr-auxiliary-8;
