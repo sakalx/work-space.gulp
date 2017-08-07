@@ -30,14 +30,14 @@
 
 <!--make difrent backgrounds with auto changing
     buttin Esc for resset-->
-
+<!--header================================================================-->
+<header id="header" style="position: absolute">
+    <h1>Serhii Sakal test</h1>
+    <span>front end developer 3403hrs</span>
+</header>
 Drag to spin the cube
 <div id="box">
-    <!--header================================================================-->
-    <header style="position: absolute">
-        <h1>Serhii Sakal test</h1>
-        <span>front end developer 3403hrs</span>
-    </header>
+
 
 
     <!--cube================================================================-->
@@ -94,45 +94,49 @@ Drag to spin the cube
         <section id="works__content" class="cube__preview">
             <h3>my projects</h3>
             <figure class="cube__atom">
-                <a href="#" target="_blank">
-                    <img src="img/works/work1.jpg" alt="Work preview Foose Shose">
+                <a class="fr_c_cc" href="#" target="_blank">
+                    <img class="works__img" src="img/works/work1.jpg" alt="Work preview Foose Shose">
                 </a>
                 <figcaption>Foose Shose</figcaption>
             </figure>
             <figure class="cube__atom">
-                <a href="#" target="_blank">
-                    <img src="img/works/work2.jpg" alt="Work preview Landing Page">
+                <a class="fr_c_cc" href="#" target="_blank">
+                    <img class="works__img" src="img/works/work2.jpg" alt="Work preview Landing Page">
                 </a>
                 <figcaption>Landing Page</figcaption>
             </figure>
             <figure class="cube__atom">
-                <a href="#" target="_blank">
-                    <img src="img/works/work3.jpg" alt="Work preview Waxo">
+                <a class="fr_c_cc" href="#" target="_blank">
+                    <img class="works__img" src="img/works/work3.jpg" alt="Work preview Waxo">
                 </a>
                 <figcaption>Waxo</figcaption>
             </figure>
-            <span class="cube__atom close fr_c_cc t_xxxl a_pointer" style="margin: auto">&#215;</span>
+            <div class="wf-close">
+                <span class="close fr_c_cc t_xxxl a_pointer a_trans_linear">&#215;</span>
+            </div>
         </section>
     </div>
     <!--profile================================================================-->
     <div class="wf-cube__preview">
-        <section id="profile__content" class="cube__preview fr_c_cc">
+        <section id="profile__content" class="cube__preview fr_c_cc" style="background: red">
             <!--about -->
             <article class="cube__atom cube__atom--bg fc_c_cc">
-                <svg width="44" height="44">
+                <svg class="svg-atom" width="44" height="44">
                     <use xlink:href='#profile--svg_about'></use>
                 </svg>
-                <h3>About me</h3>
-                <p>
-                    Shortly about myself<br>
+                <h3 class="t_cntr">About me</h3>
+                <p class="t_cntr">
+                    Shortly about myself
+                </p>
                 <hr class="hr-smal">
-                I <span class="heart">❤</span> coding & traveling,<br>
+                <p class="t_cntr">
+                    I <span class="heart">❤</span> coding & traveling,<br>
                 and I'm hardworking.
                 </p>
             </article>
             <!-- education -->
             <section class="cube__atom cube__atom--bg fc_c_cc">
-                <svg width="44" height="44">
+                <svg class="svg-atom" width="44" height="44">
                     <use xlink:href='#profile--svg_education'></use>
                 </svg>
                 <h3>College</h3>
@@ -147,7 +151,7 @@ Drag to spin the cube
                 </article>
             </section>
             <section class="cube__atom cube__atom--bg fc_c_cc">
-                <svg width="44" height="44">
+                <svg class="svg-atom" width="44" height="44">
                     <use xlink:href='#profile--svg_education'></use>
                 </svg>
                 <h3>University</h3>
@@ -162,10 +166,10 @@ Drag to spin the cube
                 </article>
             </section>
             <section class="cube__atom cube__atom--bg fc_c_cc">
-                <svg width="44" height="44">
+                <svg class="svg-atom" width="44" height="44">
                     <use xlink:href='#profile--svg_education'></use>
                 </svg>
-                <h3>Online education</h3>
+                <h3 class="t_cntr">Online education</h3>
                 <div class="fr_c_cc">
                     <time datetime="2016">since 2016</time>
                 </div>
@@ -179,16 +183,16 @@ Drag to spin the cube
             </section>
             <!-- experience -->
             <article class="cube__atom cube__atom--bg fc_c_cc">
-                <svg width="44" height="44">
+                <svg class="svg-atom" width="44" height="44">
                     <use xlink:href='#profile--svg_experience'></use>
                 </svg>
-                <h3>Work experience</h3>
+                <h3 class="t_cntr">Work experience</h3>
                 <hr class="hr-smal">
                 <p> < 1 year </p>
             </article>
             <!-- hobbies -->
             <section class="cube__atom cube__atom--bg fc_c_cc">
-                <svg width="44" height="44">
+                <svg class="svg-atom" width="44" height="44">
                     <use xlink:href='#profile--svg_hobbies'></use>
                 </svg>
                 <h3>Hobbies</h3>
