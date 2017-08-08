@@ -81,6 +81,13 @@ ________________________________
     background: rgba(28, 28, 28, 1);
     border-radius: 50%
 }
+	/*CONTROL-Button===================================================================*/
+	.control-btn {
+    color: rgba(39,147,232, 1);
+    display: inline-block;
+    width: 20px;
+    height: 15px
+}
 	/*CUBE===================================================================*/
 	.cube__side, .cube__atom {
     background-color: rgba(15,15,15, .8);
@@ -204,6 +211,7 @@ ________________________________
 	/*CLOSE-Button===================================================================*/
 	.wf-close {
     position: absolute;
+    z-index: 1;
     top: 0;
     right: 0
 }
@@ -211,6 +219,11 @@ ________________________________
     width: 3.125rem;
     height: 3.125rem;
     margin: 0.938rem
+}
+	/*TITLE===================================================================*/
+	.title {
+    position: absolute;
+    margin: 1.25rem
 }
 	/*BOX===================================================================*/
 	#box {
@@ -275,16 +288,16 @@ ________________________________
     padding: 0.313rem
 }
 	.cube__atom--bg {
-    width: 30vmin;
+    min-width: 30vmin;
     min-height: 30vmin
 }
-	.cube__atom--md {
-    width: 18vmin;
-    min-height: 18vmin
-}
+	/*.cube__atom--md {*/
+	/*width: 18vmin;*/
+	/*min-height: 18vmin;*/
+	/*}*/
 	.cube__atom--sml {
-    width: 15vmin;
-    min-height: 15vmin
+    min-width: 20vmin;
+    min-height: 20vmin
 }
 	.sonar {
     position: absolute;
@@ -887,6 +900,7 @@ ________________________________
 	/*h2*/
 	/*h3*/
 	/*h4*/
+	/*DONT CHANGE!*/
 	/*h5*/
 	/*h6*/
 	/*@FONT-FACE===================================================================*/
@@ -955,10 +969,10 @@ MOLECULES
     font-size: 1.75rem
 }
 	h3, .t_xl {
-    font-size: 1.313rem
+    font-size: 1.125rem
 }
 	h4, .t_larg {
-    font-size: 1.125rem
+    font-size: 1rem
 }
 	h5, .t_medium {
     font-size: 1.063rem
@@ -981,12 +995,12 @@ MOLECULES
 }
 	/*++++++++++++++++++++++++++++++++++++*/
 	.t_larg_bldr {
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: bolder
 }
 	/*++++++++++++++++++++++++++++++++++++*/
 	.t_xl_end {
-    font-size: 1.313rem;
+    font-size: 1.125rem;
     text-align: end
 }
 	.t_xxxl_end {
@@ -999,7 +1013,7 @@ MOLECULES
     text-align: center
 }
 	.t_larg_cntr {
-    font-size: 1.125rem;
+    font-size: 1rem;
     text-align: center
 }
 	.t_xxl_cntr {
@@ -1007,7 +1021,7 @@ MOLECULES
     text-align: center
 }
 	.t_xl_cntr {
-    font-size: 1.313rem;
+    font-size: 1.125rem;
     text-align: center
 }
 	/*FONT-STYLE================================================================*/
@@ -1240,8 +1254,8 @@ ________________________________
             transform: scale(0.5,0.5)
 }
 	.shrink {
-    -webkit-transform: scale(0.3,0.3) !important;
-            transform: scale(0.3,0.3) !important
+    -webkit-transform: scale(0.2,0.2) !important;
+            transform: scale(0.2,0.2) !important
 }
 	.cube {
     transition: -webkit-transform 50ms linear;
