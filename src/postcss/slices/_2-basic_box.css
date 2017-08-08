@@ -74,6 +74,7 @@ body {
 /*CLOSE-Button===================================================================*/
 .wf-close {
     position: absolute;
+    z-index: 1;
     top: 0;
     right: 0;
 }
@@ -82,6 +83,15 @@ body {
     height: rem(50);
     margin: rem(15);
 }
+
+
+/*TITLE===================================================================*/
+.title {
+    position: absolute;
+    margin: rem(20);
+}
+
+
 
 /*BOX===================================================================*/
 #box {
@@ -159,18 +169,18 @@ body {
 }
 
 .cube__atom--bg {
-    width: 30vmin;
+    min-width: 30vmin;
     min-height: 30vmin;
 }
 
-.cube__atom--md {
-    width: 18vmin;
-    min-height: 18vmin;
-}
+/*.cube__atom--md {*/
+    /*width: 18vmin;*/
+    /*min-height: 18vmin;*/
+/*}*/
 
 .cube__atom--sml {
-    width: 15vmin;
-    min-height: 15vmin;
+    min-width: 20vmin;
+    min-height: 20vmin;
 }
 
 .sonar {
