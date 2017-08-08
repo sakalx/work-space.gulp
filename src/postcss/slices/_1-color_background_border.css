@@ -95,6 +95,14 @@ $clr-bgr-attention: rgba(28, 28, 28, 1);
 	border-radius: 50%;
 }
 
+/*CONTROL-Button===================================================================*/
+.control-btn {
+	color: $clr-link;
+	display: inline-block;
+	width: 20px;
+	height: 15px;
+
+}
 
 
 
