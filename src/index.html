@@ -28,19 +28,39 @@
 </head>
 <body>
 
-<!--make difrent backgrounds with auto changing
-    buttin Esc for resset-->
+<!--make difrent backgrounds with auto changing-->
 <!--header================================================================-->
-<header id="header" style="position: absolute">
-    <h1>Serhii Sakal test</h1>
-    <span>front end developer 3403hrs</span>
+<header id="header" class="title">
+    <h1>Serhii Sakal</h1>
+    <p>
+        Front-end developer experience :<span id="exp-hrs"></span>
+    </p>
 </header>
-Drag to spin the cube
-<div id="box">
 
-
+<div id="box" class="fr_c_cc">
 
     <!--cube================================================================-->
+    <aside>
+
+    </aside>
+   <p><br> Drag & Drop
+    <i class="control-btn auto">&#8634;</i>
+    <i class="control-btn auto">&#8635;</i>
+    to spin the cube or use
+       <div class="fr_c_cc">
+
+
+    <i class="control-btn fr_c_cc">&#8678;</i>
+
+        <i class="control-btn fr_c_cc" style="margin-bottom: 12px">&#8679;</i>
+        <!--<i class="control-btn fr_c_cc">&#8681;</i>-->
+
+
+
+    <i class="control-btn fr_c_cc">&#8680;</i>
+</div>
+    Esc for reset
+
     <div id="viewport" class="a_trans_linear" >
         <div class="cube" style="background: rebeccapurple">
             <!--top-side - works-->
@@ -118,22 +138,7 @@ Drag to spin the cube
     </div>
     <!--profile================================================================-->
     <div class="wf-cube__preview">
-        <section id="profile__content" class="cube__preview fr_c_cc" style="background: red">
-            <!--about -->
-            <article class="cube__atom cube__atom--bg fc_c_cc">
-                <svg class="svg-atom" width="44" height="44">
-                    <use xlink:href='#profile--svg_about'></use>
-                </svg>
-                <h3 class="t_cntr">About me</h3>
-                <p class="t_cntr">
-                    Shortly about myself
-                </p>
-                <hr class="hr-smal">
-                <p class="t_cntr">
-                    I <span class="heart">❤</span> coding & traveling,<br>
-                and I'm hardworking.
-                </p>
-            </article>
+        <section id="profile__content" class="cube__preview fr_c_cc">
             <!-- education -->
             <section class="cube__atom cube__atom--bg fc_c_cc">
                 <svg class="svg-atom" width="44" height="44">
@@ -175,12 +180,27 @@ Drag to spin the cube
                 </div>
                 <hr class="hr-smal">
                 <article>
-                    <h4 class="l_mark-tick"> geekbrains.ru</h4>
-                    <h4 class="l_mark-tick"> learn.javascript.ru</h4>
-                    <h4 class="l_mark-tick"> udacity.com</h4>
-                    <h4 class="l_mark-tick"> codecademy.com</h4>
+                    <h4 class="l_mark-tick">geekbrains</h4>
+                    <h4 class="l_mark-tick">javascript</h4>
+                    <h4 class="l_mark-tick">udacity</h4>
+                    <h4 class="l_mark-tick">codecademy</h4>
                 </article>
             </section>
+            <!--about -->
+            <article class="cube__atom cube__atom--bg fc_c_cc">
+                <svg class="svg-atom" width="44" height="44">
+                    <use xlink:href='#profile--svg_about'></use>
+                </svg>
+                <h3 class="t_cntr">About me</h3>
+                <p class="t_cntr">
+                    Shortly about myself
+                </p>
+                <hr class="hr-smal">
+                <p class="t_cntr">
+                    I <span class="heart">❤</span> coding & traveling,<br>
+                    and I'm hardworking.
+                </p>
+            </article>
             <!-- experience -->
             <article class="cube__atom cube__atom--bg fc_c_cc">
                 <svg class="svg-atom" width="44" height="44">
@@ -295,7 +315,7 @@ Drag to spin the cube
         <div id="knowledge__sonar" class="sonar"></div>
         <div id="knowledge__content" class="cube__preview fr_c_cc">
             <!-- cms -->
-            <section class="cube__atom cube__atom--md fcn_c_cc">
+            <section class="cube__atom cube__atom--sml fcn_c_cc">
                 <h3>CMS</h3>
                 <hr class="hr-smal">
                 <ul class="fc_c_cc">
@@ -306,7 +326,7 @@ Drag to spin the cube
                 </ul>
             </section>
             <!-- methodology -->
-            <section class="cube__atom cube__atom--md fcn_c_cc">
+            <section class="cube__atom cube__atom--sml fcn_c_cc">
                 <h3>Methodology</h3>
                 <hr class="hr-smal">
                 <ul class="fc_c_cc">
@@ -317,23 +337,23 @@ Drag to spin the cube
                 </ul>
             </section>
             <!-- software -->
-            <section class="cube__atom cube__atom--md fcn_c_cc">
+            <section class="cube__atom cube__atom--sml fcn_c_cc">
                 <h3>Software</h3>
                 <hr class="hr-smal">
                 <ul>
-                    <li>
+                    <li class="fr_c_cc">
                         <svg width="25" height="25">
                             <use xlink:href='#knowledge--svg_webstorm'></use>
                         </svg>
                         <span>WebStorm</span>
                     </li>
-                    <li>
+                    <li class="fr_c_cc">
                         <svg width="25" height="25">
                             <use xlink:href='#knowledge--svg_sublime-text'></use>
                         </svg>
-                        <span>Sublime Text</span>
+                        <span>Sublime</span>
                     </li>
-                    <li>
+                    <li class="fr_c_cc">
                         <svg width="25" height="25">
                             <use xlink:href='#knowledge--svg_gimp'></use>
                         </svg>
@@ -342,7 +362,7 @@ Drag to spin the cube
                 </ul>
             </section>
             <!-- languages -->
-            <section class="cube__atom cube__atom--md fcn_c_cc">
+            <section class="cube__atom cube__atom--sml fcn_c_cc">
                 <h3>Languages</h3>
                 <hr class="hr-smal">
                 <ul>
@@ -367,42 +387,42 @@ Drag to spin the cube
                 </ul>
             </section>
             <!-- skills -->
-            <section class="cube__atom cube__atom--md fcn_c_cc">
+            <section class="cube__atom cube__atom--sml fcn_c_cc">
                 <h3>Skills</h3>
                 <hr class="hr-smal">
                 <ul>
-                    <li>
-                        <svg width="25" height="25">
-                            <use xlink:href='#knowledge--svg_html5'></use>
-                        </svg>
-                        <span>HTML5</span>
-                    </li>
-                    <li>
-                        <svg width="25" height="25">
-                            <use xlink:href='#knowledge--svg_css3'></use>
-                        </svg>
-                        <span>CSS3</span>
-                    </li>
-                    <li>
+                    <li class="fr_c_cc">
                         <svg width="25" height="25">
                             <use xlink:href='#knowledge--svg_javascript'></use>
                         </svg>
                         <span>JavaScript</span>
                     </li>
+                    <li class="fr_c_cc">
+                        <svg width="25" height="25">
+                            <use xlink:href='#knowledge--svg_html5'></use>
+                        </svg>
+                        <span>HTML5</span>
+                    </li>
+                    <li class="fr_c_cc">
+                        <svg width="25" height="25">
+                            <use xlink:href='#knowledge--svg_css3'></use>
+                        </svg>
+                        <span>CSS3</span>
+                    </li>
                 </ul>
             </section>
             <!-- css post / preprocesso -->
-            <section class="cube__atom cube__atom--md fcn_c_cc">
+            <section class="cube__atom cube__atom--sml fcn_c_cc">
                 <h3>CSS</h3>
                 <hr class="hr-smal">
                 <ul>
-                    <li>
+                    <li class="fr_c_cc">
                         <svg width="25" height="25">
                             <use xlink:href='#knowledge--svg_PostCSS'></use>
                         </svg>
                         <span>postCSS</span>
                     </li>
-                    <li>
+                    <li class="fr_c_cc">
                         <svg width="25" height="25">
                             <use xlink:href='#knowledge--svg_sass'></use>
                         </svg>
@@ -411,7 +431,7 @@ Drag to spin the cube
                 </ul>
             </section>
             <!-- js librarie -->
-            <section class="cube__atom cube__atom--md fcn_c_cc">
+            <section class="cube__atom cube__atom--sml fcn_c_cc">
                 <h3>JS librarie</h3>
                 <hr class="hr-smal">
                 <ul class="fc_c_cc">
@@ -422,7 +442,7 @@ Drag to spin the cube
                 </ul>
             </section>
             <!-- bundling tools -->
-            <section class="cube__atom cube__atom--md fcn_c_cc">
+            <section class="cube__atom cube__atom--sml fcn_c_cc">
                 <h3>Bundling tools</h3>
                 <hr class="hr-smal">
                 <svg width="34" height="34">
