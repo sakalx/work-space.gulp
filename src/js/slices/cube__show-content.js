@@ -273,7 +273,7 @@ function ardraShow() {
     },
     translateX: function translateX(t, i, c) {
       var radius = anime.random(110, 160);
-      return Math.round((radius * Math.cos(2 * (i + 1) * Math.PI / c)) / 4.5) +
+      return Math.round((radius * Math.cos(2 * (i + 1) * Math.PI / c)) / 4) +
           'vw';
     },
     rotate: function rotate(t, i, c) {
