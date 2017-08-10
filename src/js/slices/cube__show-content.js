@@ -399,11 +399,11 @@ function raviHide() {
  ************************************************************************/
 function optimizeEl() {
   CubeEnvironment.cube.classList.add('shrink');
-  CubeEnvironment.header.display = 'none';
+  CubeEnvironment.header.visibility = 'hidden';
 }
 function unOptimizeEl() {
   CubeEnvironment.cube.classList.remove('shrink');
-  CubeEnvironment.header.display  = 'flex';
+  CubeEnvironment.header.visibility  = 'visible';
 }
 /************************************************************************
  * 1: works

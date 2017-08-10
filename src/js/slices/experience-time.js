@@ -1,6 +1,6 @@
 'use strict';
 
-(function () {
+;(function () {
   var hours = 1000 * 60 * 60,
 
   //days = hours * 24,
