@@ -88,16 +88,23 @@ body {
 /*TITLE===================================================================*/
 .title {
     position: absolute;
+    width: 95%;
     margin: rem(20);
 }
-
-
+.title__name {
+    position: fixed;
+    bottom: 12%;
+    right: 5%;
+}
+.title__descr {
+    margin-bottom: rem(12);
+}
 
 /*BOX===================================================================*/
 #box {
     display: flex;
     height: 95vh;
-
+    touch-action: none; /*error from chrome fix*/
 }
 
 /*CUBE===================================================================*/
@@ -112,14 +119,25 @@ body {
 
 #viewport {
     margin: auto;
-    touch-action: none; /*error from chrome fix*/
+
 }
 
 .cube {
     position: relative;
     width: rem(400);
     height: rem(400);
-    margin: 0 auto;
+    margin: auto;
+}
+
+.cube__title-svg {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.cube__title {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
 }
 
 .cube__side {
@@ -287,6 +305,67 @@ $contact__from-w: 80%;
     display: none;
 }
 
+
+
+
+/* Kumya */
+.link--kumya {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 6.5em;
+    overflow: hidden;
+    padding: 10px 10px 0;
+    line-height: 1;
+    color: #242424;
+}
+
+.link--kumya:hover {
+    color: #242424;
+}
+
+.link--kumya::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: #242424;
+    -webkit-transform: translate3d(101%,0,0);
+    transform: translate3d(101%,0,0);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+.link--kumya:hover::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.link--kumya span {
+    display: block;
+    position: relative;
+}
+
+.link--kumya span::before {
+    content: attr(data-letters);
+    position: absolute;
+    color: #fff;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0%;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+.link--kumya:hover span::before {
+    width: 100%;
+}
 
 
 

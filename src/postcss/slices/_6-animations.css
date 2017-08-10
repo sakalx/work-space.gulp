@@ -137,7 +137,6 @@ a, section, article, div, span, nav, ul, input, textarea
 
 /*++++++++++++++++++++++++++++++++++++*/
 .a_pointer,
-svg,
 button,
 input[type="submit"] 
 {   cursor: pointer; }

@@ -30,80 +30,136 @@
 
 <!--make difrent backgrounds with auto changing-->
 <!--header================================================================-->
-<header id="header" class="title">
-    <h1>Serhii Sakal</h1>
-    <p>
+<header id="header" class="title a_easy">
+    <h1 class="title__name">Serhii Sakal</h1>
+    <h2 class="title__descr">
         Front-end developer experience :<span id="exp-hrs"></span>
-    </p>
+    </h2>
+    <aside class="fc_c_cc">
+        <div class="fr_c_cc">
+            <span>Drag & Drop to spin</span>
+            <i class="control-btn" style="margin-left: 7px">&#8634;</i>
+            <i class="control-btn" style="margin-right: 7px">&#8635;</i>
+            <span style="margin-right: 7px">the cube,</span>
+            <span class="sml-screen__hide">or use
+                <i class="control-btn" style="margin-left: 7px">&#8678;</i>
+                <i class="control-btn" style="transform: translateY(-12px)">&#8679;</i>
+                <i class="control-btn" style="margin-left: -7px">&#8680;</i>
+            </span>
+        </div>
+        <span><i class="control-btn" style="margin: 7px;">Esc</i>for reset</span>
+    </aside>
 </header>
 
 <div id="box" class="fr_c_cc">
 
     <!--cube================================================================-->
-    <aside>
-
-    </aside>
-   <p><br> Drag & Drop
-    <i class="control-btn auto">&#8634;</i>
-    <i class="control-btn auto">&#8635;</i>
-    to spin the cube or use
-       <div class="fr_c_cc">
-
-
-    <i class="control-btn fr_c_cc">&#8678;</i>
-
-        <i class="control-btn fr_c_cc" style="margin-bottom: 12px">&#8679;</i>
-        <!--<i class="control-btn fr_c_cc">&#8681;</i>-->
-
-
-
-    <i class="control-btn fr_c_cc">&#8680;</i>
-</div>
-    Esc for reset
-
-    <div id="viewport" class="a_trans_linear" >
-        <div class="cube" style="background: rebeccapurple">
+    <div id="viewport" class="a_trans_linear">
+        <div class="cube">
             <!--top-side - works-->
             <section id="cube__side--1" class="cube__side fc_c_cc">
-                <h2>PORTFOLIO</h2>
-                <svg id="works__show-content" width="150" height="150">
-                    <use xlink:href='#works--svg_works'></use>
-                </svg>
+                <h2 id="works__show-content" class="cube__title a_pointer">
+                    <span>P</span>
+                    <span>O</span>
+                    <span>R</span>
+                    <span>T</span>
+                    <span>F</span>
+                    <span>O</span>
+                    <span>L</span>
+                    <span>I</span>
+                    <span>O</span>
+                    <br>
+                    <svg class="cube__title-svg a_trans_linear" width="120" height="120">
+                        <use xlink:href='#works--svg_works'></use>
+                    </svg>
+                </h2>
             </section><!--end works-->
             <!--front - profile-->
             <section id="cube__side--2" class="cube__side fc_c_cc">
-                <h2>PROFILE</h2>
-                <svg id="profile__show-content" width="150" height="150">
-                    <use xlink:href='#profile--svg_profile'></use>
-                </svg>
+                <h2 id="profile__show-content" class="cube__title a_pointer">
+                    <span>P</span>
+                    <span>R</span>
+                    <span>O</span>
+                    <span>F</span>
+                    <span>I</span>
+                    <span>L</span>
+                    <span>E</span>
+                    <br>
+                    <svg class="cube__title-svg a_trans_linear" width="120" height="120">
+                        <use xlink:href='#profile--svg_profile'></use>
+                    </svg>
+                </h2>
             </section> <!--end front - profile-->
             <!--right - services-->
             <section id="cube__side--3" class="cube__side fc_c_cc">
-                <h2>SERVICES</h2>
-                <svg id="services__show-content" width="150" height="150">
-                    <use xlink:href='#services--svg_service'></use>
-                </svg>
+                <h2 id="services__show-content" class="cube__title a_pointer">
+                    <span>S</span>
+                    <span>E</span>
+                    <span>R</span>
+                    <span>V</span>
+                    <span>I</span>
+                    <span>C</span>
+                    <span>E</span>
+                    <span>S</span>
+                    <br>
+                    <svg class="cube__title-svg a_trans_linear" width="120" height="120">
+                        <use xlink:href='#services--svg_service'></use>
+                    </svg>
+                </h2>
             </section> <!--end services-->
             <!--back - cooperation-->
             <section id="cube__side--4" class="cube__side fc_c_cc">
-                <h2>COOPERATION</h2>
-                <svg id="cooperation__show-content" width="150" height="150">
-                    <use xlink:href='#cooperation--svg_cooperation'></use>
-                </svg>
+                <h2 id="cooperation__show-content" class="cube__title a_pointer">
+                    <span>C</span>
+                    <span>O</span>
+                    <span>O</span>
+                    <span>P</span>
+                    <span>E</span>
+                    <span>R</span>
+                    <span>A</span>
+                    <span>T</span>
+                    <span>I</span>
+                    <span>O</span>
+                    <span>N</span>
+                    <br>
+                    <svg class="cube__title-svg a_trans_linear" width="120" height="120">
+                        <use xlink:href='#cooperation--svg_cooperation'></use>
+                    </svg>
+                </h2>
             </section> <!--end cooperation-->
             <!--left - knowledge-->
             <section id="cube__side--5" class="cube__side fc_c_cc">
-                <h2>KNOWLEDGE</h2>
-                <svg id="knowledge__show-content" width="150" height="150">
-                    <use xlink:href='#knowledge--svg_knowledge'></use>
-                </svg>
+                <h2 id="knowledge__show-content" class="cube__title a_pointer a_pointer">
+                    <span>K</span>
+                    <span>N</span>
+                    <span>O</span>
+                    <span>W</span>
+                    <span>L</span>
+                    <span>E</span>
+                    <span>D</span>
+                    <span>G</span>
+                    <span>E</span>
+                    <br>
+                    <svg class="cube__title-svg a_trans_linear" width="120" height="120">
+                        <use xlink:href='#knowledge--svg_knowledge'></use>
+                    </svg>
+                </h2>
             </section> <!--end knowledge-->
             <!--bottom - contact-->
             <section id="cube__side--6" class="cube__side fc_c_cc">
-                <h2>CONTACT</h2>
-                <svg id="contact__show-content" width="150" height="150">
-                    <use xlink:href='#contact--svg_contact'></use>
-                </svg>
+                <h2 id="contact__show-content" class="cube__title a_pointer">
+                    <span>C</span>
+                    <span>O</span>
+                    <span>N</span>
+                    <span>T</span>
+                    <span>A</span>
+                    <span>C</span>
+                    <span>T</span>
+                    <br>
+                    <svg class="cube__title-svg a_trans_linear" width="120" height="120">
+                        <use xlink:href='#contact--svg_contact'></use>
+                    </svg>
+                </h2>
             </section> <!--end contact-->
         </div> <!--end cube-->
     </div>
@@ -480,7 +536,10 @@
             </div>
         </form>
     </section>
+
+
 </div>
+
 
 
 <!--paralax================================================================-->
