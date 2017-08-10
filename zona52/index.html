@@ -3,10 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>zona 52</title>
-    <script src="ready-to-serve/js/classes.js"></script>
+    <style>
+        #movies {
+            display: flex;
+            flex-wrap: wrap;
+        }
 
+        img {
+            flex: 1;
+            margin: 5px;
+        }
+    </style>
 
 </head>
 <body>
+<h1>Search Movie</h1>
+<input type="text" id="searchMovie" pattern="[a-zA-Z0-9]+" title="only eng"
+       placeholder="use eng for searching" autofocus>
+
+<!--search result-->
+<div id="movies"></div>
+
+<!--scripts-->
+<script src="fast-food/es6/intresting%20projects/AJAX-search-movie.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@ function applyForVisa(documents) {
   console.log('Обработка заявление....');
   let promise = new Promise(function(resolve, reject) {
     setTimeout(function() {
-      Math.random() > 0?
+      Math.random() > .5?
           resolve({}):
           reject('отказано по причене №234');
     },1000);
