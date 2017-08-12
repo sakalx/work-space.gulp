@@ -67,7 +67,7 @@ ________________________________
 
 /*TRANSITION================================================================*/
 .a_easy, 			/*transition ease-in-out*/
-a, hr, svg, button 
+a
 {   transition: all 0.1s ease-in-out; }
 
 .a_easy_sl 			/*transition ease-in-out slow*/

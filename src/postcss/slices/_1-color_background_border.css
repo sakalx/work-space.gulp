@@ -59,9 +59,9 @@ ________________________________
 */
 /*COLOR-SCHEME============================================================*/
 /*HEX*/
-$clr-txt-main: #fff;
-$clr-txt-auxiliary: #606060;
-$clr-text-attention: #cc181e;
+$clr-txt-main: #d5d7d8;
+$clr-txt-auxiliary: #8e8e8e;
+$clr-txt-attention: #cc181e;
 $clr-link: #2793e8;
 
 $clr-bgr-main: #000;
@@ -70,49 +70,56 @@ $clr-bgr-attention: #1c1c1c;
 
 /*++++++++++++++++++++++++++++++++++++*/
 /*RGBA*/
-$clr-txt-main: rgba(255, 255, 255, 1);
-$clr-txt-auxiliary: rgba(96, 96, 96, 1);
+$clr-txt-attention-1: rgba(204,24,30, .1);
+
+$clr-bgr-main-3: rgba(0,0,0, .3);
+$clr-bgr-auxiliary-8: rgba(15,15,15, .8);
+
+$clr-empty: rgba(0,0,0, 0);
+/*
+$clr-txt-main: rgba(213, 215, 216, 1);
+$clr-txt-auxiliary: rgba(142, 142, 142, 1);
 $clr-txt-attention: rgba(204,24,30, 1);
 $clr-link: rgba(39,147,232, 1);
 
 $clr-bgr-main: rgba(0,0,0, 1);
-$clr-bgr-auxiliary-8: rgba(15,15,15, .8);
+$clr-bgr-auxiliary: rgba(15,15,15, 1);
 $clr-bgr-attention: rgba(28, 28, 28, 1);
+*/
 
+/*RESET===================================================================*/
+h3, figcaption {
+	color: $clr-txt-main;
+}
 
+/*Basic Style===================================================================*/
 .hr-smal {
-	background: $clr-text-attention;
+	background: $clr-txt-attention;
 	border: none;
 }
-
 .heart {
-	color: $clr-text-attention;
+	color: $clr-txt-attention;
 }
-/*CLOSE-Button===================================================================*/
+/*Control-Button*/
+.control-btn {
+	color: $clr-link;
+}
+/*Close-Button*/
 .close {
 	color: $clr-link;
 	background: $clr-bgr-attention;
 	border-radius: 50%;
 }
 
-/*CONTROL-Button===================================================================*/
-.control-btn {
-	color: $clr-link;
-	display: inline-block;
-	width: 20px;
-	height: 15px;
-
+/*HEADER===================================================================*/
+.title__descr {
+	color: $clr-txt-attention;
 }
-
-/*TITLE===================================================================*/
-.title__name {
-	position: fixed;
-	bottom: 12%;
-	right: 5%;
-
+.title__control {
+	color: $clr-txt-main;
 }
-.title__name {
-	background-color: #666666;
+.name {
+	background-color: #666;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	background-clip: text;
@@ -121,74 +128,60 @@ $clr-bgr-attention: rgba(28, 28, 28, 1);
 	-webkit-box-reflect: below 0px -webkit-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, transparent 50%, transparent 100%);
 }
 
-
 /*CUBE===================================================================*/
-
-
+.cube__side {
+	color: $clr-link;
+}
 .cube__side,
 .cube__atom {
 	background-color: $clr-bgr-auxiliary-8;
-	border: 1px solid $clr-text-attention;
+	border: 1px solid $clr-txt-attention;
 	border-radius: 2vmin;
 }
-
 .cube__title {
 	color: $clr-txt-main;
 }
 
-.cube__side {
-	color: $clr-link;
+/*CUBE-CONTENT===================================================================*/
+.cube__atom {
+	opacity: 0;
+	color: $clr-txt-auxiliary;
 }
-
-/*WORKS===================================================================*/
+.sonar {
+	border-radius: 10%;
+	background: $clr-txt-attention;
+	opacity: 0;
+}
+/*Works view*/
 .works__img {
 	border-radius: 2vmin;
 }
-
-/*CUBE-CONTENT===================================================================*/
-.cube__preview-2 {
-	background-color: $clr-bgr-auxiliary-8;
-	border: 1px solid $clr-txt-attention;
-	border-radius: 2vmin;
-	box-shadow: 5px 5px 20px #000;
+/*Contact view*/
+.contact__label {
+	color: $clr-txt-auxiliary;
 }
-.cube__atom {
-	opacity: 0;
+.contact__author,
+.contact__msg {
+	color: $clr-txt-main;
+	background-color: $clr-bgr-auxiliary;
+	border: none;
+	border-radius: 1vmin;
+	box-shadow: 5px 5px 20px $clr-txt-attention;
 }
-
-.sonar {
-	border-radius: 10%;
-	background: #181a1c;
-	opacity: 0;
-}
-
-
-
-/*send - bytton*/
 .contact__send-btn {
 	background: url(../img/svg/svg-min/contact/svg_send.svg) no-repeat;
 	background-size: 100% 100%;
 	border-style: none;
 }
-.wf-contact__send-btn {
-	background: rgba(255, 255, 255, 0.1);
-	border-radius: 50%;
-	transition: transform ease-out 0.1s, background 0.2s;
-}
-
-
-
-
 
 /*PARALAX===================================================================*/
 .parallax__layer--bgr {
-	background: url(../img/background.jpg) no-repeat;
+	background: url(../img/background/background.jpg) no-repeat;
 	background-size: 100% 100%;
 }
 .parallax__layer--mask {
-	background-image: radial-gradient(ellipse farthest-corner at center, rgba(0,0,0,.3) 0%, #000 100%);
+	background-image: radial-gradient(ellipse farthest-corner at center, $clr-bgr-main-3 0%, $clr-bgr-main 100%);
 }
-
 
 /*BORDERS===================================================================*/
 .borders {

@@ -68,6 +68,21 @@ ________________________________
 	/*HEX*/
 	/*++++++++++++++++++++++++++++++++++++*/
 	/*RGBA*/
+	/*
+$clr-txt-main: rgba(213, 215, 216, 1);
+$clr-txt-auxiliary: rgba(142, 142, 142, 1);
+$clr-txt-attention: rgba(204,24,30, 1);
+$clr-link: rgba(39,147,232, 1);
+
+$clr-bgr-main: rgba(0,0,0, 1);
+$clr-bgr-auxiliary: rgba(15,15,15, 1);
+$clr-bgr-attention: rgba(28, 28, 28, 1);
+*/
+	/*RESET===================================================================*/
+	h3, figcaption {
+    color: #d5d7d8
+}
+	/*Basic Style===================================================================*/
 	.hr-smal {
     background: #cc181e;
     border: none
@@ -75,27 +90,25 @@ ________________________________
 	.heart {
     color: #cc181e
 }
-	/*CLOSE-Button===================================================================*/
+	/*Control-Button*/
+	.control-btn {
+    color: #2793e8
+}
+	/*Close-Button*/
 	.close {
-    color: rgba(39,147,232, 1);
-    background: rgba(28, 28, 28, 1);
+    color: #2793e8;
+    background: #1c1c1c;
     border-radius: 50%
 }
-	/*CONTROL-Button===================================================================*/
-	.control-btn {
-    color: rgba(39,147,232, 1);
-    display: inline-block;
-    width: 20px;
-    height: 15px
+	/*HEADER===================================================================*/
+	.title__descr {
+    color: #cc181e
 }
-	/*TITLE===================================================================*/
-	.title__name {
-    position: fixed;
-    bottom: 12%;
-    right: 5%
+	.title__control {
+    color: #d5d7d8
 }
-	.title__name {
-    background-color: #666666;
+	.name {
+    background-color: #666;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -103,56 +116,54 @@ ________________________________
     -webkit-box-reflect: below 0px -webkit-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, transparent 50%, transparent 100%)
 }
 	/*CUBE===================================================================*/
+	.cube__side {
+    color: #2793e8
+}
 	.cube__side, .cube__atom {
     background-color: rgba(15,15,15, .8);
     border: 1px solid #cc181e;
     border-radius: 2vmin
 }
 	.cube__title {
-    color: rgba(255, 255, 255, 1)
-}
-	.cube__side {
-    color: rgba(39,147,232, 1)
-}
-	/*WORKS===================================================================*/
-	.works__img {
-    border-radius: 2vmin
+    color: #d5d7d8
 }
 	/*CUBE-CONTENT===================================================================*/
-	.cube__preview-2 {
-    background-color: rgba(15,15,15, .8);
-    border: 1px solid rgba(204,24,30, 1);
-    border-radius: 2vmin;
-    box-shadow: 5px 5px 20px #000
-}
 	.cube__atom {
-    opacity: 0
+    opacity: 0;
+    color: #8e8e8e
 }
 	.sonar {
     border-radius: 10%;
-    background: #181a1c;
+    background: #cc181e;
     opacity: 0
 }
-	/*send - bytton*/
+	/*Works view*/
+	.works__img {
+    border-radius: 2vmin
+}
+	/*Contact view*/
+	.contact__label {
+    color: #8e8e8e
+}
+	.contact__author, .contact__msg {
+    color: #d5d7d8;
+    background-color: #0F0F0F;
+    border: none;
+    border-radius: 1vmin;
+    box-shadow: 5px 5px 20px #cc181e
+}
 	.contact__send-btn {
     background: url(../img/svg/svg-min/contact/svg_send.svg) no-repeat;
     background-size: 100% 100%;
     border-style: none
 }
-	.wf-contact__send-btn {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    transition: background 0.2s, -webkit-transform ease-out 0.1s;
-    transition: transform ease-out 0.1s, background 0.2s;
-    transition: transform ease-out 0.1s, background 0.2s, -webkit-transform ease-out 0.1s
-}
 	/*PARALAX===================================================================*/
 	.parallax__layer--bgr {
-    background: url(../img/background.jpg) no-repeat;
+    background: url(../img/background/background.jpg) no-repeat;
     background-size: 100% 100%
 }
 	.parallax__layer--mask {
-    background-image: radial-gradient(ellipse farthest-corner at center, rgba(0,0,0,.3) 0%, #000 100%)
+    background-image: radial-gradient(ellipse farthest-corner at center, rgba(0,0,0, .3) 0%, #000 100%)
 }
 	/*BORDERS===================================================================*/
 	.borders {
@@ -225,6 +236,12 @@ ________________________________
     height: 0.125rem;
     margin: 0.313rem auto
 }
+	/*Control-Button*/
+	.control-btn {
+    display: inline-block;
+    width: 20px;
+    height: 15px
+}
 	/*CLOSE-Button===================================================================*/
 	.wf-close {
     position: absolute;
@@ -243,7 +260,7 @@ ________________________________
     width: 95%;
     margin: 1.25rem
 }
-	.title__name {
+	.name {
     position: fixed;
     bottom: 12%;
     right: 5%
@@ -257,18 +274,19 @@ ________________________________
     display: -ms-flexbox;
     display: flex;
     height: 95vh;
-    -ms-touch-action: none;
-        touch-action: none
-    /*error from chrome fix*/
+    -ms-touch-action: manipulation;
+        touch-action: manipulation
+    /*fix error from chrome - need test with auto*/
 }
 	/*CUBE===================================================================*/
 	/*very important!*/
-	#viewport:hover .cube {
-    will-change: transform
+	/*#viewport:hover .cube {
+    will-change: transform;
 }
-	#works__show:hover .works__unit {
-    will-change: transform
-}
+
+#works__show:hover .works__unit {
+    will-change: transform;
+}*/
 	#viewport {
     margin: auto
 }
@@ -279,8 +297,7 @@ ________________________________
     margin: auto
 }
 	.cube__title-svg {
-    width: 100%;
-    margin-top: 10px
+    margin: 10px auto
 }
 	.cube__title {
     display: inline-block;
@@ -1198,7 +1215,7 @@ ________________________________
             transform: scale(1.2)
 }
 	/*TRANSITION================================================================*/
-	.a_easy, a, hr, svg, button {
+	.a_easy, a {
     transition: all 0.1s ease-in-out
 }
 	.a_easy_sl {

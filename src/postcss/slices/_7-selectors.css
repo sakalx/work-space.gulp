@@ -53,7 +53,7 @@ textarea:focus {
 
 /*CLOSE-Button===================================================================*/
 .close:hover {
-    color: $clr-text-attention;
+    color: $clr-txt-attention;
     transform: rotate(360deg);
     background:  #fff;
 }
@@ -70,7 +70,7 @@ textarea:focus {
     top: 30px;
     left: 0;
     width: 100%;
-    border: solid 1px $clr-text-attention;
+    border: solid 1px $clr-txt-attention;
     transform: translate3d(-100%,0,0);
     transition: transform 1.5s;
 }
@@ -84,7 +84,7 @@ textarea:focus {
     transition: transform 0.5s, color 0.5s;
 }
 .cube__title:hover span {
-    color: $clr-text-attention;
+    color: $clr-txt-attention;
     transform: perspective(1000px) rotate3d(0,1,0,360deg);
 }
 .cube__title span:nth-child(12),

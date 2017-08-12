@@ -71,6 +71,12 @@ body {
     margin: rem(5) auto;
 }
 
+/*Control-Button*/
+.control-btn {
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+}
 /*CLOSE-Button===================================================================*/
 .wf-close {
     position: absolute;
@@ -91,7 +97,7 @@ body {
     width: 95%;
     margin: rem(20);
 }
-.title__name {
+.name {
     position: fixed;
     bottom: 12%;
     right: 5%;
@@ -104,18 +110,18 @@ body {
 #box {
     display: flex;
     height: 95vh;
-    touch-action: none; /*error from chrome fix*/
+    touch-action: manipulation; /*fix error from chrome - need test with auto*/
 }
 
 /*CUBE===================================================================*/
 /*very important!*/
-#viewport:hover .cube {
+/*#viewport:hover .cube {
     will-change: transform;
 }
 
 #works__show:hover .works__unit {
     will-change: transform;
-}
+}*/
 
 #viewport {
     margin: auto;
@@ -130,8 +136,7 @@ body {
 }
 
 .cube__title-svg {
-    width: 100%;
-    margin-top: 10px;
+    margin: 10px auto;
 }
 
 .cube__title {

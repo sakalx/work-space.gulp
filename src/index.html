@@ -28,14 +28,13 @@
 </head>
 <body>
 
-<!--make difrent backgrounds with auto changing-->
 <!--header================================================================-->
 <header id="header" class="title a_easy">
-    <h1 class="title__name">Serhii Sakal</h1>
+    <h1 class="name">Serhii Sakal</h1>
     <h2 class="title__descr">
         Front-end developer experience :<span id="exp-hrs"></span>
     </h2>
-    <aside class="fc_c_cc">
+    <aside class="fc_c_cc title__control">
         <div class="fr_c_cc">
             <span>Drag & Drop to spin</span>
             <i class="control-btn" style="margin-left: 7px">&#8634;</i>
@@ -51,8 +50,8 @@
     </aside>
 </header>
 
-<div id="box" class="fr_c_cc">
-
+<!--main================================================================-->
+<main id="box" class="fr_c_cc">
     <!--cube================================================================-->
     <div id="viewport" class="a_trans_linear">
         <div class="cube">
@@ -69,7 +68,7 @@
                     <span>I</span>
                     <span>O</span>
                     <br>
-                    <svg class="cube__title-svg a_trans_linear" width="120" height="120">
+                    <svg class="cube__title-svg fr_c_cc a_trans_linear" width="120" height="120">
                         <use xlink:href='#works--svg_works'></use>
                     </svg>
                 </h2>
@@ -85,7 +84,7 @@
                     <span>L</span>
                     <span>E</span>
                     <br>
-                    <svg class="cube__title-svg a_trans_linear" width="120" height="120">
+                    <svg class="cube__title-svg fr_c_cc a_trans_linear" width="120" height="120">
                         <use xlink:href='#profile--svg_profile'></use>
                     </svg>
                 </h2>
@@ -102,7 +101,7 @@
                     <span>E</span>
                     <span>S</span>
                     <br>
-                    <svg class="cube__title-svg a_trans_linear" width="120" height="120">
+                    <svg class="cube__title-svg fr_c_cc a_trans_linear" width="120" height="120">
                         <use xlink:href='#services--svg_service'></use>
                     </svg>
                 </h2>
@@ -122,7 +121,7 @@
                     <span>O</span>
                     <span>N</span>
                     <br>
-                    <svg class="cube__title-svg a_trans_linear" width="120" height="120">
+                    <svg class="cube__title-svg fr_c_cc a_trans_linear" width="120" height="120">
                         <use xlink:href='#cooperation--svg_cooperation'></use>
                     </svg>
                 </h2>
@@ -140,7 +139,7 @@
                     <span>G</span>
                     <span>E</span>
                     <br>
-                    <svg class="cube__title-svg a_trans_linear" width="120" height="120">
+                    <svg class="cube__title-svg fr_c_cc a_trans_linear" width="120" height="120">
                         <use xlink:href='#knowledge--svg_knowledge'></use>
                     </svg>
                 </h2>
@@ -156,7 +155,7 @@
                     <span>C</span>
                     <span>T</span>
                     <br>
-                    <svg class="cube__title-svg a_trans_linear" width="120" height="120">
+                    <svg class="cube__title-svg fr_c_cc a_trans_linear" width="120" height="120">
                         <use xlink:href='#contact--svg_contact'></use>
                     </svg>
                 </h2>
@@ -191,7 +190,7 @@
                 <span class="close fr_c_cc t_xxxl a_pointer a_trans_linear">&#215;</span>
             </div>
         </section>
-    </div>
+    </div> <!--end works-->
     <!--profile================================================================-->
     <div class="wf-cube__preview">
         <section id="profile__content" class="cube__preview fr_c_cc">
@@ -281,7 +280,7 @@
                 </ul>
             </section>
         </section>
-    </div>
+    </div> <!--end profile-->
     <!--services================================================================-->
     <section class="wf-cube__preview">
         <ul id="services__content" class="cube__preview fr_c_cc">
@@ -334,10 +333,9 @@
                 <h4 class="t_cntr">PSD to HTML</h4>
             </li>
         </ul>
-    </section>
+    </section> <!--end services-->
     <!--cooperation================================================================-->
     <section class="wf-cube__preview">
-        <!-- <h2>why we should work together</h2> -->
         <ul id="cooperation__content" class="cube__preview fr_c_cc">
             <li class="cube__atom cube__atom--sml fc_c_cc">
                 <svg width="39" height="39">
@@ -365,7 +363,7 @@
                 <span class="t_cntr">I love what I do</span>
             </li>
         </ul>
-    </section>
+    </section> <!--end cooperation-->
     <!--knowledge================================================================-->
     <section class="wf-cube__preview">
         <div id="knowledge__sonar" class="sonar"></div>
@@ -397,6 +395,12 @@
                 <h3>Software</h3>
                 <hr class="hr-smal">
                 <ul>
+                    <li class="fr_c_cc">
+                        <svg width="25" height="25">
+                            <use xlink:href='#knowledge--svg_source-tree'></use>
+                        </svg>
+                        <span>SourceTree</span>
+                    </li>
                     <li class="fr_c_cc">
                         <svg width="25" height="25">
                             <use xlink:href='#knowledge--svg_webstorm'></use>
@@ -506,11 +510,20 @@
                 </svg>
                 <span>Gulp</span>
             </section>
+            <!-- VCS -->
+            <section class="cube__atom cube__atom--sml fcn_c_cc">
+                <h3>VCS</h3>
+                <hr class="hr-smal">
+                <svg width="34" height="34">
+                    <use xlink:href='#knowledge--svg_github'></use>
+                </svg>
+                <span>Github</span>
+            </section>
         </div>
-    </section>
+    </section> <!--end knowledge-->
     <!--contact================================================================-->
     <section class="wf-cube__preview">
-        <form id="contact__content" class="cube__preview-2 fc_c_cc" action="">
+        <form id="contact__content" class="cube__atom cube__preview-2 fc_c_cc" action="">
             <div id="contact__close" class="wf-close fals_e">
                 <span class="close fr_c_cc t_xxxl a_pointer a_trans_linear">&#215;</span>
             </div>
@@ -519,7 +532,7 @@
                     <input class="contact__author" type="text" name="name" placeholder="Name" required
                            pattern="[a-zA-Z0-9]+"
                            maxlength="21"
-                           title="only eng. Thank You." autocomplete="on" autofocus>
+                           title="only eng. Thank You." autocomplete="on">
                     <label class="contact__label a_label" for="contact__name">Name</label>
                 </div>
                 <div style="position: relative">
@@ -535,27 +548,21 @@
                 <input id="send" class="contact__send-btn" type="submit" name="send" value="">
             </div>
         </form>
-    </section>
-
-
-</div>
-
-
+    </section> <!--end contact-->
+</main>
 
 <!--paralax================================================================-->
-<div id="container" class="z container">
+<div id="container" class="container">
     <div id="scene" class="scene parallax">
         <div class="layer"></div> <!-- wtf -->
+        <!--dark mask-->
         <div class="layer parallax__layer parallax__layer--mask" style=" z-index: -9;"
              data-depth="0.50"></div>
-        <div class="layer parallax__layer"
-             style="background: url(img/background2.png); background-size: 100% 100%; z-index: 1;"
-             data-depth="0.00"></div>
+        <!--background-->
         <div class="layer parallax__layer parallax__layer--bgr" style=" z-index: -10;"
-             data-depth="0.30"></div>
+             data-depth="0.20"></div>
     </div>
 </div>
-
 
 <!--borders================================================================-->
 <div class="borders"
@@ -579,6 +586,7 @@
 <!--Script================================================================-->
 <script src="js/libs.min.js" defer charset="utf-8"></script>
 <script src="js/main.min.js" defer charset="utf-8"></script>
+
 </body>
 </html>
 
