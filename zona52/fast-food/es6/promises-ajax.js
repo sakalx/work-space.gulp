@@ -66,7 +66,7 @@ Promise.race([superman, batman])
 */
 
 
-/* <= Remove it
+<= Remove it
 
 //some testing with Promise.all & Promise.race
 function go(num) {
