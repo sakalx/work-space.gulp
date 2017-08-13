@@ -65,11 +65,11 @@ $col12: calc($col * 12 + 22 * $col_margin);
 {	max-width: $screen; width: 100%; }
 /*FLEX ROW WRAP=================================================================*/
 .fr_b_ee,.fr_c_ee,.fr_b_ss,.fr_a_hh,.fc_b_cc,.fr_e_ss,.fr_e_ee,.fr_e_cc,.fr_s_hh,.fr_e_hh,.fr_c_hh, .fr_b_hh,.fr_s_ss,.fr_s_cc,.fr_c_ss,.fr_c_cc,.fr_a_cc,.fr_b_cc,.fr_a_ss
-{	display: flex; flex-flow: row wrap; }
+{	display: flex; flex-wrap: wrap;}
 
 /*FLEX ROW NO WRAP===============================================================*/
 .frn_s_cc
-{	display: flex; flex-flow: row nowrap; }
+{	display: flex; }
 
 /*FLEX COLUMN WRAP===============================================================*/
 .fc_b_cc,.fc_c_hh,.fc_c_cc,.fc_b_hh,.fc_c_ee,.fc_a_cc

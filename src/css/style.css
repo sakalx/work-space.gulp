@@ -82,7 +82,7 @@ $clr-bgr-attention: rgba(28, 28, 28, 1);
 	h3, figcaption {
     color: #d5d7d8
 }
-	/*Basic Style===================================================================*/
+	/*BASIC STYLE===================================================================*/
 	.hr-smal {
     background: #cc181e;
     border: none
@@ -220,17 +220,15 @@ ________________________________
     margin: 0;
     padding: 0
 }
-	/*++++++++++++++++++++++++++++++++++++*/
 	body {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto
 }
-	/*++++++++++++++++++++++++++++++++++++*/
 	.auto {
     margin: auto
 }
-	/*++++++++++++++++++++++++++++++++++++*/
+	/*BASIC STYLE===================================================================*/
 	.hr-smal {
     width: 50%;
     height: 0.125rem;
@@ -239,10 +237,10 @@ ________________________________
 	/*Control-Button*/
 	.control-btn {
     display: inline-block;
-    width: 20px;
-    height: 15px
+    width: 1.25rem;
+    height: 0.938rem
 }
-	/*CLOSE-Button===================================================================*/
+	/*Close-Button*/
 	.wf-close {
     position: absolute;
     z-index: 1;
@@ -254,19 +252,19 @@ ________________________________
     height: 3.125rem;
     margin: 0.938rem
 }
-	/*TITLE===================================================================*/
+	/*HEADER===================================================================*/
 	.title {
     position: absolute;
     width: 95%;
     margin: 1.25rem
 }
-	.name {
-    position: fixed;
-    bottom: 12%;
-    right: 5%
-}
 	.title__descr {
     margin-bottom: 0.75rem
+}
+	.name {
+    position: fixed;
+    bottom: 8%;
+    right: 5%
 }
 	/*BOX===================================================================*/
 	#box {
@@ -279,14 +277,12 @@ ________________________________
     /*fix error from chrome - need test with auto*/
 }
 	/*CUBE===================================================================*/
-	/*very important!*/
-	/*#viewport:hover .cube {
+	/*fix speed bug - need test #box*/
+	/*
+#viewport:hover .cube {
     will-change: transform;
 }
-
-#works__show:hover .works__unit {
-    will-change: transform;
-}*/
+*/
 	#viewport {
     margin: auto
 }
@@ -296,13 +292,13 @@ ________________________________
     height: 25rem;
     margin: auto
 }
-	.cube__title-svg {
-    margin: 10px auto
-}
 	.cube__title {
     display: inline-block;
     position: relative;
     overflow: hidden
+}
+	.cube__title-svg {
+    margin: 10px auto
 }
 	.cube__side {
     position: absolute;
@@ -343,10 +339,6 @@ ________________________________
     min-width: 30vmin;
     min-height: 30vmin
 }
-	/*.cube__atom--md {*/
-	/*width: 18vmin;*/
-	/*min-height: 18vmin;*/
-	/*}*/
 	.cube__atom--sml {
     min-width: 20vmin;
     min-height: 20vmin
@@ -367,6 +359,7 @@ ________________________________
     width: 80%
 }
 	.contact__author {
+    width: 20vw;
     margin: 0.938rem 0;
     padding: 0.75rem
 }
@@ -382,10 +375,6 @@ ________________________________
     padding: 0.75rem
 }
 	/*send - bytton*/
-	.contact__send-btn {
-    width: 100%;
-    height: 100%
-}
 	.wf-contact__send-btn {
     display: inline-block;
     position: absolute;
@@ -396,8 +385,12 @@ ________________________________
     width: 5.625rem;
     height: 5.625rem
 }
+	.contact__send-btn {
+    width: 100%;
+    height: 100%
+}
 	/*PARALAX===================================================================*/
-	#container {
+	.container {
     position: absolute;
     z-index: -1;
     top: 0;
@@ -419,60 +412,6 @@ ________________________________
 	.borders {
     position: absolute;
     z-index: 100
-}
-	/*TEMP-Style===================================================================*/
-	.z {
-    display: none
-}
-	/* Kumya */
-	.link--kumya {
-    font-family: 'Syncopate', sans-serif;
-    font-size: 6.5em;
-    overflow: hidden;
-    padding: 10px 10px 0;
-    line-height: 1;
-    color: #242424
-}
-	.link--kumya:hover {
-    color: #242424
-}
-	.link--kumya::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    background: #242424;
-    -webkit-transform: translate3d(101%,0,0);
-    transform: translate3d(101%,0,0);
-    transition: -webkit-transform 0.5s;
-    transition: transform 0.5s;
-    transition: transform 0.5s, -webkit-transform 0.5s;
-    transition-timing-function: cubic-bezier(0.7,0,0.3,1)
-}
-	.link--kumya:hover::after {
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0)
-}
-	.link--kumya span {
-    display: block;
-    position: relative
-}
-	.link--kumya span::before {
-    content: attr(data-letters);
-    position: absolute;
-    color: #fff;
-    left: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 0%;
-    transition: width 0.5s;
-    transition-timing-function: cubic-bezier(0.7,0,0.3,1)
-}
-	.link--kumya:hover span::before {
-    width: 100%
 }
 
 /*	Slice 3 / 8			Flex Box Properties */
@@ -552,20 +491,14 @@ ________________________________
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap
 }
 	/*FLEX ROW NO WRAP===============================================================*/
 	.frn_s_cc {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap
+    display: flex
 }
 	/*FLEX COLUMN WRAP===============================================================*/
 	.fc_b_cc, .fc_c_hh, .fc_c_cc, .fc_b_hh, .fc_c_ee, .fc_a_cc {
@@ -927,6 +860,7 @@ ________________________________
 	ul {
     list-style: none
 }
+	/*STYLE MARKERS===================================================================*/
 	.l_mark-tick:before {
     content: "\2714"
 }
@@ -1002,30 +936,33 @@ ________________________________
 	/*h2*/
 	/*h3*/
 	/*h4*/
-	/*DONT CHANGE!*/
 	/*h5*/
 	/*h6*/
 	/*@FONT-FACE===================================================================*/
-	/*@font-face {
-  font-family: 'slab';
-  src:
-       url('../font/www/slab.woff2') format('woff2'),
-       url('../font/www/slab.woff') format('woff'),
-       url('../font/www/slab.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	@font-face {
+    font-family: 'scratch';
+    src: url('../font/san_diego_font/san_diego_font.woff2') format('woff2'),
+        url('../font/san_diego_font/san_diego_font.woff') format('woff'),
+        url('../font/san_diego_font/san_diego_font.svg#san_diego_fontmedium') format('svg');
+    font-weight: normal;
+    font-style: normal
 }
-html,body
-{	font-family: slab; }*/
+	h1, h2, h3, h4, span, input {
+    font-family: scratch
+}
 	/*LETTER-SPACING================================================================*/
-	.t_lsp {
-    letter-spacing: 0.125rem
+	.t_lsp, html, body {
+    letter-spacing: 0.094rem
+}
+	.t_lsp-larg {
+    letter-spacing: 0.125rem;
+    font-size: 1.313rem
 }
 	/*::::::::::::::::::::::::
 MOLECULES
 ::::::::::::::::::::::::*/
 	.t_lsp_cntr {
-    letter-spacing: 0.125rem;
+    letter-spacing: 0.094rem;
     text-align: center
 }
 	/*TEXT-TRANSFORM================================================================*/
@@ -1065,19 +1002,19 @@ MOLECULES
     font-size: 7vw
 }
 	h1, .t_xxxl {
-    font-size: 3.125rem
+    font-size: 3rem
 }
 	h2, .t_xxl {
-    font-size: 1.75rem
+    font-size: 1.625rem
 }
 	h3, .t_xl {
-    font-size: 1.125rem
+    font-size: 1.5rem
 }
 	h4, .t_larg {
-    font-size: 1rem
+    font-size: 1.313rem
 }
 	h5, .t_medium {
-    font-size: 1.063rem
+    font-size: 1.125rem
 }
 	h6, .t_smal {
     font-size: 1rem
@@ -1097,33 +1034,33 @@ MOLECULES
 }
 	/*++++++++++++++++++++++++++++++++++++*/
 	.t_larg_bldr {
-    font-size: 1rem;
+    font-size: 1.313rem;
     font-weight: bolder
 }
 	/*++++++++++++++++++++++++++++++++++++*/
 	.t_xl_end {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     text-align: end
 }
 	.t_xxxl_end {
-    font-size: 3.125rem;
+    font-size: 3rem;
     text-align: end
 }
 	/*++++++++++++++++++++++++++++++++++++*/
 	.t_med_cntr {
-    font-size: 1.063rem;
+    font-size: 1.125rem;
     text-align: center
 }
 	.t_larg_cntr {
-    font-size: 1rem;
+    font-size: 1.313rem;
     text-align: center
 }
 	.t_xxl_cntr {
-    font-size: 1.75rem;
+    font-size: 1.625rem;
     text-align: center
 }
 	.t_xl_cntr {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     text-align: center
 }
 	/*FONT-STYLE================================================================*/
@@ -1193,6 +1130,22 @@ for User Interface
 	text-overflow
 ________________________________
 */
+	/*RESET======================================================================*/
+	a, section, article, div, span, nav, ul, input, textarea {
+    box-sizing: border-box
+}
+	/*++++++++++++++++++++++++++++++++++++*/
+	.a_pointer, button, input[type="submit"] {
+    cursor: pointer
+}
+	/*++++++++++++++++++++++++++++++++++++*/
+	input, input[type="search"], input[type="text"], input[type="email"], textarea, button {
+    outline: none
+}
+	/*++++++++++++++++++++++++++++++++++++*/
+	textarea {
+    resize: none
+}
 	/*ANIMATION================================================================*/
 	.a_both {
     -webkit-animation-duration: 1.5s;
@@ -1205,7 +1158,6 @@ ________________________________
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg)
 }
-	/*++++++++++++++++++++++++++++++++++++*/
 	.a_scale {
     -webkit-transform: scale(1.5);
             transform: scale(1.5)
@@ -1221,11 +1173,31 @@ ________________________________
 	.a_easy_sl {
     transition: all 1.3s ease-in-out
 }
-	/*++++++++++++++++++++++++++++++++++++*/
 	.a_trans_linear {
     transition: all 0.5s linear
 }
 	/*@KEYFRAMES=================================================================*/
+	/* Neon */
+	@-webkit-keyframes neon {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177
+    }
+}
+	@keyframes neon {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177
+    }
+}
+	.a_neon {
+    -webkit-animation: neon 1s ease-in-out infinite alternate;
+            animation: neon 1s ease-in-out infinite alternate
+}
 	/*Show Label*/
 	@-webkit-keyframes showLabel {
     0% {
@@ -1259,7 +1231,6 @@ ________________________________
     -webkit-animation: showLabel 0.25s ease-in-out;
             animation: showLabel 0.25s ease-in-out
 }
-	/*++++++++++++++++++++++++++++++++++++*/
 	/*Send message*/
 	@-webkit-keyframes a_send {
     0% {
@@ -1297,7 +1268,6 @@ ________________________________
                 transform: translateX(0) translateY(0)
     }
 }
-	/*++++++++++++++++++++++++++++++++++++*/
 	/*sonarEffect for: send-btn*/
 	@-webkit-keyframes sonarEffect {
     0% {
@@ -1329,23 +1299,6 @@ ________________________________
         opacity: 0
     }
 }
-	/*++++++++++++++++++++++++++++++++++++*/
-	/*RESET======================================================================*/
-	a, section, article, div, span, nav, ul, input, textarea {
-    box-sizing: border-box
-}
-	/*++++++++++++++++++++++++++++++++++++*/
-	.a_pointer, button, input[type="submit"] {
-    cursor: pointer
-}
-	/*++++++++++++++++++++++++++++++++++++*/
-	input, input[type="search"], input[type="text"], input[type="email"], textarea, button {
-    outline: none
-}
-	/*++++++++++++++++++++++++++++++++++++*/
-	textarea {
-    resize: none
-}
 	/*CUBE===================================================================*/
 	#viewport {
     -webkit-perspective: 800px;
@@ -1354,10 +1307,6 @@ ________________________________
             perspective-origin: 50% 200px;
     -webkit-transform: scale(0.5,0.5);
             transform: scale(0.5,0.5)
-}
-	.shrink {
-    -webkit-transform: scale(0.2,0.2) !important;
-            transform: scale(0.2,0.2) !important
 }
 	.cube {
     transition: -webkit-transform 50ms linear;
@@ -1391,6 +1340,10 @@ ________________________________
 	#cube__side--6 {
     -webkit-transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
             transform: rotateX(-90deg) rotate(180deg) translateZ(200px)
+}
+	.shrink {
+    -webkit-transform: scale(0.2,0.2) !important;
+            transform: scale(0.2,0.2) !important
 }
 
 /*	Slice 7 / 8			Selectors */
@@ -1444,7 +1397,11 @@ ________________________________
     outline: 0;
     box-shadow: 5px 5px 25px #fff
 }
-	/*CLOSE-Button===================================================================*/
+	/*BASIC STYLE===================================================================*/
+	.s_first-color::first-letter {
+    color: #d5d7d8
+}
+	/*Close-Button*/
 	.close:hover {
     color: #cc181e;
     -webkit-transform: rotate(360deg);
@@ -1456,7 +1413,7 @@ ________________________________
     -webkit-transform: scale(1.2);
             transform: scale(1.2)
 }
-	/* Cube title--yaku */
+	/* Cube title */
 	.cube__title::before {
     content: '';
     position: absolute;
@@ -1524,7 +1481,6 @@ ________________________________
 	.cube__title span:first-child, .cube__title:hover span:nth-child(12) {
     transition-delay: 1.2s
 }
-	/* END Cube title--yaku */
 	/*CONTACT===================================================================*/
 	.contact__author:placeholder-shown + .contact__label {
     display: none;
@@ -1580,19 +1536,14 @@ Includes Media queries & Vendors
 ::::::::::::::::::::::::
 */
 	/*@MEDIA==================================================================*/
-	/*NOTE max-device-widt*/
+	/* NoTe max-device-widt */
 	@media only screen and (max-width: 610px) {
-    .sml-screen__hide {
-        display: none
-    }
-    .svg-atom {
+    .sml-screen__hide, .svg-atom {
         display: none
     }
     .l_mark-tick:before {
         content: ""
     }
-    /*++++++++++++++++++++++++++++++++++++*/
-    /*++++++++++++++++++++++++++++++++++++*/
 }
 	/*FONTELLO=================================================================*/
 	/*HAMBURGERS===============================================================*/

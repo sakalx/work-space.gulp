@@ -5,20 +5,16 @@ Includes Media queries & Vendors
 ::::::::::::::::::::::::
 */
 /*@MEDIA==================================================================*/
-/*NOTE max-device-widt*/
+/* NoTe max-device-widt */
 @media only screen and (max-width: 610px)
 {
-    .sml-screen__hide {
-        display: none;
-    }
-    .svg-atom {
+    .sml-screen__hide,
+      .svg-atom {
         display: none;
     }
     .l_mark-tick:before {
         content: "";
     }
-    /*++++++++++++++++++++++++++++++++++++*/
-/*++++++++++++++++++++++++++++++++++++*/
 }
 
 /*FONTELLO=================================================================*/

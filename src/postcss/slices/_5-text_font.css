@@ -67,37 +67,44 @@ ________________________________
 /*TEXT SIZE=====================================================================*/
 $bxl: 7vw; 
 
-$xxxl: rem(50);  /*h1*/
+$xxxl: rem(48);  /*h1*/
 
-$xxl: rem(28);	 /*h2*/
+$xxl: rem(26);	 /*h2*/
 
-$xl: rem(18);	 /*h3*/
+$xl: rem(24);	 /*h3*/
 
-$larg: rem(16);	 /*h4*/     /*DONT CHANGE!*/
+$larg: rem(21);	 /*h4*/
 
-$med: rem(17);	 /*h5*/
+$med: rem(18);	 /*h5*/
 
 $smal: rem(16);	 /*h6*/
 
 $xs: rem(12);
 
-$nano: rem(2);
+$nano: rem(1.5);
+
 /*@FONT-FACE===================================================================*/
-/*@font-face {
-  font-family: 'slab';
-  src:
-       url('../font/www/slab.woff2') format('woff2'),
-       url('../font/www/slab.woff') format('woff'),
-       url('../font/www/slab.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
+@font-face {
+    font-family: 'scratch';
+    src: 
+    	url('../font/san_diego_font/san_diego_font.woff2') format('woff2'),
+        url('../font/san_diego_font/san_diego_font.woff') format('woff'),
+        url('../font/san_diego_font/san_diego_font.svg#san_diego_fontmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
-html,body
-{	font-family: slab; }*/
+
+h1, h2, h3, h4, span, input
+{ 	font-family: scratch; }
+
 /*LETTER-SPACING================================================================*/
-.t_lsp
+.t_lsp,
+html, body
 {	letter-spacing: $nano; }
 
+.t_lsp-larg
+{	letter-spacing: rem(2);
+	font-size: $larg; }
 /*::::::::::::::::::::::::
 MOLECULES
 ::::::::::::::::::::::::*/

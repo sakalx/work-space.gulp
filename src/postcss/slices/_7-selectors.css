@@ -44,14 +44,19 @@ Selectors
 ________________________________
 */
 /*RESET===================================================================*/
+
 .contact__author:focus,
 textarea:focus {
     outline:0;
     box-shadow: 5px 5px 25px #fff;
 }
 
+/*BASIC STYLE===================================================================*/
+.s_first-color::first-letter {
+    color: $clr-txt-main;
+}
 
-/*CLOSE-Button===================================================================*/
+/*Close-Button*/
 .close:hover {
     color: $clr-txt-attention;
     transform: rotate(360deg);
@@ -63,7 +68,7 @@ textarea:focus {
     transform: scale(1.2);
 }
 
-/* Cube title--yaku */
+/* Cube title */
 .cube__title::before {
     content: '';
     position: absolute;
@@ -135,8 +140,6 @@ textarea:focus {
 .cube__title:hover span:nth-child(12) {
     transition-delay: 1.2s;
 }
-/* END Cube title--yaku */
-
 
 /*CONTACT===================================================================*/
 .contact__author:placeholder-shown + .contact__label {

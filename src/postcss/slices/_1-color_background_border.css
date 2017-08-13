@@ -92,8 +92,8 @@ h3, figcaption {
 	color: $clr-txt-main;
 }
 
-/*Basic Style===================================================================*/
-.hr-smal {
+/*BASIC STYLE===================================================================*/
+.hr-smal { 
 	background: $clr-txt-attention;
 	border: none;
 }
@@ -187,11 +187,3 @@ h3, figcaption {
 .borders {
 	background: url(../img/borders.png) no-repeat;
 }
-
-
-
-
-
-
-
-
