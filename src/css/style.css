@@ -110,10 +110,10 @@ $clr-bgr-attention: rgba(28, 28, 28, 1);
 	.name {
     background-color: #666;
     -webkit-background-clip: text;
-    background-clip: text;
+    -moz-background-clip: text;
     color: transparent;
     text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
-    -webkit-box-reflect: below 0px -webkit-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, transparent 50%, transparent 100%)
+    -webkit-box-reflect: below 0 -webkit-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, transparent 50%, transparent 100%)
 }
 	/*CUBE===================================================================*/
 	.cube__side {
@@ -157,13 +157,17 @@ $clr-bgr-attention: rgba(28, 28, 28, 1);
     background-size: 100% 100%;
     border-style: none
 }
+	/*additional contacts*/
+	.addit-contact__info {
+    color: #2793e8
+}
 	/*PARALAX===================================================================*/
 	.parallax__layer--bgr {
     background: url(../img/background/background.jpg) no-repeat;
     background-size: 100% 100%
 }
 	.parallax__layer--mask {
-    background-image: radial-gradient(ellipse farthest-corner at center, rgba(0,0,0, .3) 0%, #000 100%)
+    background-image: radial-gradient(ellipse farthest-corner at center, rgba(5,5,5, .3) 0%, #050505 100%)
 }
 	/*BORDERS===================================================================*/
 	.borders {
@@ -324,10 +328,10 @@ ________________________________
 }
 	.cube__preview-2 {
     position: absolute;
-    top: 40%;
+    top: 13.75rem;
     left: calc(50% - (70vw / 2));
     width: 70vw;
-    height: 50vh
+    min-height: 50vh
 }
 	.cube__atom {
     display: block;
@@ -359,8 +363,8 @@ ________________________________
     width: 80%
 }
 	.contact__author {
-    width: 20vw;
-    margin: 0.938rem 0;
+    min-width: 100%;
+    margin: 2.188rem 0 0.313rem 0;
     padding: 0.75rem
 }
 	.contact__label {
@@ -370,7 +374,7 @@ ________________________________
 }
 	.contact__msg {
     width: 80%;
-    height: 40%;
+    min-height: 9.375rem;
     margin: 0.938rem 0;
     padding: 0.75rem
 }
@@ -378,9 +382,8 @@ ________________________________
 	.wf-contact__send-btn {
     display: inline-block;
     position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 0.938rem;
+    top: 48%;
+    right: 5%;
     padding: 0.625rem;
     width: 5.625rem;
     height: 5.625rem
@@ -388,6 +391,10 @@ ________________________________
 	.contact__send-btn {
     width: 100%;
     height: 100%
+}
+	/*additional contacts*/
+	.addit-contact {
+    margin: 0.625rem
 }
 	/*PARALAX===================================================================*/
 	.container {
@@ -1526,6 +1533,10 @@ ________________________________
     -webkit-animation: a_send 1.2s infinite linear;
     animation: a_send 1.2s infinite linear;
     display: inline-block
+}
+	/*additional contacts*/
+	.addit-contac__title::first-letter {
+    color: #cc181e
 }
 
 /*	Slice 8 / 8			Media queries & Vendors */

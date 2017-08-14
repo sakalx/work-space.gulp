@@ -64,7 +64,7 @@ $clr-txt-auxiliary: #8e8e8e;
 $clr-txt-attention: #cc181e;
 $clr-link: #2793e8;
 
-$clr-bgr-main: #000;
+$clr-bgr-main: #050505;
 $clr-bgr-auxiliary: #0F0F0F;
 $clr-bgr-attention: #1c1c1c;
 
@@ -72,7 +72,7 @@ $clr-bgr-attention: #1c1c1c;
 /*RGBA*/
 $clr-txt-attention-1: rgba(204,24,30, .1);
 
-$clr-bgr-main-3: rgba(0,0,0, .3);
+$clr-bgr-main-3: rgba(5,5,5, .3);
 $clr-bgr-auxiliary-8: rgba(15,15,15, .8);
 
 $clr-empty: rgba(0,0,0, 0);
@@ -122,10 +122,9 @@ h3, figcaption {
 	background-color: #666;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
-	background-clip: text;
 	color: transparent;
 	text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
-	-webkit-box-reflect: below 0px -webkit-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, transparent 50%, transparent 100%);
+	-webkit-box-reflect: below 0 -webkit-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, transparent 50%, transparent 100%);
 }
 
 /*CUBE===================================================================*/
@@ -169,11 +168,14 @@ h3, figcaption {
 	box-shadow: 5px 5px 20px $clr-txt-attention;
 }
 .contact__send-btn {
-	background: url(../img/svg/svg-min/contact/svg_send.svg) no-repeat;
+	background: url(../svg/svg-min/contact/svg_send.svg) no-repeat;
 	background-size: 100% 100%;
 	border-style: none;
 }
-
+/*additional contacts*/
+.addit-contact__info {
+	color: $clr-link;
+}
 /*PARALAX===================================================================*/
 .parallax__layer--bgr {
 	background: url(../img/background/background.jpg) no-repeat;

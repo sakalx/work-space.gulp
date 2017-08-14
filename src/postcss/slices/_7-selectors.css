@@ -158,7 +158,6 @@ textarea:focus {
     -moz-box-sizing: content-box;
     box-sizing: content-box;
 }
-
 .wf-contact__send-btn:before {
     speak: none;
     font-size: 48px;
@@ -179,13 +178,15 @@ textarea:focus {
     opacity: 0;
     transform: scale(0.9);
 }
-
 .wf-contact__send-btn:hover:after {
     animation: sonarEffect infinite ease-out 1.2s;
 }
-
 .wf-contact__send-btn:hover .contact__send-btn {
     -webkit-animation: a_send 1.2s infinite linear;
     animation: a_send 1.2s infinite linear;
     display: inline-block;
+}
+/*additional contacts*/
+.addit-contac__title::first-letter {
+    color: $clr-txt-attention;
 }
