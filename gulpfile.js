@@ -118,6 +118,14 @@ gulp.task('scripts', function() {
     .pipe(browserSync.reload({stream: true}));     // Обновляем JS на странице при изменении
     });
 
+// Создаем таск Concat + Uglify--------------------для склеивания дополнительных js и их сжатия
+gulp.task('scripts2', function() {
+    return gulp.src('src/js/slices-part2/**/*.js') // Берем все наши js файлы с папки not-minify
+    .pipe(concat('part2.min.js'))                  // Собираем их в кучу в новом файле part2.min.js
+    .pipe(uglify())                                // Сжимаем JS файл
+    .pipe(gulp.dest('src/js'))                     // Выгружаем в папку src/js
+    .pipe(browserSync.reload({stream: true}));     // Обновляем JS на странице при изменении
+    });
 
 // Создаем таск Browser Sync----------------------для обновления браузера
 gulp.task('browser-sync', function() { 
@@ -148,7 +156,7 @@ gulp.task('watch', [
 gulp.task('htmlmin', function(){
 	return gulp.src(['!src/libs/**/*.html', 'src/**/*.html'])
   .pipe(htmlmin({collapseWhitespace: true}))      // Минимизируем  HTML 
-  .pipe(gulp.dest('completed'));                  // Выгружаем в готовый проект
+  .pipe(gulp.dest('built'));                  // Выгружаем в готовый проект
   });
 
 
@@ -161,7 +169,7 @@ gulp.task('cssnano', function() {
             return gulp.src('src/css/**/*.css')   
        .pipe(postcss(nano))                       // Подкдючаем к PostCSS
        .pipe(rename({suffix: '.min'}))            // Додаем суффикс .min
-       .pipe(gulp.dest('completed/css/'));        // Выгружаем в готовый проект
+       .pipe(gulp.dest('built/css/'));        // Выгружаем в готовый проект
        });
 
 
@@ -174,7 +182,7 @@ gulp.task('img', function(){
   	svgoPlugins: [{removeViewBox: false}],
   	use: [pngquant()]
   	})))
-  .pipe(gulp.dest('completed/img'));               // Выгружаем в готовый проект
+  .pipe(gulp.dest('built/img'));               // Выгружаем в готовый проект
   });
 
 
@@ -191,15 +199,31 @@ gulp.task('build', [
                   'css',                          // Запускаем таск CSS
                   'vendor',                       // Запускаем таск Vendor
                   'scripts',                      // Запускаем таск Scripts
+                  'scripts2',                     // Запускаем таск Scripts2
                   'htmlmin',                      // Запускаем таск HTML-Min
                   'cssnano'                       // Запускаем таск CSS-Nano
                   ], function(){
 
-      gulp.src('src/font/**/*')                  // Переносим шрифты в готовый продукт
-      .pipe(gulp.dest('completed/font'));
+      gulp.src('src/svg/**/*')                  // Переносим SVG
+      .pipe(gulp.dest('built/svg'));
 
-      gulp.src(['src/js/**/*.js', '!src/js/slices/**/*.js', '!src/js/ES6/**/*.js']) 
-      .pipe(gulp.dest('completed/js'));           // Переносим мини-скрипты в готовый продукт
+      gulp.src('src/favicon/**/*')               // Переносим Favicon
+      .pipe(gulp.dest('built/favicon'));
+
+      gulp.src('src/json/**/*')                  // Переносим JSON 
+      .pipe(gulp.dest('built/json'));
+
+      gulp.src('src/font/**/*')                  // Переносим шрифты 
+      .pipe(gulp.dest('built/font'));
+
+      gulp.src(['src/js/**/*.js',
+        '!src/js/slices/**/*.js',
+        '!src/js/slices-part2/**/*.js',
+        '!src/js/ES6/**/*.js']) 
+      .pipe(gulp.dest('built/js'));              // Переносим мини-скрипты
       });
+
+      gulp.src('src/**/*.php')                  // Переносим PHP 
+      .pipe(gulp.dest('built'));
 
 gulp.task('default', ['stream']);
