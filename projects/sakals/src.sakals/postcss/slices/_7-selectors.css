@@ -1,0 +1,192 @@
+/*   Slice 7 / 8		Selectors
+________________________________
+::::::::::::::::::::::::
+Includes Properties
+::::::::::::::::::::::::
+________________________________
+Selectors
+	:active
+	::after
+	::before
+	:checked
+	:disabled
+	:empty
+	:enabled
+	:first-child
+	::first-letter
+	::first-line
+	:first-of-type
+	:focus
+	:hover
+	:in-range
+	:invalid
+	:lang(language)
+	:last-child
+	:last-of-type
+	:link
+	:not(selector)
+	:nth-child(n)
+	:nth-last-child(n)
+	:nth-last-of-type(n)
+	:nth-of-type(n)
+	:only-of-type
+	:only-child
+	:optional
+	:out-of-range
+	:read-only
+	:read-write
+	:required
+	:root
+	::selection
+	:target
+	:valid
+	:visited
+________________________________
+*/
+/*RESET===================================================================*/
+
+.contact__author:focus,
+textarea:focus {
+    outline:0;
+    box-shadow: 5px 5px 25px #fff;
+}
+
+/*BASIC STYLE===================================================================*/
+.s_first-color::first-letter {
+    color: $clr-txt-main;
+}
+
+/*Close-Button*/
+.close:hover {
+    color: $clr-txt-attention;
+    transform: rotate(360deg);
+    background:  #fff;
+}
+
+/*CUBE===================================================================*/
+.cube__title:hover .cube__title-svg {
+    transform: scale(1.2);
+}
+
+/* Cube title */
+.cube__title::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    border: solid 1px $clr-txt-attention;
+    transform: translate3d(-100%,0,0);
+    transition: transform 1.5s;
+}
+.cube__title:hover::before {
+    transform: translate3d(0,0,0);
+}
+.cube__title span {
+    display: inline-block;
+    position: relative;
+    transform: perspective(1000px) rotate3d(0,1,0,0deg);
+    transition: transform 0.5s, color 0.5s;
+}
+.cube__title:hover span {
+    color: $clr-txt-attention;
+    transform: perspective(1000px) rotate3d(0,1,0,360deg);
+}
+.cube__title span:nth-child(12),
+.cube__title:hover span:first-child {
+    transition-delay: 0s;
+}
+.cube__title span:nth-child(11),
+.cube__title:hover span:nth-child(2) {
+    transition-delay: .1s;
+}
+.cube__title span:nth-child(10),
+.cube__title:hover span:nth-child(3) {
+    transition-delay: .2s;
+}
+.cube__title span:nth-child(9),
+.cube__title:hover span:nth-child(4) {
+    transition-delay: .3s;
+}
+.cube__title span:nth-child(8),
+.cube__title:hover span:nth-child(5) {
+    transition-delay: .5s;
+}
+.cube__title span:nth-child(7),
+.cube__title:hover span:nth-child(6) {
+    transition-delay: .6s;
+}
+.cube__title span:nth-child(6),
+.cube__title:hover span:nth-child(7) {
+    transition-delay: .7s;
+}
+.cube__title span:nth-child(5),
+.cube__title:hover span:nth-child(8) {
+    transition-delay: .8s;
+}
+.cube__title span:nth-child(4),
+.cube__title:hover span:nth-child(9) {
+    transition-delay: .9s;
+}
+.cube__title span:nth-child(3),
+.cube__title:hover span:nth-child(10) {
+    transition-delay: 1.0s;
+}
+.cube__title span:nth-child(2),
+.cube__title:hover span:nth-child(11) {
+    transition-delay: 1.1s;
+}
+.cube__title span:first-child,
+.cube__title:hover span:nth-child(12) {
+    transition-delay: 1.2s;
+}
+
+/*CONTACT===================================================================*/
+.contact__author:placeholder-shown + .contact__label {
+    display: none;
+    animation: none;
+}
+/*send - bytton*/
+.wf-contact__send-btn:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.wf-contact__send-btn:before {
+    speak: none;
+    font-size: 48px;
+    line-height: 90px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+}
+.wf-contact__send-btn:after {
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: -1;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transform: scale(0.9);
+}
+.wf-contact__send-btn:hover:after {
+    animation: sonarEffect infinite ease-out 1.2s;
+}
+.wf-contact__send-btn:hover .contact__send-btn {
+    -webkit-animation: a_send 1.2s infinite linear;
+    animation: a_send 1.2s infinite linear;
+    display: inline-block;
+}
+/*additional contacts*/
+.addit-contac__title::first-letter {
+    color: $clr-txt-attention;
+}
