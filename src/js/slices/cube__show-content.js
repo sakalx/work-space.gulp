@@ -8,7 +8,7 @@ var CubeContent = {
   services: document.getElementById('services__content'),
   cooperation: document.getElementById('cooperation__content'),
   knowledge: document.getElementById('knowledge__content'),
-  contact: document.getElementById('contact__content'),
+  contact: document.getElementById('contact__content')
 };
 var CubeSide = {
   works: document.getElementById('works__show-content'),
@@ -16,7 +16,7 @@ var CubeSide = {
   services: document.getElementById('services__show-content'),
   cooperation: document.getElementById('cooperation__show-content'),
   knowledge: document.getElementById('knowledge__show-content'),
-  contact: document.getElementById('contact__show-content'),
+  contact: document.getElementById('contact__show-content')
 };
 
 // Nandi
@@ -42,10 +42,16 @@ function nandiShow() {
   });
 
   anime({
-    targets: CubeContent.contact.children,
-    duration: 1200,
+    targets: [
+      CubeContent.contact.children[0],
+      CubeContent.contact.children[1].children,
+      CubeContent.contact.children[2],
+      CubeContent.contact.children[3],
+      CubeContent.contact.children[4].children
+    ],
+    duration: 1500,
     delay: function delay(t, i) {
-      return i * 280 + 500;
+      return i * 500;
     },
     easing: [0.1, 1, 0.3, 1],
     scale: [0, 1],
@@ -71,7 +77,13 @@ function nandiHide() {
   });
 
   anime({
-    targets: CubeContent.contact.children,
+    targets: [
+      CubeContent.contact.children[0],
+      CubeContent.contact.children[1].children,
+      CubeContent.contact.children[2],
+      CubeContent.contact.children[3],
+      CubeContent.contact.children[4].children
+    ],
     duration: 100,
     easing: 'easeOutQuad',
     scale: 0,
