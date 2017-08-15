@@ -107,6 +107,10 @@ $clr-bgr-attention: rgba(28, 28, 28, 1);
 	.title__control {
     color: #d5d7d8
 }
+	/*Nav - menu*/
+	.menu__btn {
+    color: #8e8e8e
+}
 	.name {
     background-color: #666;
     -webkit-background-clip: text;
@@ -153,7 +157,7 @@ $clr-bgr-attention: rgba(28, 28, 28, 1);
     box-shadow: 5px 5px 20px #cc181e
 }
 	.contact__send-btn {
-    background: url(../img/svg/svg-min/contact/svg_send.svg) no-repeat;
+    background: url(../svg/svg-min/contact/svg_send.svg) no-repeat;
     background-size: 100% 100%;
     border-style: none
 }
@@ -262,8 +266,43 @@ ________________________________
     width: 95%;
     margin: 1.25rem
 }
-	.title__descr {
-    margin-bottom: 0.75rem
+	/*Nav - menu*/
+	.menu__btn {
+    background: red;
+    position: relative;
+    height: 1.563rem;
+    margin: 0.938rem 0.625rem;
+    padding: 0 0.625rem
+    /*overflow: hidden;*/
+}
+	.menu__btn svg {
+    display: block;
+    margin: auto
+}
+	.menu__btn span {
+    display: block;
+    margin: 0.313rem auto
+}
+	.menu__btn svg {
+    opacity: 0;
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%)
+}
+	.menu__btn:hover svg {
+    opacity: 1;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%)
+}
+	.menu__btn:hover span {
+    opacity: 0;
+    -webkit-transform: translateY(200%);
+            transform: translateY(200%)
+}
+	.arrow {
+    opacity: 1
+}
+	.menu__btn:hover .arrow {
+    opacity: 1
 }
 	.name {
     position: fixed;
@@ -276,17 +315,15 @@ ________________________________
     display: -ms-flexbox;
     display: flex;
     height: 95vh;
-    -ms-touch-action: manipulation;
-        touch-action: manipulation
-    /*fix error from chrome - need test with auto*/
+    -ms-touch-action: pinch-zoom;
+        touch-action: pinch-zoom
+    /*fix error from chrome - need test with
+    pan-right
+    pan-y
+    pan-down
+    */
 }
 	/*CUBE===================================================================*/
-	/*fix speed bug - need test #box*/
-	/*
-#viewport:hover .cube {
-    will-change: transform;
-}
-*/
 	#viewport {
     margin: auto
 }
@@ -954,7 +991,7 @@ ________________________________
     font-weight: normal;
     font-style: normal
 }
-	h1, h2, h3, h4, span, input {
+	a, h1, h2, h3, h4, span, input {
     font-family: scratch
 }
 	/*LETTER-SPACING================================================================*/
@@ -1175,13 +1212,13 @@ ________________________________
 }
 	/*TRANSITION================================================================*/
 	.a_easy, a {
-    transition: all 0.1s ease-in-out
+    transition: all .3s ease-in-out
 }
 	.a_easy_sl {
     transition: all 1.3s ease-in-out
 }
 	.a_trans_linear {
-    transition: all 0.5s linear
+    transition: all .5s linear
 }
 	/*@KEYFRAMES=================================================================*/
 	/* Neon */
@@ -1415,6 +1452,8 @@ ________________________________
             transform: rotate(360deg);
     background: #fff
 }
+	/*HEADER===================================================================*/
+	/*Nav - menu*/
 	/*CUBE===================================================================*/
 	.cube__title:hover .cube__title-svg {
     -webkit-transform: scale(1.2);

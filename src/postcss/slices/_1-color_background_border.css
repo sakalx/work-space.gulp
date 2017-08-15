@@ -118,6 +118,10 @@ h3, figcaption {
 .title__control {
 	color: $clr-txt-main;
 }
+/*Nav - menu*/
+.menu__btn {
+	color: $clr-txt-auxiliary;
+}
 .name {
 	background-color: #666;
 	-webkit-background-clip: text;

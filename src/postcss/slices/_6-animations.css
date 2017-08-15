@@ -90,13 +90,13 @@ textarea
 /*TRANSITION================================================================*/
 .a_easy, 			/*transition ease-in-out*/
 a
-{   transition: all 0.1s ease-in-out; }
+{   transition: all .3s ease-in-out; }
 
 .a_easy_sl 			/*transition ease-in-out slow*/
 {   transition: all 1.3s ease-in-out; }
 
 .a_trans_linear 	/*transition linear*/
-{   transition: all 0.5s linear; }
+{   transition: all .5s linear; }
 
 /*@KEYFRAMES=================================================================*/
 /* Neon */

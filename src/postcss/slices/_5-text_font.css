@@ -94,7 +94,7 @@ $nano: rem(1.5);
     font-style: normal;
 }
 
-h1, h2, h3, h4, span, input
+a, h1, h2, h3, h4, span, input
 { 	font-family: scratch; }
 
 /*LETTER-SPACING================================================================*/

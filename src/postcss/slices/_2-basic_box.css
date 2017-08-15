@@ -92,9 +92,55 @@ body {
     width: 95%;
     margin: rem(20);
 }
-.title__descr {
-    margin-bottom: rem(12);
+/*Nav - menu*/
+.menu__btn {
+    background: red;
+position: relative;
+
+height: rem(25);
+    margin: rem(15) rem(10);
+    padding: 0 rem(10);
+    /*overflow: hidden;*/
 }
+.menu__btn svg {
+display: block;
+    margin: auto;
+}
+.menu__btn span {
+    display: block;
+    margin: rem(5) auto;
+}
+.menu__btn svg {
+    opacity: 0;
+     transform: translateY(-200%);
+ }
+.menu__btn:hover svg {
+    opacity: 1;
+    transform: translateY(-100%);
+}
+.menu__btn:hover span {
+    opacity: 0;
+    transform: translateY(200%);
+}
+
+.arrow {
+    opacity: 1;
+}
+.menu__btn:hover .arrow {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .name {
     position: fixed;
     bottom: 8%;
@@ -105,16 +151,15 @@ body {
 #box {
     display: flex;
     height: 95vh;
-    touch-action: manipulation; /*fix error from chrome - need test with auto*/
+    touch-action: pinch-zoom;
+    /*fix error from chrome - need test with
+    pan-right
+    pan-y
+    pan-down
+    */
 }
 
 /*CUBE===================================================================*/
-/*fix speed bug - need test #box*/
-/*
-#box:hover .cube {
-    will-change: transform;
-}
-*/
 #viewport {
     margin: auto;
 }
