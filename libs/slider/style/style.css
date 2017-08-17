@@ -1,0 +1,60 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#gallery {
+    position: relative;
+}
+.gallery__controler {
+ position: absolute;
+ z-index: 1;
+ left: 0;
+ width: 100%; 
+}
+
+/*Slide Img*/
+.gallery__slide {
+    width: 100%;
+}
+
+/*Block Arrows*/
+#gallery__arrows  {
+   display: flex;
+   justify-content: space-between;
+   top: 45%;
+}
+
+/*Arrow*/
+.gallery__arrow  {
+    width: 70px;
+    height: 70px;
+    color: #fff;
+    background: rgba(0, 0, 0, .7);
+    border-radius: 50%;
+    font-size: 44px; 
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+/*Block Dots*/
+#gallery__dots {
+   bottom: 0;
+   text-align: center;
+}
+
+/*Dot*/
+.gallery__dots-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+/*Active Dot*/
+.gallery__dots-img--act {
+    transform: scale(1.2);
+}
