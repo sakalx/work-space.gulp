@@ -99,25 +99,31 @@ position: relative;
 
 height: rem(25);
     margin: rem(15) rem(10);
-    padding: 0 rem(10);
+    /*padding: 0 rem(10);*/
     /*overflow: hidden;*/
 }
 .menu__btn svg {
 display: block;
-    margin: auto;
+    width: 100%;
+    /*margin: auto;*/
+
+
+
+
+   /*margin: auto;*/
 }
 .menu__btn span {
     display: block;
-    margin: rem(5) auto;
+    margin: rem(5) rem(10);
 }
 .menu__btn svg {
-    opacity: 0;
+    opacity: 1;
      transform: translateY(-200%);
  }
-.menu__btn:hover svg {
+/*.menu__btn:hover svg {
     opacity: 1;
     transform: translateY(-100%);
-}
+}*/
 .menu__btn:hover span {
     opacity: 0;
     transform: translateY(200%);
@@ -125,6 +131,7 @@ display: block;
 
 .arrow {
     opacity: 1;
+    background: greenyellow;
 }
 .menu__btn:hover .arrow {
     opacity: 1;

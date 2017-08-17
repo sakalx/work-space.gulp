@@ -271,35 +271,37 @@ ________________________________
     background: red;
     position: relative;
     height: 1.563rem;
-    margin: 0.938rem 0.625rem;
-    padding: 0 0.625rem
+    margin: 0.938rem 0.625rem
+    /*padding: 0 rem(10);*/
     /*overflow: hidden;*/
 }
 	.menu__btn svg {
     display: block;
-    margin: auto
+    width: 100%
+    /*margin: auto;*/
+    /*margin: auto;*/
 }
 	.menu__btn span {
     display: block;
-    margin: 0.313rem auto
+    margin: 0.313rem 0.625rem
 }
 	.menu__btn svg {
-    opacity: 0;
+    opacity: 1;
     -webkit-transform: translateY(-200%);
             transform: translateY(-200%)
 }
-	.menu__btn:hover svg {
+	/*.menu__btn:hover svg {
     opacity: 1;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%)
-}
+    transform: translateY(-100%);
+}*/
 	.menu__btn:hover span {
     opacity: 0;
     -webkit-transform: translateY(200%);
             transform: translateY(200%)
 }
 	.arrow {
-    opacity: 1
+    opacity: 1;
+    background: greenyellow
 }
 	.menu__btn:hover .arrow {
     opacity: 1
