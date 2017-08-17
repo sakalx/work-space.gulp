@@ -1,10 +1,16 @@
 //name script
 /*
-$(document).ready(function() {
+ $(document).ready(function() {
 
-});
+ });
 
-;(function() {
-	'use strict';
+ ;(function() {
+ 'use strict';
 
-})();*/
+ })();
+
+ ;(() => {
+ 'use strict';
+
+ })();
+ */

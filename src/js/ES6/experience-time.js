@@ -1,4 +1,6 @@
+//timer count exp time
 ;(() => {
+  'use strict';
   const
       hours = 1000 * 60 * 60,
       //days = hours * 24,
