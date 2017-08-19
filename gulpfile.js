@@ -8,11 +8,10 @@ var autoprefixer = require('autoprefixer'),             // Подключаем 
     imagemin     = require('gulp-imagemin'),            // Подключаем Image-Min      для оптимизации img
     postcss 		 = require('gulp-postcss'),         // Подключаем PostCSS        для парсинга CSS
     rename 		   = require('gulp-rename'),            // Подключаем Rename         для для переименования файлов
-    uglify       = require('gulp-uglifyjs'),            // Подключаем Uglify-JS      для сжатия JS
+    uglify       = require('gulp-uglifyjs'),            // Подключаем Uglify           для сжатия JS
     pngquant     = require('imagemin-pngquant'),        // Подключаем PNG-Quant      для оптимизации PNG
     postcssUnits = require('postcss-units'),            // Подключаем PostCSS-Units  для смены px to rem
     precss 			 = require('precss');               // Подключаем PreCSS         для имитации Sass
-
 
 //=======================================================================================================
 //factory SVG
@@ -98,7 +97,7 @@ gulp.task('css', function() {
 // Создаем таск Concat + Uglify--------------------для склеивания библиотек и их сжатия
 gulp.task('vendor', function() {
     return gulp.src([                                          		// Берем все необходимые библиотеки
-		'src/libs/jquery/jquery-3.2.1.min.js',         	  		// Берем jQuery
+		'src/libs/jquery/jquery-3.2.1.min.js',         	  			// Берем jQuery
         //'src/libs/jquery/jquery-ui-1.12.1/jquery-ui.min.js',  	// Берем jQuery-UI
     	'src/libs/anime.js/anime.min.js', 						    // Берем Anime.js
     	'src/libs/parallax.js/parallax.min.js'				        // Берем Parallax.js
@@ -141,7 +140,8 @@ gulp.task('watch', [
 	'browser-sync',
 	'css',
 	'vendor',
-	'scripts'
+	'scripts',
+  'scripts2',
 	], function() {
  gulp.watch('src/postcss/**/*.css', ['css']);      // Наблюдение за css файлами в папке postcss
  gulp.watch('src/**/*.html', browserSync.reload);  // Наблюдение за HTML файлами в корне проекта
@@ -154,9 +154,13 @@ gulp.task('watch', [
 
 // Создаем таск HTML-Min--------------------------для минификации HTML
 gulp.task('htmlmin', function(){
-	return gulp.src(['!src/libs/**/*.html', 'src/**/*.html'])
-  .pipe(htmlmin({collapseWhitespace: true}))      // Минимизируем  HTML 
-  .pipe(gulp.dest('built'));                  // Выгружаем в готовый проект
+	return gulp.src(['!src/libs/**/*.html', 'src/**/*.html']) // Минимизируем  HTML 
+  .pipe(htmlmin({
+  			collapseWhitespace: true, 
+  			removeComments: true
+  			})
+  )      
+  .pipe(gulp.dest('built'));                  		// Выгружаем в готовый проект
   });
 
 
