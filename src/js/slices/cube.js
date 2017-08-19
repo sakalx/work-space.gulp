@@ -30,9 +30,8 @@ $(function() {
             if (typeof coords.x === 'number') this.x = coords.x;
             if (typeof coords.y === 'number') this.y = coords.y;
           }
-          this.el.style[transformProp] = 'rotateX(' + this.x + 'deg) rotateY(' +
-              this.y + 'deg)';
-          this.el.style[transformProp].rotateX = this.x + 'deg';
+          this.el.style[transformProp] = 'rotateX(' + this.x + 'deg) rotateY(' + this.y + 'deg)';
+
         },
         reset: function() {
           this.move({x: 0, y: 0});
@@ -135,19 +134,26 @@ $(function() {
 
   //nav - menu for cube
   document.getElementById('nav-menu').addEventListener('click', function(event) {
-    //Сделать проверку ОБЯЗАТЕЛЬНО!!!!!!!!!!!!!
-    //change cube coords
-    var target = event.target;
-    viewport.move({x: viewport.x = target.dataset.x});
-    viewport.move({y: viewport.y = target.dataset.y});
+    //check our target
+    if (event.target.tagName === 'svg' || event.target.tagName === 'span') {
 
-    //remove arrow from btn nav - menu
-    var allArrow = document.querySelectorAll('.arrow');
-    allArrow.forEach(function(element) {
-      element.classList.remove('arrow');
-    });
-    //add arrow for btn nav - menu
-    target.nextElementSibling.classList.add('arrow');
+      //change cube coords
+      var target = event.target.parentNode;
+      viewport.reset();
+      viewport.move({x: viewport.x - target.dataset.x});
+      viewport.move({y: viewport.y - target.dataset.y});
+
+      //remove arrow from btn nav - menu
+      var allArrow = document.querySelectorAll('.active');
+      allArrow.forEach(function(element) {
+        element.classList.remove('active');
+      });
+      //add arrow for btn nav - menu
+      target.children[2].classList.add('active');
+    }
   });
+
+
+
 
 });
