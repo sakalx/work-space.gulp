@@ -1,0 +1,5 @@
+﻿Eric Cartman	xBox	132$	2
+Eric Cartman	taco	12$	1
+Eric Cartman	burrito	21$	3
+Kyle Broflovski	PS4	122$	1
+Kyle Broflovski	pizza	101$	32

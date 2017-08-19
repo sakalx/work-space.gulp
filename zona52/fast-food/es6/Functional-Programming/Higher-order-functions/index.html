@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Fetch-Reduce_txt-json.js"></script>
+</head>
+<body>
+<h1>.txt translate to .json</h1>
+<small>with using Fetch/AJAX</small>
+<h2><mark>txt file on server looks like :</mark></h2>
+<pre>
+    Eric Cartman	xBox	132$	2
+Eric Cartman	taco	12$	1
+Eric Cartman	burrito	21$	3
+Kyle Broflovski	PS4	122$	1
+Kyle Broflovski	pizza	101$	32
+</pre>
+<br>
+<h2><mark>What we need :</mark></h2>
+<pre>
+    <code>
+        {
+  "Eric Cartman": [
+    {
+      "order": "xBox",
+      "price": "132$",
+      "quantity": "2"
+    },
+    {
+      "order": "taco",
+      "price": "12$",
+      "quantity": "1"
+    },
+    {
+      "order": "burrito",
+      "price": "21$",
+      "quantity": "3"
+    }
+  ],
+  "Kyle Broflovski": [
+    {
+      "order": "PS4",
+      "price": "122$",
+      "quantity": "1"
+    },
+    {
+      "order": "pizza",
+      "price": "10$",
+      "quantity": "12"
+    }
+  ]
+}
+    </code>
+</pre>
+<br>
+<mark>check console</mark>
+</body>
+</html>
