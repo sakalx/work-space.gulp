@@ -1,17 +1,31 @@
-let jsx = React.createElement(
-  "div",
-  { className: "container" },
-  React.createElement(
-    "h1",
-    null,
-    "Kitty"
-  ),
-  React.createElement("img", { src: "https://sakals.000webhostapp.com/share/HelloKitty.png" }),
-  React.createElement(
-    "p",
-    null,
-    "Best App! 2017"
-  )
-);
+const Hero = props => {
+    console.log(props);
+    return React.createElement(
+        "div",
+        { className: "container" },
+        React.createElement(
+            "h1",
+            null,
+            props.title
+        ),
+        React.createElement("img", { src: props.imgUrl }),
+        React.createElement(
+            "p",
+            null,
+            props.subTitle
+        )
+    );
+};
 
-ReactDOM.render(jsx, document.getElementById('root'));
+ReactDOM.render(React.createElement(
+    "div",
+    null,
+    React.createElement(Hero, {
+        title: "Kitty",
+        imgUrl: "https://sakals.000webhostapp.com/share/HelloKitty.png",
+        subTitle: "Best App! 2017" }),
+    React.createElement(Hero, {
+        title: "Kitty2",
+        imgUrl: "https://sakals.000webhostapp.com/share/HelloKitty2.png",
+        subTitle: "Best App! 2017" })
+), document.getElementById('root'));
