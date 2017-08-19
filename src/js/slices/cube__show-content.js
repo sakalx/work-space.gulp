@@ -1,6 +1,6 @@
 var CubeEnvironment = {
   cube: document.getElementById('viewport'),
-  header: document.getElementById('header').style
+  header: document.getElementById('header').style,
 };
 var CubeContent = {
   works: document.getElementById('works__content'),
@@ -8,15 +8,7 @@ var CubeContent = {
   services: document.getElementById('services__content'),
   cooperation: document.getElementById('cooperation__content'),
   knowledge: document.getElementById('knowledge__content'),
-  contact: document.getElementById('contact__content')
-};
-var CubeSide = {
-  works: document.getElementById('works__show-content'),
-  profile: document.getElementById('profile__show-content'),
-  services: document.getElementById('services__show-content'),
-  cooperation: document.getElementById('cooperation__show-content'),
-  knowledge: document.getElementById('knowledge__show-content'),
-  contact: document.getElementById('contact__show-content')
+  contact: document.getElementById('contact__content'),
 };
 
 // Nandi
@@ -47,7 +39,7 @@ function nandiShow() {
       CubeContent.contact.children[1].children,
       CubeContent.contact.children[2],
       CubeContent.contact.children[3],
-      CubeContent.contact.children[4].children
+      CubeContent.contact.children[4].children,
     ],
     duration: 1500,
     delay: function delay(t, i) {
@@ -82,7 +74,7 @@ function nandiHide() {
       CubeContent.contact.children[1].children,
       CubeContent.contact.children[2],
       CubeContent.contact.children[3],
-      CubeContent.contact.children[4].children
+      CubeContent.contact.children[4].children,
     ],
     duration: 100,
     easing: 'easeOutQuad',
@@ -415,40 +407,66 @@ function optimizeEl() {
 }
 function unOptimizeEl() {
   CubeEnvironment.cube.classList.remove('shrink');
-  CubeEnvironment.header.visibility  = 'visible';
+  CubeEnvironment.header.visibility = 'visible';
 }
 /************************************************************************
- * 1: works
+ * listener Show
  ************************************************************************/
-CubeSide.works.addEventListener('click', raviShow);
+function showContent(e) {
+  const target = e.target.tagName;
+//need to listen to targets
+  if (
+      target === 'H2' ||
+      target === 'SPAN' ||
+      target === 'svg' ||
+      target === 'use'
+  ) {
+//find parent with data
+    e.path.forEach(function(e) {
+      if (e.tagName === 'SECTION') {
+//show content
+        switch (e.dataset.side) {
+            // front - profile
+          case 'front':
+            deviShow();
+            break;
+            // right - services
+          case 'right':
+            rudrasShow();
+            break;
+            // back - cooperation
+          case 'back':
+            durgaShow();
+            break;
+            // left - knowledge
+          case 'left':
+            ardraShow();
+            break;
+          // top-side
+          case 'top':
+            raviShow();
+            break;
+          // bottom - contact
+          case 'bottom':
+            nandiShow();
+        }
+      }
+    });
+  }
+}
+CubeEnvironment.cube.addEventListener('click', showContent);
+/************************************************************************
+ * listeners Hide
+ ************************************************************************/
+ // 1: works
 CubeContent.works.parentNode.addEventListener('click', raviHide);
-
-/************************************************************************
- * 2: profile
- ************************************************************************/
-CubeSide.profile.addEventListener('click', deviShow);
+// 2: profile
 CubeContent.profile.parentNode.addEventListener('click', deviHide);
-
-/************************************************************************
- * 3: services
- ************************************************************************/
-CubeSide.services.addEventListener('click', rudrasShow);
+// 3: services
 CubeContent.services.parentNode.addEventListener('click', rudrasHide);
-
-/************************************************************************
- * 4: cooperation
- ************************************************************************/
-CubeSide.cooperation.addEventListener('click', durgaShow);
+// 4: cooperation
 CubeContent.cooperation.parentNode.addEventListener('click', durgaHide);
-
-/************************************************************************
- * 5: knowledge
- ************************************************************************/
-CubeSide.knowledge.addEventListener('click', ardraShow);
+// 5: knowledge
 CubeContent.knowledge.parentNode.addEventListener('click', ardraHide);
-
-/************************************************************************
- * 6: contact
- ************************************************************************/
-CubeSide.contact.addEventListener('click', nandiShow);
+// 6: contact
 document.getElementById('contact__close').addEventListener('click', nandiHide);

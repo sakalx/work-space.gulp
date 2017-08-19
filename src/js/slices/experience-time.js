@@ -1,6 +1,9 @@
 'use strict';
 
+//timer count exp time
 ;(function () {
+  'use strict';
+
   var hours = 1000 * 60 * 60,
 
   //days = hours * 24,
