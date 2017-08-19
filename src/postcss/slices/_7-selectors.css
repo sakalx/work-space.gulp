@@ -65,10 +65,16 @@ textarea:focus {
 
 /*HEADER===================================================================*/
 /*Nav - menu*/
-
-
-
-
+.menu__btn:hover .menu__title,
+.menu__btn:focus .menu__title {
+    opacity: 0;
+    transform: translateY(200%);
+}
+.menu__btn:hover .menu__svg--icon,
+.menu__btn:focus .menu__svg--icon {
+    opacity: 1;
+    transform: translateY(-100%);
+}
 /*CUBE===================================================================*/
 .cube__title:hover .cube__title-svg {
     transform: scale(1.2);

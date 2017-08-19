@@ -188,6 +188,8 @@ $col12: calc($col * 12 + 22 * $col_margin);
 {	flex: 0 1 $col12; margin: $col_margin; }
 
 /*FLEX COLUMNS SHRINK && GROW===================================================*/
+.f_auto
+{	flex: 1 1 auto;}
 .f1
 {	flex: 1 1 auto; margin: $col_margin;}
 .f1_1

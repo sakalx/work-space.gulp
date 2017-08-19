@@ -116,7 +116,7 @@ $clr-bgr-attention: rgba(28, 28, 28, 1);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     color: transparent;
-    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+    text-shadow: rgba(255,255,255,.5) 0px 3px 3px;
     -webkit-box-reflect: below 0 -webkit-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, transparent 50%, transparent 100%)
 }
 	/*CUBE===================================================================*/
@@ -268,44 +268,29 @@ ________________________________
 }
 	/*Nav - menu*/
 	.menu__btn {
-    background: red;
-    position: relative;
-    height: 1.563rem;
-    margin: 0.938rem 0.625rem
-    /*padding: 0 rem(10);*/
-    /*overflow: hidden;*/
+    background: darkmagenta;
+    max-width: 5rem;
+    height: 1.563rem
 }
-	.menu__btn svg {
-    display: block;
-    width: 100%
-    /*margin: auto;*/
-    /*margin: auto;*/
+	.menu__title {
+    display: block
 }
-	.menu__btn span {
-    display: block;
-    margin: 0.313rem 0.625rem
-}
-	.menu__btn svg {
-    opacity: 1;
+	.menu__svg {
+    width: 100%;
+    opacity: 0;
     -webkit-transform: translateY(-200%);
             transform: translateY(-200%)
 }
-	/*.menu__btn:hover svg {
+	.active {
     opacity: 1;
-    transform: translateY(-100%);
-}*/
-	.menu__btn:hover span {
-    opacity: 0;
-    -webkit-transform: translateY(200%);
-            transform: translateY(200%)
+    -webkit-transform: translateY(-120%);
+            transform: translateY(-120%)
 }
-	.arrow {
-    opacity: 1;
-    background: greenyellow
+	/*Title Control*/
+	.title__control {
+    margin-top: 1.875rem
 }
-	.menu__btn:hover .arrow {
-    opacity: 1
-}
+	/*Title Name*/
 	.name {
     position: fixed;
     bottom: 8%;
@@ -1456,6 +1441,16 @@ ________________________________
 }
 	/*HEADER===================================================================*/
 	/*Nav - menu*/
+	.menu__btn:hover .menu__title, .menu__btn:focus .menu__title {
+    opacity: 0;
+    -webkit-transform: translateY(200%);
+            transform: translateY(200%)
+}
+	.menu__btn:hover .menu__svg--icon, .menu__btn:focus .menu__svg--icon {
+    opacity: 1;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%)
+}
 	/*CUBE===================================================================*/
 	.cube__title:hover .cube__title-svg {
     -webkit-transform: scale(1.2);

@@ -92,62 +92,32 @@ body {
     width: 95%;
     margin: rem(20);
 }
+
 /*Nav - menu*/
 .menu__btn {
-    background: red;
-position: relative;
-
-height: rem(25);
-    margin: rem(15) rem(10);
-    /*padding: 0 rem(10);*/
-    /*overflow: hidden;*/
+    background: darkmagenta;
+    max-width: rem(80);
+    height: rem(25);
+    margin: rem(10);
 }
-.menu__btn svg {
-display: block;
-    width: 100%;
-    /*margin: auto;*/
-
-
-
-
-   /*margin: auto;*/
-}
-.menu__btn span {
+.menu__title {
     display: block;
-    margin: rem(5) rem(10);
 }
-.menu__btn svg {
-    opacity: 1;
-     transform: translateY(-200%);
- }
-/*.menu__btn:hover svg {
-    opacity: 1;
-    transform: translateY(-100%);
-}*/
-.menu__btn:hover span {
+.menu__svg {
+    width: 100%;
     opacity: 0;
-    transform: translateY(200%);
+    transform: translateY(-200%);
 }
-
-.arrow {
+.active {
     opacity: 1;
-    background: greenyellow;
+    transform: translateY(-120%);
 }
-.menu__btn:hover .arrow {
-    opacity: 1;
+/*Title Control*/
+.title__control {
+    margin-top: rem(30);
 }
 
-
-
-
-
-
-
-
-
-
-
-
+/*Title Name*/
 .name {
     position: fixed;
     bottom: 8%;
