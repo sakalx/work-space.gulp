@@ -85,7 +85,6 @@ body {
     margin: rem(15);
 }
 
-
 /*HEADER===================================================================*/
 .title {
     position: absolute;
@@ -95,8 +94,7 @@ body {
 
 /*Nav - menu*/
 .menu__btn {
-    background: darkmagenta;
-    max-width: rem(80);
+    max-width: rem(90);
     height: rem(25);
     margin: rem(10);
 }
@@ -110,13 +108,15 @@ body {
 }
 .active {
     opacity: 1;
-    transform: translateY(-120%);
+    transform: translateY(-170%);
 }
 /*Title Control*/
 .title__control {
-    margin-top: rem(30);
+    position: fixed;
+    left: 0;
+    bottom: 18%;
+    width: 100%;
 }
-
 /*Title Name*/
 .name {
     position: fixed;

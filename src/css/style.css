@@ -268,9 +268,9 @@ ________________________________
 }
 	/*Nav - menu*/
 	.menu__btn {
-    background: darkmagenta;
-    max-width: 5rem;
-    height: 1.563rem
+    max-width: 5.625rem;
+    height: 1.563rem;
+    margin: 0.625rem
 }
 	.menu__title {
     display: block
@@ -283,12 +283,15 @@ ________________________________
 }
 	.active {
     opacity: 1;
-    -webkit-transform: translateY(-120%);
-            transform: translateY(-120%)
+    -webkit-transform: translateY(-170%);
+            transform: translateY(-170%)
 }
 	/*Title Control*/
 	.title__control {
-    margin-top: 1.875rem
+    position: fixed;
+    left: 0;
+    bottom: 18%;
+    width: 100%
 }
 	/*Title Name*/
 	.name {
@@ -779,6 +782,11 @@ ________________________________
     margin: 15px
 }
 	/*FLEX COLUMNS SHRINK && GROW===================================================*/
+	.f_auto {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto
+}
 	.f1 {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
@@ -982,7 +990,7 @@ ________________________________
     font-family: scratch
 }
 	/*LETTER-SPACING================================================================*/
-	.t_lsp, html, body {
+	.t_lsp, body {
     letter-spacing: 0.094rem
 }
 	.t_lsp-larg {
@@ -1048,7 +1056,7 @@ MOLECULES
     font-size: 1.125rem
 }
 	h6, .t_smal {
-    font-size: 1rem
+    font-size: 1.063rem
 }
 	.t_xs {
     font-size: 0.75rem
@@ -1060,7 +1068,7 @@ MOLECULES
 MOLECULES
 ::::::::::::::::::::::::*/
 	.t_sml_itlc {
-    font-size: 1rem;
+    font-size: 1.063rem;
     font-style: italic
 }
 	/*++++++++++++++++++++++++++++++++++++*/
@@ -1432,6 +1440,9 @@ ________________________________
 	.s_first-color::first-letter {
     color: #d5d7d8
 }
+	.s_first-color2::first-letter {
+    color: #2793e8
+}
 	/*Close-Button*/
 	.close:hover {
     color: #cc181e;
@@ -1584,16 +1595,27 @@ Includes Media queries & Vendors
 */
 	/*@MEDIA==================================================================*/
 	/* NoTe max-device-widt */
-	@media only screen and (max-width: 610px) {
+	@media only screen and (max-width: 640px) {
     .sml-screen__hide, .svg-atom {
         display: none
+    }
+    .hamburger {
+        display: inline-block !important
     }
     .l_mark-tick:before {
         content: ""
     }
 }
+	@media only screen and (min-width: 640px) {
+    #nav-menu {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important
+    }
+}
 	/*FONTELLO=================================================================*/
 	/*HAMBURGERS===============================================================*/
+	/* ================================================================ */
 	/*
 Hamburgers
 description Tasty CSS-animated hamburgers
@@ -1601,3 +1623,94 @@ author Jonathan Suh jonsuh
 site https://jonsuh.com/hamburgers
 link https://github.com/jonsuh/hamburgers
 */
+	/* ================================================================ */
+	.hamburger {
+    padding: 15px 15px;
+    display: none;
+    cursor: pointer;
+    transition-property: opacity, -webkit-filter;
+    transition-property: opacity, filter;
+    transition-property: opacity, filter, -webkit-filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible
+}
+	.hamburger:hover {
+    opacity: 0.7
+}
+	.hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative
+}
+	.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px
+}
+	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease
+}
+	.hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block
+}
+	.hamburger-inner::before {
+    top: -10px
+}
+	.hamburger-inner::after {
+    bottom: -10px
+}
+	/*Spring*/
+	.hamburger--spring .hamburger-inner {
+    top: 2px;
+    transition: background-color 0s 0.13s linear
+}
+	.hamburger--spring .hamburger-inner::before {
+    top: 10px;
+    transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19)
+}
+	.hamburger--spring .hamburger-inner::after {
+    top: 20px;
+    transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19)
+}
+	.hamburger--spring.is-active .hamburger-inner {
+    transition-delay: 0.22s;
+    background-color: transparent
+}
+	.hamburger--spring.is-active .hamburger-inner::before {
+    top: 0;
+    transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 10px, 0) rotate(45deg);
+            transform: translate3d(0, 10px, 0) rotate(45deg)
+}
+	.hamburger--spring.is-active .hamburger-inner::after {
+    top: 0;
+    transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 10px, 0) rotate(-45deg);
+            transform: translate3d(0, 10px, 0) rotate(-45deg)
+}

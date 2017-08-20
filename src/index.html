@@ -28,25 +28,34 @@
 <header id="header" class="title a_easy">
     <h1 class="name">Serhii Sakal</h1>
     <section class="fr_c_cc">
-        <h2 class="title__descr" style="background: darkcyan; flex: 1 1 40%; min-width: 320px">
+        <h2 class="title__descr" style="flex: 1 1 40%; min-width: 320px">
             Front-end developer experience :<span id="exp-hrs"></span>
-        </h2 >
-        <nav class="fr_e_cc" style="background: greenyellow; flex: 1 1 60%; ">
+        </h2>
+
+        <!--hamburger for smal screen-->
+        <div class="hamburger hamburger--spring is-active">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
+        </div>
+
+        <!--Naviagation Menu-->
+        <nav class="fr_e_cc" style="flex: 1 1 60%">
             <ul id="nav-menu" class="fr_c_cc">
                 <!--front - profile-->
-                <li class="menu__btn f_auto t_cntr" data-x="0" data-y="0">
-                    <span class="menu__title a_easy">Profile</span>
-                    <svg class="menu__svg menu__svg--icon a_easy a_pointer" width="25" height="25">
-                     <use xlink:href='#profile--svg_profile'></use>
+                <li class="menu__btn f_auto t_cntr" data-x="0" data-y="0"">
+                    <span class="menu__title t_smal a_easy s_first-color2">Profile</span>
+                    <svg class="menu__svg menu__svg--icon a_easy a_pointer" width="35" height="35">
+                        <use xlink:href='#profile--svg_profile'></use>
                     </svg>
                     <svg class="menu__svg a_trans_linear active a_pointer" width="25" height="25">
                         <use xlink:href='#arrow--svg_arrow'></use>
                     </svg>
                 </li><!--end profile-->
                 <!--left - knowledge-->
-                <li class="menu__btn f_auto t_cntr"  data-x="0" data-y="-90">
-                    <span class="menu__title a_easy">Knowledge</span>
-                    <svg class="menu__svg menu__svg--icon a_easy a_pointer"  width="25" height="25">
+                <li class="menu__btn f_auto t_cntr" data-x="0" data-y="-90">
+                    <span class="menu__title t_smal a_easy s_first-color2">Knowledge</span>
+                    <svg class="menu__svg menu__svg--icon a_easy a_pointer" width="35" height="35">
                         <use xlink:href='#knowledge--svg_knowledge'></use>
                     </svg>
                     <svg class="menu__svg a_trans_linear a_pointer" width="25" height="25">
@@ -55,8 +64,8 @@
                 </li><!--end knowledge-->
                 <!--right - services-->
                 <li class="menu__btn f_auto t_cntr" data-x="0" data-y="90">
-                    <span class="menu__title a_easy">Services</span>
-                    <svg class="menu__svg menu__svg--icon a_easy a_pointer" width="25" height="25">
+                    <span class="menu__title t_smal a_easy s_first-color2">Services</span>
+                    <svg class="menu__svg menu__svg--icon a_easy a_pointer" width="35" height="35">
                         <use xlink:href='#services--svg_service'></use>
                     </svg>
                     <svg class="menu__svg a_trans_linear a_pointer" width="25" height="25">
@@ -65,8 +74,8 @@
                 </li><!--end services-->
                 <!--back - cooperation-->
                 <li class="menu__btn f_auto t_cntr" data-x="0" data-y="-180">
-                    <span class="menu__title a_easy">Cooperation</span>
-                    <svg class="menu__svg menu__svg--icon a_easy a_pointer" width="25" height="25">
+                    <span class="menu__title t_smal a_easy s_first-color2">Cooperation</span>
+                    <svg class="menu__svg menu__svg--icon a_easy a_pointer" width="35" height="35">
                         <use xlink:href='#cooperation--svg_cooperation'></use>
                     </svg>
                     <svg class="menu__svg a_trans_linear a_pointer" width="25" height="25">
@@ -75,18 +84,18 @@
                 </li><!--end cooperation-->
                 <!--top-side - works-->
                 <li class="menu__btn f_auto t_cntr" data-x="90" data-y="0">
-                    <span class="menu__title a_easy">Works</span>
-                    <svg class="menu__svg menu__svg--icon a_easy a_pointer" width="25" height="25">
-                            <use xlink:href='#works--svg_works'></use>
-                        </svg>
+                    <span class="menu__title t_smal a_easy s_first-color2">Works</span>
+                    <svg class="menu__svg menu__svg--icon a_easy a_pointer" width="35" height="35">
+                        <use xlink:href='#works--svg_works'></use>
+                    </svg>
                     <svg class="menu__svg a_trans_linear a_pointer" width="25" height="25">
                         <use xlink:href='#arrow--svg_arrow'></use>
                     </svg>
                 </li><!--end works-->
                 <!--bottom - contact-->
                 <li class="menu__btn f_auto t_cntr" data-x="-90" data-y="180">
-                    <span class="menu__title a_easy">Contact</span>
-                    <svg class="menu__svg menu__svg--icon a_easy a_pointer" width="25" height="25">
+                    <span class="menu__title t_smal a_easy s_first-color2">Contact</span>
+                    <svg class="menu__svg menu__svg--icon a_easy a_pointer" width="35" height="35">
                         <use xlink:href='#contact--svg_contact'></use>
                     </svg>
                     <svg class="menu__svg a_trans_linear a_pointer" width="25" height="25">
@@ -96,19 +105,19 @@
             </ul>
         </nav>
     </section>
-    <aside class="fc_c_cc title__control t_larg">
+    <aside class="title__control fc_c_cc t_larg">
         <div class="fr_c_cc">
             <span>Drag and Drop to spin</span>
             <i class="control-btn" style="margin-left: 7px; transform: translateY(-8px)">&#8634;</i>
             <i class="control-btn" style="margin-right: 7px; transform: translateY(-8px)">&#8635;</i>
-            <span style="margin-right: 7px">the cube,</span>
+            <span style="margin-right: 7px">the cube</span>
             <span class="sml-screen__hide">or use
                     <i class="control-btn" style="margin-left: 7px">&#8678;</i>
                     <i class="control-btn" style="transform: translateY(-12px)">&#8679;</i>
                     <i class="control-btn" style="margin-left: -7px">&#8680;</i>
                 </span>
         </div>
-        <span><b class="control-btn sml-screen__hide" style="margin: 17px;">Esc</b>for reset</span>
+        <span class="sml-screen__hide"><b class="control-btn" style="margin: 17px;">Esc</b>for reset</span>
     </aside>
 </header>
 
@@ -529,7 +538,7 @@
                         </svg>
                         <span>Ukrainian</span>
                     </li>
-                     <li>
+                    <li>
                         <svg width="25" height="25">
                             <use xlink:href='#knowledge--svg_language'></use>
                         </svg>
@@ -585,12 +594,20 @@
             <section class="cube__atom cube__atom--sml fcn_c_cc">
                 <h3>JS librarie</h3>
                 <hr class="hr-smal">
-                <div class="fc_c_cc">
-                    <svg width="25" height="25">
-                        <use xlink:href='#knowledge--svg_jquery'></use>
-                    </svg>
-                    <span>jQuery</span>
-                </div>
+                <ul>
+                    <li class="fr_c_cc">
+                        <svg width="25" height="25">
+                            <use xlink:href='#knowledge&#45;&#45;svg_jquery'></use>
+                        </svg>
+                        <span>jQuery</span>
+                    </li>
+                    <li class="fr_c_cc">
+                        <svg width="25" height="25">
+                            <use xlink:href='#knowledge--svg_react'></use>
+                        </svg>
+                        <span>React</span>
+                    </li>
+                </ul>
             </section>
             <!-- bundling tools -->
             <section class="cube__atom cube__atom--sml fcn_c_cc">
@@ -640,8 +657,8 @@
                       required
                       maxlength="120" title="only eng. Thank You."></textarea>
             <div class="wf-contact__send-btn a_pointer">
-              <input id="send" class="contact__send-btn" type="submit" name="send" value="">
-          </div>
+                <input id="send" class="contact__send-btn" type="submit" name="send" value="">
+            </div>
             <!--Additional contacts-->
             <div id="addit-contact" class="fr_c_cc">
                 <!--Email-->
@@ -722,4 +739,3 @@
 
 </body>
 </html>
-

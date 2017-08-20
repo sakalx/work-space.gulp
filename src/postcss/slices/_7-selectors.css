@@ -53,7 +53,10 @@ textarea:focus {
 
 /*BASIC STYLE===================================================================*/
 .s_first-color::first-letter {
-    color: $clr-txt-main;
+     color: $clr-txt-main;
+ }
+.s_first-color2::first-letter {
+    color: $clr-link;
 }
 
 /*Close-Button*/
