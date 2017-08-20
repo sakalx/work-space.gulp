@@ -1,4 +1,6 @@
-const Hero = props => {
+"use strict";
+
+var Hero = function Hero(props) {
     console.log(props);
     return React.createElement(
         "div",
