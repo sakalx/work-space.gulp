@@ -16,4 +16,4 @@
  */
 
 console.log(`%c 😈 Copyright © ${new Date().getFullYear()}`,
-`font-size:18px;color:#cc181e`);
+`font-size:18px;color:#666`);

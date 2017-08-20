@@ -17,4 +17,4 @@
  })();
  */
 
-console.log("%c \uD83D\uDE08 Copyright \xA9 " + new Date().getFullYear(), "font-size:18px;color:#cc181e");
+console.log("%c \uD83D\uDE08 Copyright \xA9 " + new Date().getFullYear(), "font-size:18px;color:#666");
