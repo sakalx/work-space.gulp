@@ -77,7 +77,7 @@ $larg: rem(21);	 /*h4*/
 
 $med: rem(18);	 /*h5*/
 
-$smal: rem(16);	 /*h6*/
+$smal: rem(17);	 /*h6*/
 
 $xs: rem(12);
 
@@ -94,12 +94,12 @@ $nano: rem(1.5);
     font-style: normal;
 }
 
-h1, h2, h3, h4, span, input
+a, h1, h2, h3, h4, span, input
 { 	font-family: scratch; }
 
 /*LETTER-SPACING================================================================*/
 .t_lsp,
-html, body
+body
 {	letter-spacing: $nano; }
 
 .t_lsp-larg

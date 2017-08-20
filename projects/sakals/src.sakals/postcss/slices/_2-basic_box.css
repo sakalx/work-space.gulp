@@ -85,16 +85,39 @@ body {
     margin: rem(15);
 }
 
-
 /*HEADER===================================================================*/
 .title {
     position: absolute;
     width: 95%;
     margin: rem(20);
 }
-.title__descr {
-    margin-bottom: rem(12);
+
+/*Nav - menu*/
+.menu__btn {
+    max-width: rem(90);
+    height: rem(25);
+    margin: rem(10);
 }
+.menu__title {
+    display: block;
+}
+.menu__svg {
+    width: 100%;
+    opacity: 0;
+    transform: translateY(-200%);
+}
+.active {
+    opacity: 1;
+    transform: translateY(-170%);
+}
+/*Title Control*/
+.title__control {
+    position: fixed;
+    left: 0;
+    bottom: 18%;
+    width: 100%;
+}
+/*Title Name*/
 .name {
     position: fixed;
     bottom: 8%;
@@ -105,16 +128,15 @@ body {
 #box {
     display: flex;
     height: 95vh;
-    touch-action: manipulation; /*fix error from chrome - need test with auto*/
+    touch-action: pinch-zoom;
+    /*fix error from chrome - need test with
+    pan-right
+    pan-y
+    pan-down
+    */
 }
 
 /*CUBE===================================================================*/
-/*fix speed bug - need test #box*/
-/*
-#box:hover .cube {
-    will-change: transform;
-}
-*/
 #viewport {
     margin: auto;
 }

@@ -1,5 +1,14 @@
+.svg-arrow--svg_arrow {
+	background: url("svg/sprite.view.svg") 16.666666666666668% 0 no-repeat;
+}
+
+.svg-arrow--svg_arrow-dims {
+	width: 38px;
+	height: 23.44px;
+}
+
 .svg-contact--svg_contact {
-	background: url("svg/sprite.view.svg") 20% 0 no-repeat;
+	background: url("svg/sprite.view.svg") 66.66666666666667% 19.689839572192515% no-repeat;
 }
 
 .svg-contact--svg_contact-dims {
@@ -8,7 +17,7 @@
 }
 
 .svg-contact--svg_send {
-	background: url("svg/sprite.view.svg") 80% 0 no-repeat;
+	background: url("svg/sprite.view.svg") 0 20.32085561497326% no-repeat;
 }
 
 .svg-contact--svg_send-dims {
@@ -17,7 +26,7 @@
 }
 
 .svg-cooperation--svg_ability-un {
-	background: url("svg/sprite.view.svg") 0 20% no-repeat;
+	background: url("svg/sprite.view.svg") 16.666666666666668% 20.32085561497326% no-repeat;
 }
 
 .svg-cooperation--svg_ability-un-dims {
@@ -26,7 +35,7 @@
 }
 
 .svg-cooperation--svg_cooperation {
-	background: url("svg/sprite.view.svg") 20% 20% no-repeat;
+	background: url("svg/sprite.view.svg") 33.333333333333336% 0 no-repeat;
 }
 
 .svg-cooperation--svg_cooperation-dims {
@@ -35,7 +44,7 @@
 }
 
 .svg-cooperation--svg_importance {
-	background: url("svg/sprite.view.svg") 40% 0 no-repeat;
+	background: url("svg/sprite.view.svg") 33.333333333333336% 20.32085561497326% no-repeat;
 }
 
 .svg-cooperation--svg_importance-dims {
@@ -44,7 +53,7 @@
 }
 
 .svg-cooperation--svg_love {
-	background: url("svg/sprite.view.svg") 40% 20% no-repeat;
+	background: url("svg/sprite.view.svg") 0 40.64171122994652% no-repeat;
 }
 
 .svg-cooperation--svg_love-dims {
@@ -53,7 +62,7 @@
 }
 
 .svg-cooperation--svg_ready {
-	background: url("svg/sprite.view.svg") 0 40% no-repeat;
+	background: url("svg/sprite.view.svg") 16.666666666666668% 40.64171122994652% no-repeat;
 }
 
 .svg-cooperation--svg_ready-dims {
@@ -62,7 +71,7 @@
 }
 
 .svg-knowledge--svg_PostCSS {
-	background: url("svg/sprite.view.svg") 20% 39.913870069849274% no-repeat;
+	background: url("svg/sprite.view.svg") 33.333333333333336% 40.552798676698146% no-repeat;
 }
 
 .svg-knowledge--svg_PostCSS-dims {
@@ -71,7 +80,7 @@
 }
 
 .svg-knowledge--svg_bem {
-	background: url("svg/sprite.view.svg") 40% 38.860765966150225% no-repeat;
+	background: url("svg/sprite.view.svg") 50% 0 no-repeat;
 }
 
 .svg-knowledge--svg_bem-dims {
@@ -80,7 +89,7 @@
 }
 
 .svg-knowledge--svg_css3 {
-	background: url("svg/sprite.view.svg") 60% 0 no-repeat;
+	background: url("svg/sprite.view.svg") 50% 17.342245989304814% no-repeat;
 }
 
 .svg-knowledge--svg_css3-dims {
@@ -89,7 +98,7 @@
 }
 
 .svg-knowledge--svg_gimp {
-	background: url("svg/sprite.view.svg") 60% 20% no-repeat;
+	background: url("svg/sprite.view.svg") 50% 37.66310160427808% no-repeat;
 }
 
 .svg-knowledge--svg_gimp-dims {
@@ -98,7 +107,7 @@
 }
 
 .svg-knowledge--svg_github {
-	background: url("svg/sprite.view.svg") 60% 40% no-repeat;
+	background: url("svg/sprite.view.svg") 0 60.962566844919785% no-repeat;
 }
 
 .svg-knowledge--svg_github-dims {
@@ -107,7 +116,7 @@
 }
 
 .svg-knowledge--svg_gulp {
-	background: url("svg/sprite.view.svg") 0 60% no-repeat;
+	background: url("svg/sprite.view.svg") 16.666666666666668% 60.962566844919785% no-repeat;
 }
 
 .svg-knowledge--svg_gulp-dims {
@@ -116,7 +125,7 @@
 }
 
 .svg-knowledge--svg_html5 {
-	background: url("svg/sprite.view.svg") 20% 60% no-repeat;
+	background: url("svg/sprite.view.svg") 33.333333333333336% 60.962566844919785% no-repeat;
 }
 
 .svg-knowledge--svg_html5-dims {
@@ -125,7 +134,7 @@
 }
 
 .svg-knowledge--svg_javascript {
-	background: url("svg/sprite.view.svg") 40% 60% no-repeat;
+	background: url("svg/sprite.view.svg") 50% 60.962566844919785% no-repeat;
 }
 
 .svg-knowledge--svg_javascript-dims {
@@ -134,7 +143,7 @@
 }
 
 .svg-knowledge--svg_jquery {
-	background: url("svg/sprite.view.svg") 60% 59.62966837535307% no-repeat;
+	background: url("svg/sprite.view.svg") 66.66666666666667% 0 no-repeat;
 }
 
 .svg-knowledge--svg_jquery-dims {
@@ -152,7 +161,7 @@
 }
 
 .svg-knowledge--svg_lang {
-	background: url("svg/sprite.view.svg") 80% 19.19191919191919% no-repeat;
+	background: url("svg/sprite.view.svg") 66.66666666666667% 38.36923076923077% no-repeat;
 }
 
 .svg-knowledge--svg_lang-dims {
@@ -161,7 +170,7 @@
 }
 
 .svg-knowledge--svg_language {
-	background: url("svg/sprite.view.svg") 80% 35.78947368421053% no-repeat;
+	background: url("svg/sprite.view.svg") 66.66666666666667% 56.05347593582888% no-repeat;
 }
 
 .svg-knowledge--svg_language-dims {
@@ -169,8 +178,17 @@
 	height: 38px;
 }
 
+.svg-knowledge--svg_react {
+	background: url("svg/sprite.view.svg") 0 79.85290254793802% no-repeat;
+}
+
+.svg-knowledge--svg_react-dims {
+	width: 38px;
+	height: 34.65px;
+}
+
 .svg-knowledge--svg_sass {
-	background: url("svg/sprite.view.svg") 80% 53.535353535353536% no-repeat;
+	background: url("svg/sprite.view.svg") 16.666666666666668% 77.94871794871794% no-repeat;
 }
 
 .svg-knowledge--svg_sass-dims {
@@ -179,7 +197,7 @@
 }
 
 .svg-knowledge--svg_source-tree {
-	background: url("svg/sprite.view.svg") 0 80% no-repeat;
+	background: url("svg/sprite.view.svg") 83.33333333333333% 0 no-repeat;
 }
 
 .svg-knowledge--svg_source-tree-dims {
@@ -188,7 +206,7 @@
 }
 
 .svg-knowledge--svg_sublime-text {
-	background: url("svg/sprite.view.svg") 20% 80% no-repeat;
+	background: url("svg/sprite.view.svg") 83.33333333333333% 20.32085561497326% no-repeat;
 }
 
 .svg-knowledge--svg_sublime-text-dims {
@@ -197,7 +215,7 @@
 }
 
 .svg-knowledge--svg_webstorm {
-	background: url("svg/sprite.view.svg") 40% 78.09288943690918% no-repeat;
+	background: url("svg/sprite.view.svg") 83.33333333333333% 39.65769150490503% no-repeat;
 }
 
 .svg-knowledge--svg_webstorm-dims {
@@ -206,7 +224,7 @@
 }
 
 .svg-knowledge--svg_wordpress {
-	background: url("svg/sprite.view.svg") 100% 0 no-repeat;
+	background: url("svg/sprite.view.svg") 83.33333333333333% 58.481283422459896% no-repeat;
 }
 
 .svg-knowledge--svg_wordpress-dims {
@@ -215,7 +233,7 @@
 }
 
 .svg-profile--svg_about {
-	background: url("svg/sprite.view.svg") 100% 20% no-repeat;
+	background: url("svg/sprite.view.svg") 83.33333333333333% 78.80213903743316% no-repeat;
 }
 
 .svg-profile--svg_about-dims {
@@ -224,7 +242,7 @@
 }
 
 .svg-profile--svg_education {
-	background: url("svg/sprite.view.svg") 100% 40% no-repeat;
+	background: url("svg/sprite.view.svg") 0 99.81283422459893% no-repeat;
 }
 
 .svg-profile--svg_education-dims {
@@ -233,7 +251,7 @@
 }
 
 .svg-profile--svg_experience {
-	background: url("svg/sprite.view.svg") 100% 60% no-repeat;
+	background: url("svg/sprite.view.svg") 16.666666666666668% 99.81283422459893% no-repeat;
 }
 
 .svg-profile--svg_experience-dims {
@@ -242,7 +260,7 @@
 }
 
 .svg-profile--svg_hobbies {
-	background: url("svg/sprite.view.svg") 100% 80% no-repeat;
+	background: url("svg/sprite.view.svg") 33.333333333333336% 99.81283422459893% no-repeat;
 }
 
 .svg-profile--svg_hobbies-dims {
@@ -251,7 +269,7 @@
 }
 
 .svg-profile--svg_profile {
-	background: url("svg/sprite.view.svg") 0 100% no-repeat;
+	background: url("svg/sprite.view.svg") 50% 99.81283422459893% no-repeat;
 }
 
 .svg-profile--svg_profile-dims {
@@ -260,7 +278,7 @@
 }
 
 .svg-services--svg_marker {
-	background: url("svg/sprite.view.svg") 20% 100% no-repeat;
+	background: url("svg/sprite.view.svg") 66.66666666666667% 99.81283422459893% no-repeat;
 }
 
 .svg-services--svg_marker-dims {
@@ -269,7 +287,7 @@
 }
 
 .svg-services--svg_service {
-	background: url("svg/sprite.view.svg") 40% 100% no-repeat;
+	background: url("svg/sprite.view.svg") 83.33333333333333% 99.81283422459893% no-repeat;
 }
 
 .svg-services--svg_service-dims {
@@ -278,7 +296,7 @@
 }
 
 .svg-works--svg_works {
-	background: url("svg/sprite.view.svg") 60% 100% no-repeat;
+	background: url("svg/sprite.view.svg") 100% 0 no-repeat;
 }
 
 .svg-works--svg_works-dims {

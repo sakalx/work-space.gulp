@@ -53,7 +53,10 @@ textarea:focus {
 
 /*BASIC STYLE===================================================================*/
 .s_first-color::first-letter {
-    color: $clr-txt-main;
+     color: $clr-txt-main;
+ }
+.s_first-color2::first-letter {
+    color: $clr-link;
 }
 
 /*Close-Button*/
@@ -63,6 +66,18 @@ textarea:focus {
     background:  #fff;
 }
 
+/*HEADER===================================================================*/
+/*Nav - menu*/
+.menu__btn:hover .menu__title,
+.menu__btn:focus .menu__title {
+    opacity: 0;
+    transform: translateY(200%);
+}
+.menu__btn:hover .menu__svg--icon,
+.menu__btn:focus .menu__svg--icon {
+    opacity: 1;
+    transform: translateY(-100%);
+}
 /*CUBE===================================================================*/
 .cube__title:hover .cube__title-svg {
     transform: scale(1.2);
