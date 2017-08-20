@@ -1,7 +1,7 @@
 <svg width="421.94" height="230" xmlns="http://www.w3.org/2000/svg">
  <g>
   <title>background</title>
-  <rect x="-1" y="-1" width="423.94" height="232" id="canvas_background" fill="none"/>
+  <rect fill="none" id="canvas_background" height="232" width="423.94" y="-1" x="-1"/>
  </g>
 
  <g>
@@ -21,13 +21,13 @@
   <g id="svg_17"/>
   <g id="svg_18"/>
   <g id="svg_19"/>
-  <path stroke="#000" transform="rotate(90 212.24810791015628,115.79864501953126) " id="svg_3" d="m223.881711,115.798699l-115.202447,-206.798699l207.137703,206.798699l-207.137703,206.798588l115.202447,-206.798588z" stroke-opacity="null" stroke-width="0" fill="#2793e8"/>
-  <path id="svg_22" opacity="0.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
-  <path id="svg_23" opacity="0.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
-  <path id="svg_24" opacity="0.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
-  <path id="svg_25" opacity="0.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
-  <path id="svg_26" opacity="0.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
-  <path id="svg_27" opacity="0.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
-  <path id="svg_28" opacity="0.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <path fill="#cc181e" stroke-width="0" stroke-opacity="null" d="m223.88171,115.7987l-115.20245,-206.7987l207.13771,206.7987l-207.13771,206.79859l115.20245,-206.79859z" id="svg_3" transform="rotate(90 212.24810791015628,115.79864501953126) " stroke="#000"/>
+  <path fill="#fff" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" opacity="0.5" id="svg_22"/>
+  <path fill="#fff" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" opacity="0.5" id="svg_23"/>
+  <path fill="#fff" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" opacity="0.5" id="svg_24"/>
+  <path fill="#fff" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" opacity="0.5" id="svg_25"/>
+  <path fill="#fff" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" opacity="0.5" id="svg_26"/>
+  <path fill="#fff" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" opacity="0.5" id="svg_27"/>
+  <path fill="#fff" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" opacity="0.5" id="svg_28"/>
  </g>
 </svg>
