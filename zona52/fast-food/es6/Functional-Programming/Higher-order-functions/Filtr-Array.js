@@ -12,7 +12,7 @@ const animals = [
 const findDogs = unit => unit.species === 'dog';
 const dogs = animals.filter(findDogs);
 //const dogs = animals.filter(unit => unit.species === 'dog');
-console.log(dogs.le);
+console.log(dogs);
 
 //with using loop
 const dogsLoops = [];
