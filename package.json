@@ -6,7 +6,7 @@
   "scripts": {
     "cooking__es6--src": "babel src/js/ES6 -o src/js/slices/compiled-ES6.js -w",
     "cooking__es6--z52": "babel zona52/fast-food -d zona52/ready-to-serve -w --minified",
-    "cooking__react--z52": "babel zona52/React/jsx -o zona52/React/app/compiled-JSX.js -w" 
+    "cooking__react--z52": "babel zona52/React/jsx -d zona52/React/app -w" 
   },
   "babel": {
   	"presets": ["es2015", "react"],
