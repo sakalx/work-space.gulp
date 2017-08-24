@@ -42,45 +42,50 @@ $(function() {
     // var d = touch ? 20 : 800;  old version
     viewport.el.style[transitionDurationProp] = 800 + 'ms'; //800 = d
     //return d;
-}();
+  }();
 
-$(document).keydown(function(evt) {
-	switch (evt.keyCode) {
+  $(document).keydown(function(evt) {
+   switch (evt.keyCode) {
       case 37: // left
       viewport.move({y: viewport.y - 90});
+      removeArrow();
       break;
 
       case 38: // up
       evt.preventDefault();
       viewport.move({x: viewport.x + 90});
+      removeArrow();
       break;
 
       case 39: // right
       viewport.move({y: viewport.y + 90});
+      removeArrow();
       break;
 
       case 40: // down
       evt.preventDefault();
       viewport.move({x: viewport.x - 90});
+      removeArrow();
       break;
 
       case 27: //esc
       viewport.reset();
+      removeArrow();
       break;
 
       default:
       break;
+    }
+  }).bind('mousedown touchstart', function(evt) {
+   delete mouse.last;
+   if ($(evt.target).is('a, iframe')) {
+    return true;
   }
-}).bind('mousedown touchstart', function(evt) {
-	delete mouse.last;
-	if ($(evt.target).is('a, iframe')) {
-		return true;
-	}
 
-	evt.originalEvent.touches ? evt = evt.originalEvent.touches[0] : null;
-	mouse.start.x = evt.pageX;
-	mouse.start.y = evt.pageY;
-	$(document).bind('mousemove touchmove', function(event) {
+  evt.originalEvent.touches ? evt = evt.originalEvent.touches[0] : null;
+  mouse.start.x = evt.pageX;
+  mouse.start.y = evt.pageY;
+  $(document).bind('mousemove touchmove', function(event) {
       // Only perform rotation if one touch or mouse (e.g. still scale with pinch and zoom)
       if (!touch ||
       	!(event.originalEvent && event.originalEvent.touches.length > 1)) {
@@ -91,16 +96,15 @@ $(document).keydown(function(evt) {
         : null;
         $('#viewport').
         trigger('move-viewport', {x: event.pageX, y: event.pageY});
-    }
+      }
+    });
+
+  $(document).bind('mouseup touchend', function() {
+    $(document).unbind('mousemove touchmove');
+  });
 });
 
-	$(document).bind('mouseup touchend', function() {
-		$(document).unbind('mousemove touchmove');
-	});
-});
-
-$('#viewport').bind('move-viewport', function(evt, movedMouse) {
-
+  $('#viewport').bind('move-viewport', function(evt, movedMouse) {
     // Reduce movement on touch screens
     var movementScaleFactor = touch ? 2 : 1;
 
@@ -114,7 +118,7 @@ $('#viewport').bind('move-viewport', function(evt, movedMouse) {
     if (forward(mouse.start.y, mouse.last.y) !==
     	forward(mouse.last.y, movedMouse.y)) {
     	mouse.start.y = mouse.last.y;
-}
+  }
 }
 
 viewport.move({
@@ -129,8 +133,22 @@ mouse.last.y = movedMouse.y;
 
 function forward(v1, v2) {
       return 'v1 >= v2';  //v1 >= v2 ? true : false; old version
-  }
-});
+    }
+  });
+
+   //remove arrow from btn nav - menu
+   function removeArrow() {
+     var allArrow = document.querySelectorAll('.active');
+     allArrow.forEach(function(element) {
+      element.classList.remove('active');
+    });
+   }
+   $('#box').mouseup(function() {
+    removeArrow();
+  });
+   $('#box').on({ 'touchstart' : function(){ 
+    removeArrow();
+  } });                    
 
   //nav - menu for cube
   function changer(target){
@@ -139,24 +157,20 @@ function forward(v1, v2) {
 	    viewport.move({x: viewport.x - target.dataset.x});
 	    viewport.move({y: viewport.y - target.dataset.y});
 
-      //remove arrow from btn nav - menu
-      var allArrow = document.querySelectorAll('.active');
-      allArrow.forEach(function(element) {
-      	element.classList.remove('active');
-      });
+      removeArrow();     
       //add arrow for btn nav - menu
       target.children[2].classList.add('active');
-  }
+    }
 
-  document.getElementById('nav-menu').addEventListener('click', function(event) {
+    document.getElementById('nav-menu').addEventListener('click', function(event) {
     //check our target
     if (event.target.tagName === 'svg' ||
     	event.target.tagName === 'span') {
     	var target = event.target.parentNode;
     changer(target);
-} else if (event.target.tagName === 'use') {
-	var target = event.target.parentNode.parentNode;
-	changer(target);
-}
-});
-});
+  } else if (event.target.tagName === 'use') {
+   var target = event.target.parentNode.parentNode;
+   changer(target);
+ }
+}); 
+  });
