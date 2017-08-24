@@ -1,9 +1,13 @@
+
+
+const Greeting = name => console.log(`Hello I'm ${name}`);
+
 const Hero = (props) => {
-  console.log(props);
-  return (
+  const SayHello = () => Greeting(props.title);
+return (
       <div className="container">
         <h1>{props.title}</h1>
-        <img src={props.imgUrl}/>
+        <img  onClick={SayHello} src={props.imgUrl}/>
         <p>{props.subTitle}</p>
       </div>
   );
