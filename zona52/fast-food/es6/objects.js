@@ -17,24 +17,24 @@ let person = {
   }*/
   //создаем метод для обекта person es6
   sayHello() {
-    console.log(`hi my name is ${this.firstName} ${this.lastName}`)
+    console.log(`hi my name is ${this.firstName} ${this.lastName}`);
 },
   //get && set es6
   get fullName() {
-    return this.firstName + ' ' + this.lastName
+    return this.firstName + ' ' + this.lastName;
   },
   set fullName(value) {
-    this.firstName = value
+    this.firstName = value;
   }
 };
 
 //Get && Set
 Object.defineProperty(person, 'fullName', {
   get: function() {
-    return this.firstName + ' ' + this.lastName
+    return this.firstName + ' ' + this.lastName;
   },
   set: function(value) {
-      this.firstName = value
+      this.firstName = value;
   }
 });
 

@@ -13,7 +13,7 @@ let sgr2 = x => x * x;
 console.log(sqr(3),  sgr2(4));
 //---------------------------------
 let answer = function() {
-  return 44
+  return 44;
 };
 let answer2 = () => 44;
 //arrow function
@@ -40,7 +40,7 @@ console.log(multiply(3, 4), multiply2(4, 5));
 let getPerson = function() {
   return {
     name: 'John'
-  }
+  };
 };
 //arrow function
 let getPerson2 = () => ({name: 'John2'});

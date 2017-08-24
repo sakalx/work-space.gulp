@@ -25,20 +25,3 @@ console.log(dogsLoops);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

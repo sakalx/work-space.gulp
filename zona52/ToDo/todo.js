@@ -15,7 +15,7 @@ const init = (document => {
         if (typeof child === 'string')
           child = document.createTextNode(child);
         element.appendChild(child);
-      })
+      });
     }
     return element;
   };
@@ -30,7 +30,7 @@ const init = (document => {
     const item = CreatElement('li', {className: 'todo-item'}, checkbox, label, editInput, editButton, deletetButton );
 
     BindEvents(item);
-    return item
+    return item;
   };
 
   const BindEvents = newItem => {

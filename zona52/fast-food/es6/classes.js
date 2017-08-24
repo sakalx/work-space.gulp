@@ -5,21 +5,21 @@ class Task {
     this._title = title;
     this.done = false;
     Task.count +=1;
-    console.log('Создание задачи')
+    console.log('Создание задачи');
   }
   get title() {
-    return this._title
+    return this._title;
   }
   set title(value) {
     this._title = value;
   }
   static getDefaultTitle() {
-    return ('Default Name')
+    return ('Default Name');
   }
   //создадим метод
   complete() {
     this.done = true;
-    console.log(`this task ${this.title} done`)
+    console.log(`this task ${this.title} done`);
   }
 }
 //статическое свойство
@@ -28,13 +28,13 @@ Task.count = 0;
 class SubTask extends Task {
   constructor(title, parent) {
       super(title); //обязательно 1!!!!!
-    this.parent = parent
-    console.log('creat subTask constructor')
+    this.parent = parent;
+    console.log('creat subTask constructor');
   }
   //расширяем родительськый метод
   complete() {
     super.complete();//обязательно 1!!!!!
-    console.log(`sub Task ${this.title} done`)
+    console.log(`sub Task ${this.title} done`);
   }
 }
 
