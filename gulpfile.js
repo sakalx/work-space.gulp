@@ -75,7 +75,10 @@ gulp.task('build-svg', ['svgmin'],
 //=======================================================================================================
 //=======================================================================================================
 
-
+const path = {
+  cssFrom: ['!src/components-css/slices/**/*.css', 'src/components-css/**/*.css'],
+  cssTo:    'src/css'
+}
 
 // Создаем таск PostCSS---------------------------для обработки CSS
 gulp.task('css', function() {
@@ -86,10 +89,10 @@ gulp.task('css', function() {
                 	browers: ['last 7 version']
                 	})
                 ];
-                return gulp.src(['!src/postcss/slices/**/*.css', 'src/postcss/**/*.css'])
+                return gulp.src(path.cssFrom)
                 .pipe(postcss(processors))
                 .pipe(concat('style.css')) 
-                .pipe(gulp.dest('src/css'))
+                .pipe(gulp.dest(path.cssTo))
   .pipe(browserSync.reload({stream: true}));       // Обновляем CSS на странице при изменении
   });
 
@@ -143,9 +146,9 @@ gulp.task('watch', [
 	'scripts',
   'scripts2',
 	], function() {
- gulp.watch('src/postcss/**/*.css', ['css']);      // Наблюдение за css файлами в папке postcss
- gulp.watch('src/**/*.html', browserSync.reload);  // Наблюдение за HTML файлами в корне проекта
- gulp.watch('src/js/**/*.js', ['scripts']);        // Наблюдение за JS файлами в папке js
+ gulp.watch('src/components-css/**/*.css', ['css']);  // Наблюдение за css файлами в папке components-css
+ gulp.watch('src/**/*.html', browserSync.reload);     // Наблюдение за HTML файлами в корне проекта
+ gulp.watch('src/js/**/*.js', ['scripts']);           // Наблюдение за JS файлами в папке js
 
  });
 
@@ -173,13 +176,13 @@ gulp.task('cssnano', function() {
             return gulp.src('src/css/**/*.css')   
        .pipe(postcss(nano))                       // Подкдючаем к PostCSS
        .pipe(rename({suffix: '.min'}))            // Додаем суффикс .min
-       .pipe(gulp.dest('built/css/'));        // Выгружаем в готовый проект
+       .pipe(gulp.dest('built/css/'));            // Выгружаем в готовый проект
        });
 
 
 // Создаем таск Img + Cache-----------------------для оптимизации изображений и его кеширования
 gulp.task('img', function(){
-  return gulp.src('src/img/**/*')              // Берем все изображения из src
+  return gulp.src('src/img/**/*')                 // Берем все изображения из src
   .pipe(cache(imagemin({                          // Сжимаем изображения с учетом кеширования
   	interlaced: true,
   	progressive: true,
